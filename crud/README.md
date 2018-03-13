@@ -11,7 +11,7 @@ git clone https://github.com/oatpp/oatpp-examples
 2) Get oatpp-lib (it is included as git submodule)
 ```
 git submodule init
-git submodule update
+git submodule update --remote --merge
 ```
 
 3) CD to crud example-project
