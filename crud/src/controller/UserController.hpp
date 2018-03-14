@@ -54,13 +54,13 @@ public:
    */
   
   ENDPOINT("POST", "demo/api/users", createUser,
-           BODY_DTO(UserDto::SharedWrapper, userDto)) {
+           BODY_DTO(UserDto::PtrWrapper, userDto)) {
     return createDtoResponse(Status::CODE_200, m_database->createUser(userDto));
   }
   
   ENDPOINT("PUT", "demo/api/users/{userId}", putUser,
            PATH(Int32, userId),
-           BODY_DTO(UserDto::SharedWrapper, userDto)) {
+           BODY_DTO(UserDto::PtrWrapper, userDto)) {
     return createDtoResponse(Status::CODE_200, m_database->updateUser(userDto));
   }
   

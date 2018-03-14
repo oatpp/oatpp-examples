@@ -19,7 +19,6 @@
 		B3F7AA902058274F00DA8A39 /* ParsingCaret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7A9D72058274F00DA8A39 /* ParsingCaret.cpp */; };
 		B3F7AA912058274F00DA8A39 /* Runnable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7A9DA2058274F00DA8A39 /* Runnable.cpp */; };
 		B3F7AA922058274F00DA8A39 /* SpinLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7A9DB2058274F00DA8A39 /* SpinLock.cpp */; };
-		B3F7AA932058274F00DA8A39 /* Mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7A9DC2058274F00DA8A39 /* Mutex.cpp */; };
 		B3F7AA942058274F00DA8A39 /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7A9DD2058274F00DA8A39 /* Thread.cpp */; };
 		B3F7AA952058274F00DA8A39 /* Library.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7A9E92058274F00DA8A39 /* Library.cpp */; };
 		B3F7AA962058274F00DA8A39 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7A9F02058274F00DA8A39 /* Object.cpp */; };
@@ -37,7 +36,7 @@
 		B3F7AAA22058274F00DA8A39 /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AA0D2058274F00DA8A39 /* Allocator.cpp */; };
 		B3F7AAA32058274F00DA8A39 /* MemoryPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AA0E2058274F00DA8A39 /* MemoryPool.cpp */; };
 		B3F7AAA42058274F00DA8A39 /* ObjectPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AA0F2058274F00DA8A39 /* ObjectPool.cpp */; };
-		B3F7AAA52058274F00DA8A39 /* SharedWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AA102058274F00DA8A39 /* SharedWrapper.cpp */; };
+		B3F7AAA52058274F00DA8A39 /* PtrWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AA102058274F00DA8A39 /* PtrWrapper.cpp */; };
 		B3F7AAA62058274F00DA8A39 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AA112058274F00DA8A39 /* String.cpp */; };
 		B3F7AAA72058274F00DA8A39 /* ErrorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AA1B2058274F00DA8A39 /* ErrorHandler.cpp */; };
 		B3F7AAA82058274F00DA8A39 /* HttpError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AA1E2058274F00DA8A39 /* HttpError.cpp */; };
@@ -121,11 +120,9 @@
 		B3F7A9D82058274F00DA8A39 /* ParsingCaret.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParsingCaret.hpp; sourceTree = "<group>"; };
 		B3F7A9DA2058274F00DA8A39 /* Runnable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Runnable.cpp; sourceTree = "<group>"; };
 		B3F7A9DB2058274F00DA8A39 /* SpinLock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpinLock.cpp; sourceTree = "<group>"; };
-		B3F7A9DC2058274F00DA8A39 /* Mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mutex.cpp; sourceTree = "<group>"; };
 		B3F7A9DD2058274F00DA8A39 /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Thread.cpp; sourceTree = "<group>"; };
 		B3F7A9DE2058274F00DA8A39 /* Runnable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Runnable.hpp; sourceTree = "<group>"; };
 		B3F7A9DF2058274F00DA8A39 /* SpinLock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpinLock.hpp; sourceTree = "<group>"; };
-		B3F7A9E02058274F00DA8A39 /* Mutex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mutex.hpp; sourceTree = "<group>"; };
 		B3F7A9E12058274F00DA8A39 /* Thread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Thread.hpp; sourceTree = "<group>"; };
 		B3F7A9E32058274F00DA8A39 /* codegen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = codegen.hpp; sourceTree = "<group>"; };
 		B3F7A9E42058274F00DA8A39 /* component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = component.hpp; sourceTree = "<group>"; };
@@ -162,12 +159,12 @@
 		B3F7AA0D2058274F00DA8A39 /* Allocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Allocator.cpp; sourceTree = "<group>"; };
 		B3F7AA0E2058274F00DA8A39 /* MemoryPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryPool.cpp; sourceTree = "<group>"; };
 		B3F7AA0F2058274F00DA8A39 /* ObjectPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectPool.cpp; sourceTree = "<group>"; };
-		B3F7AA102058274F00DA8A39 /* SharedWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SharedWrapper.cpp; sourceTree = "<group>"; };
+		B3F7AA102058274F00DA8A39 /* PtrWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PtrWrapper.cpp; sourceTree = "<group>"; };
 		B3F7AA112058274F00DA8A39 /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
 		B3F7AA122058274F00DA8A39 /* String.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = String.hpp; sourceTree = "<group>"; };
 		B3F7AA132058274F00DA8A39 /* Controllable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controllable.hpp; sourceTree = "<group>"; };
 		B3F7AA142058274F00DA8A39 /* Environment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Environment.hpp; sourceTree = "<group>"; };
-		B3F7AA152058274F00DA8A39 /* SharedWrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SharedWrapper.hpp; sourceTree = "<group>"; };
+		B3F7AA152058274F00DA8A39 /* PtrWrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PtrWrapper.hpp; sourceTree = "<group>"; };
 		B3F7AA162058274F00DA8A39 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B3F7AA1B2058274F00DA8A39 /* ErrorHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ErrorHandler.cpp; sourceTree = "<group>"; };
 		B3F7AA1C2058274F00DA8A39 /* ErrorHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ErrorHandler.hpp; sourceTree = "<group>"; };
@@ -417,12 +414,10 @@
 			isa = PBXGroup;
 			children = (
 				B3F7A9DA2058274F00DA8A39 /* Runnable.cpp */,
-				B3F7A9DB2058274F00DA8A39 /* SpinLock.cpp */,
-				B3F7A9DC2058274F00DA8A39 /* Mutex.cpp */,
-				B3F7A9DD2058274F00DA8A39 /* Thread.cpp */,
 				B3F7A9DE2058274F00DA8A39 /* Runnable.hpp */,
+				B3F7A9DB2058274F00DA8A39 /* SpinLock.cpp */,
 				B3F7A9DF2058274F00DA8A39 /* SpinLock.hpp */,
-				B3F7A9E02058274F00DA8A39 /* Mutex.hpp */,
+				B3F7A9DD2058274F00DA8A39 /* Thread.cpp */,
 				B3F7A9E12058274F00DA8A39 /* Thread.hpp */,
 			);
 			path = concurrency;
@@ -532,8 +527,8 @@
 				B3F7AA082058274F00DA8A39 /* Environment.cpp */,
 				B3F7AA142058274F00DA8A39 /* Environment.hpp */,
 				B3F7AA092058274F00DA8A39 /* memory */,
-				B3F7AA102058274F00DA8A39 /* SharedWrapper.cpp */,
-				B3F7AA152058274F00DA8A39 /* SharedWrapper.hpp */,
+				B3F7AA102058274F00DA8A39 /* PtrWrapper.cpp */,
+				B3F7AA152058274F00DA8A39 /* PtrWrapper.hpp */,
 				B3F7AA112058274F00DA8A39 /* String.cpp */,
 				B3F7AA122058274F00DA8A39 /* String.hpp */,
 			);
@@ -1031,9 +1026,8 @@
 				B3F7AA912058274F00DA8A39 /* Runnable.cpp in Sources */,
 				B3F7AAB72058274F00DA8A39 /* Response.cpp in Sources */,
 				B3F7AAA42058274F00DA8A39 /* ObjectPool.cpp in Sources */,
-				B3F7AA932058274F00DA8A39 /* Mutex.cpp in Sources */,
 				B3F7AAE22058293F00DA8A39 /* Database.cpp in Sources */,
-				B3F7AAA52058274F00DA8A39 /* SharedWrapper.cpp in Sources */,
+				B3F7AAA52058274F00DA8A39 /* PtrWrapper.cpp in Sources */,
 				B3F7AAC62058274F00DA8A39 /* Unicode.cpp in Sources */,
 				B3F7AA902058274F00DA8A39 /* ParsingCaret.cpp in Sources */,
 				B3F7AA922058274F00DA8A39 /* SpinLock.cpp in Sources */,

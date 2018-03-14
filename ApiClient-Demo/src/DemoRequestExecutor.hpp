@@ -18,8 +18,8 @@
  */
 class DemoRequestExecutor : public oatpp::web::client::RequestExecutor {
 public:
-  std::shared_ptr<Response> execute(const String::SharedWrapper& method,
-                                    const String::SharedWrapper& path,
+  std::shared_ptr<Response> execute(const String::PtrWrapper& method,
+                                    const String::PtrWrapper& path,
                                     const std::shared_ptr<Headers>& userDefinedHeaders,
                                     const std::shared_ptr<Body>& body) override
   {

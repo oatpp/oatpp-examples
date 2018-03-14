@@ -43,7 +43,7 @@ class DemoApiClient : public oatpp::web::client::ApiClient {
   
   API_CALL("POST", "/users", postUser,
            HEADER(String, token, "x-auth-token"),
-           BODY_DTO(UserDto::SharedWrapper, user))
+           BODY_DTO(UserDto::PtrWrapper, user))
   
   API_CALL("GET", "/users/offset/{offset}/limit/{limit}", getUsers,
            HEADER(String, token, "x-auth-token"),

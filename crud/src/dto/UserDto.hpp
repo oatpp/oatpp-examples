@@ -25,7 +25,7 @@ class UserDto : public oatpp::data::mapping::type::Object {
   DTO_FIELD(Int32, id);
   DTO_FIELD(String, firstName, "first-name");
   DTO_FIELD(String, lastName, "last-name");
-  DTO_FIELD(List<String>::SharedWrapper, friends) = List<String>::createShared();
+  DTO_FIELD(List<String>::PtrWrapper, friends) = List<String>::createShared();
   
 };
 

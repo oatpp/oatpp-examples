@@ -25,8 +25,8 @@ private:
   v_int32 m_idCounter; ///< counter to generate userIds
   std::unordered_map<v_int32, User> m_usersById; ///< Map userId to User
 private:
-  User serializeFromDto(const UserDto::SharedWrapper& userDto);
-  UserDto::SharedWrapper deserializeToDto(const User& user);
+  User serializeFromDto(const UserDto::PtrWrapper& userDto);
+  UserDto::PtrWrapper deserializeToDto(const User& user);
 public:
   
   Database()
@@ -34,10 +34,10 @@ public:
     , m_idCounter(0)
   {}
   
-  UserDto::SharedWrapper createUser(const UserDto::SharedWrapper& userDto);
-  UserDto::SharedWrapper updateUser(const UserDto::SharedWrapper& userDto);
-  UserDto::SharedWrapper getUserById(v_int32 id);
-  oatpp::data::mapping::type::List<UserDto::SharedWrapper>::SharedWrapper getUsers();
+  UserDto::PtrWrapper createUser(const UserDto::PtrWrapper& userDto);
+  UserDto::PtrWrapper updateUser(const UserDto::PtrWrapper& userDto);
+  UserDto::PtrWrapper getUserById(v_int32 id);
+  oatpp::data::mapping::type::List<UserDto::PtrWrapper>::PtrWrapper getUsers();
   bool deleteUser(v_int32 id);
   
 };
