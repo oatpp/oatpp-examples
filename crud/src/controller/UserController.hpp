@@ -53,6 +53,10 @@ public:
    *  Insert Your endpoints here !!!
    */
   
+  ENDPOINT("GET", "/", helloWorld) {
+    return createResponse(Status::CODE_200, "Hello World!");
+  }
+  
   ENDPOINT("POST", "demo/api/users", createUser,
            BODY_DTO(UserDto::PtrWrapper, userDto)) {
     return createDtoResponse(Status::CODE_200, m_database->createUser(userDto));

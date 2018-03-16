@@ -82,6 +82,12 @@
 		B3F7AAEA2058633B00DA8A39 /* ControllerLevelTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AAE82058633B00DA8A39 /* ControllerLevelTest.cpp */; };
 		B3F7AAED2058637100DA8A39 /* RouterLevelTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AAEB2058637100DA8A39 /* RouterLevelTest.cpp */; };
 		B3F7AAF0205863E400DA8A39 /* ConnectionHandlerLevelTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AAEE205863E400DA8A39 /* ConnectionHandlerLevelTest.cpp */; };
+		B3F7AF84205B1C1900DA8A39 /* IORequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AF82205B1C1900DA8A39 /* IORequest.cpp */; };
+		B3F7AF87205B1DFF00DA8A39 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AF85205B1DFF00DA8A39 /* Queue.cpp */; };
+		B3F7AF8A205B24A700DA8A39 /* AsyncIOStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AF88205B24A700DA8A39 /* AsyncIOStream.cpp */; };
+		B3F7AF8D205B2E8300DA8A39 /* AsyncConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AF8B205B2E8300DA8A39 /* AsyncConnection.cpp */; };
+		B3F7AF90205B317900DA8A39 /* HttpProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AF8E205B317900DA8A39 /* HttpProcessor.cpp */; };
+		B3F7AF93205B378000DA8A39 /* AsyncHttpConnectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3F7AF91205B378000DA8A39 /* AsyncHttpConnectionHandler.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -264,6 +270,18 @@
 		B3F7AAEC2058637100DA8A39 /* RouterLevelTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RouterLevelTest.hpp; sourceTree = "<group>"; };
 		B3F7AAEE205863E400DA8A39 /* ConnectionHandlerLevelTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionHandlerLevelTest.cpp; sourceTree = "<group>"; };
 		B3F7AAEF205863E400DA8A39 /* ConnectionHandlerLevelTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConnectionHandlerLevelTest.hpp; sourceTree = "<group>"; };
+		B3F7AF82205B1C1900DA8A39 /* IORequest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IORequest.cpp; sourceTree = "<group>"; };
+		B3F7AF83205B1C1900DA8A39 /* IORequest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IORequest.hpp; sourceTree = "<group>"; };
+		B3F7AF85205B1DFF00DA8A39 /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
+		B3F7AF86205B1DFF00DA8A39 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		B3F7AF88205B24A700DA8A39 /* AsyncIOStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AsyncIOStream.cpp; sourceTree = "<group>"; };
+		B3F7AF89205B24A700DA8A39 /* AsyncIOStream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AsyncIOStream.hpp; sourceTree = "<group>"; };
+		B3F7AF8B205B2E8300DA8A39 /* AsyncConnection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AsyncConnection.cpp; sourceTree = "<group>"; };
+		B3F7AF8C205B2E8300DA8A39 /* AsyncConnection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AsyncConnection.hpp; sourceTree = "<group>"; };
+		B3F7AF8E205B317900DA8A39 /* HttpProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HttpProcessor.cpp; sourceTree = "<group>"; };
+		B3F7AF8F205B317900DA8A39 /* HttpProcessor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HttpProcessor.hpp; sourceTree = "<group>"; };
+		B3F7AF91205B378000DA8A39 /* AsyncHttpConnectionHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AsyncHttpConnectionHandler.cpp; sourceTree = "<group>"; };
+		B3F7AF92205B378000DA8A39 /* AsyncHttpConnectionHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AsyncHttpConnectionHandler.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -570,14 +588,18 @@
 		B3F7AA192058274F00DA8A39 /* server */ = {
 			isa = PBXGroup;
 			children = (
-				B3F7AA1A2058274F00DA8A39 /* handler */,
-				B3F7AA1D2058274F00DA8A39 /* HttpRouter.hpp */,
-				B3F7AA1E2058274F00DA8A39 /* HttpError.cpp */,
-				B3F7AA1F2058274F00DA8A39 /* HttpConnectionHandler.hpp */,
-				B3F7AA202058274F00DA8A39 /* HttpConnectionHandler.cpp */,
 				B3F7AA212058274F00DA8A39 /* api */,
-				B3F7AA292058274F00DA8A39 /* HttpRouter.cpp */,
+				B3F7AA1A2058274F00DA8A39 /* handler */,
+				B3F7AA202058274F00DA8A39 /* HttpConnectionHandler.cpp */,
+				B3F7AA1F2058274F00DA8A39 /* HttpConnectionHandler.hpp */,
+				B3F7AA1E2058274F00DA8A39 /* HttpError.cpp */,
 				B3F7AA2A2058274F00DA8A39 /* HttpError.hpp */,
+				B3F7AF8E205B317900DA8A39 /* HttpProcessor.cpp */,
+				B3F7AF8F205B317900DA8A39 /* HttpProcessor.hpp */,
+				B3F7AA292058274F00DA8A39 /* HttpRouter.cpp */,
+				B3F7AA1D2058274F00DA8A39 /* HttpRouter.hpp */,
+				B3F7AF91205B378000DA8A39 /* AsyncHttpConnectionHandler.cpp */,
+				B3F7AF92205B378000DA8A39 /* AsyncHttpConnectionHandler.hpp */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -720,12 +742,15 @@
 		B3F7AA582058274F00DA8A39 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				B3F7AA592058274F00DA8A39 /* Connection.hpp */,
-				B3F7AA5A2058274F00DA8A39 /* server */,
-				B3F7AA612058274F00DA8A39 /* ConnectionProvider.hpp */,
-				B3F7AA622058274F00DA8A39 /* ConnectionProvider.cpp */,
-				B3F7AA632058274F00DA8A39 /* Connection.cpp */,
+				B3F7AF8B205B2E8300DA8A39 /* AsyncConnection.cpp */,
+				B3F7AF8C205B2E8300DA8A39 /* AsyncConnection.hpp */,
 				B3F7AA642058274F00DA8A39 /* client */,
+				B3F7AA632058274F00DA8A39 /* Connection.cpp */,
+				B3F7AA592058274F00DA8A39 /* Connection.hpp */,
+				B3F7AA622058274F00DA8A39 /* ConnectionProvider.cpp */,
+				B3F7AA612058274F00DA8A39 /* ConnectionProvider.hpp */,
+				B3F7AF81205B1BE800DA8A39 /* io */,
+				B3F7AA5A2058274F00DA8A39 /* server */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -733,12 +758,12 @@
 		B3F7AA5A2058274F00DA8A39 /* server */ = {
 			isa = PBXGroup;
 			children = (
-				B3F7AA5B2058274F00DA8A39 /* Server.hpp */,
-				B3F7AA5C2058274F00DA8A39 /* SimpleTCPConnectionProvider.hpp */,
-				B3F7AA5D2058274F00DA8A39 /* ConnectionHandler.hpp */,
-				B3F7AA5E2058274F00DA8A39 /* SimpleTCPConnectionProvider.cpp */,
 				B3F7AA5F2058274F00DA8A39 /* ConnectionHandler.cpp */,
+				B3F7AA5D2058274F00DA8A39 /* ConnectionHandler.hpp */,
 				B3F7AA602058274F00DA8A39 /* Server.cpp */,
+				B3F7AA5B2058274F00DA8A39 /* Server.hpp */,
+				B3F7AA5E2058274F00DA8A39 /* SimpleTCPConnectionProvider.cpp */,
+				B3F7AA5C2058274F00DA8A39 /* SimpleTCPConnectionProvider.hpp */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -910,6 +935,19 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		B3F7AF81205B1BE800DA8A39 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				B3F7AF82205B1C1900DA8A39 /* IORequest.cpp */,
+				B3F7AF83205B1C1900DA8A39 /* IORequest.hpp */,
+				B3F7AF85205B1DFF00DA8A39 /* Queue.cpp */,
+				B3F7AF86205B1DFF00DA8A39 /* Queue.hpp */,
+				B3F7AF88205B24A700DA8A39 /* AsyncIOStream.cpp */,
+				B3F7AF89205B24A700DA8A39 /* AsyncIOStream.hpp */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -969,7 +1007,9 @@
 			files = (
 				B3F7AAC22058274F00DA8A39 /* Connection.cpp in Sources */,
 				B3F7AA8C2058274F00DA8A39 /* UnitTest.cpp in Sources */,
+				B3F7AF90205B317900DA8A39 /* HttpProcessor.cpp in Sources */,
 				B3F7AA952058274F00DA8A39 /* Library.cpp in Sources */,
+				B3F7AF8D205B2E8300DA8A39 /* AsyncConnection.cpp in Sources */,
 				B3F7AA882058274F00DA8A39 /* LinkedListTest.cpp in Sources */,
 				B3F7AA9F2058274F00DA8A39 /* IOBuffer.cpp in Sources */,
 				B3F7AAB82058274F00DA8A39 /* Router.cpp in Sources */,
@@ -981,11 +1021,13 @@
 				B3F7AAC72058274F00DA8A39 /* DTOMapperPerfTest.cpp in Sources */,
 				B3F7AAAA2058274F00DA8A39 /* Endpoint.cpp in Sources */,
 				B3F7AAC32058274F00DA8A39 /* SimpleTCPConnectionProvider.cpp in Sources */,
+				B3F7AF87205B1DFF00DA8A39 /* Queue.cpp in Sources */,
 				B3F7AA9D2058274F00DA8A39 /* ChunkedBuffer.cpp in Sources */,
 				B3F7AA9B2058274F00DA8A39 /* Delegate.cpp in Sources */,
 				B3F7AAAB2058274F00DA8A39 /* ApiController.cpp in Sources */,
 				B3F7AAAF2058274F00DA8A39 /* DtoBody.cpp in Sources */,
 				B3F7AABE2058274F00DA8A39 /* SimpleTCPConnectionProvider.cpp in Sources */,
+				B3F7AF84205B1C1900DA8A39 /* IORequest.cpp in Sources */,
 				B3F7AAAE2058274F00DA8A39 /* Request.cpp in Sources */,
 				B3F7AAEA2058633B00DA8A39 /* ControllerLevelTest.cpp in Sources */,
 				B3F7AABB2058274F00DA8A39 /* RequestExecutor.cpp in Sources */,
@@ -1004,6 +1046,7 @@
 				B3F7AAC42058274F00DA8A39 /* UnicodeTest.cpp in Sources */,
 				B3F7AAC82058274F00DA8A39 /* DeserializerTest.cpp in Sources */,
 				B3F7AACC2058274F00DA8A39 /* Serializer.cpp in Sources */,
+				B3F7AF93205B378000DA8A39 /* AsyncHttpConnectionHandler.cpp in Sources */,
 				B3F7AAA12058274F00DA8A39 /* Environment.cpp in Sources */,
 				B3F7AAA92058274F00DA8A39 /* HttpConnectionHandler.cpp in Sources */,
 				B3F7AA9E2058274F00DA8A39 /* StreamBufferedProxy.cpp in Sources */,
@@ -1022,6 +1065,7 @@
 				B3F7AAB92058274F00DA8A39 /* Subscriber.cpp in Sources */,
 				B3F7AA942058274F00DA8A39 /* Thread.cpp in Sources */,
 				B3F7AABF2058274F00DA8A39 /* ConnectionHandler.cpp in Sources */,
+				B3F7AF8A205B24A700DA8A39 /* AsyncIOStream.cpp in Sources */,
 				B3F7AACB2058274F00DA8A39 /* ObjectMapper.cpp in Sources */,
 				B3F7AA912058274F00DA8A39 /* Runnable.cpp in Sources */,
 				B3F7AAB72058274F00DA8A39 /* Response.cpp in Sources */,

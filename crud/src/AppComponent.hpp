@@ -11,7 +11,7 @@
 
 #include "db/Database.hpp"
 
-#include "../../lib/oatpp-lib/web/src/server/HttpConnectionHandler.hpp"
+#include "../../lib/oatpp-lib/web/src/server/AsyncHttpConnectionHandler.hpp"
 #include "../../lib/oatpp-lib/web/src/server/HttpRouter.hpp"
 #include "../../lib/oatpp-lib/network/src/server/SimpleTCPConnectionProvider.hpp"
 
@@ -31,7 +31,7 @@ public:
    *  Create ConnectionProvider component which listens on the port
    */
   OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::network::ServerConnectionProvider>, serverConnectionProvider)([] {
-    return oatpp::network::server::SimpleTCPConnectionProvider::createShared(8000);
+    return oatpp::network::server::SimpleTCPConnectionProvider::createShared(8000, true);
   }());
   
   /**
@@ -46,7 +46,7 @@ public:
    */
   OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::network::server::ConnectionHandler>, serverConnectionHandler)([] {
     OATPP_COMPONENT(std::shared_ptr<oatpp::web::server::HttpRouter>, router); // get Router component
-    return oatpp::web::server::HttpConnectionHandler::createShared(router);
+    return oatpp::web::server::AsyncHttpConnectionHandler::createShared(router);
   }());
   
   /**
