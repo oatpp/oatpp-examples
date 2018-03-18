@@ -71,9 +71,9 @@ int main(int argc, const char * argv[]) {
 #endif
   
 #ifdef OATPP_TARGET_TEST
-  OATPP_RUN_TEST(ControllerLevelTest);
-  OATPP_RUN_TEST(RouterLevelTest);
-  OATPP_RUN_TEST(ControllerLevelTest);
+  OATPP_RUN_TEST(ConnectionHandlerLevelTest);
+  //OATPP_RUN_TEST(RouterLevelTest);
+  //OATPP_RUN_TEST(ControllerLevelTest);
 #endif
   
   oatpp::base::Environment::setLogger(nullptr); ///< free Logger
