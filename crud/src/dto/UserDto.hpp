@@ -9,8 +9,8 @@
 #ifndef UserDto_hpp
 #define UserDto_hpp
 
-#include "../../../lib/oatpp-lib/core/src/data/mapping/type/Object.hpp"
-#include "../../../lib/oatpp-lib/core/src/macro/codegen.hpp"
+#include "../../../lib/oatpp/core/src/data/mapping/type/Object.hpp"
+#include "../../../lib/oatpp/core/src/macro/codegen.hpp"
 
 #include OATPP_CODEGEN_BEGIN(DTO)
 

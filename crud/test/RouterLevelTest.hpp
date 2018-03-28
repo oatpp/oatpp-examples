@@ -9,7 +9,7 @@
 #ifndef RouterLevelTest_hpp
 #define RouterLevelTest_hpp
 
-#include "../../lib/oatpp-lib/core/test/UnitTest.hpp"
+#include "../../lib/oatpp/core/test/UnitTest.hpp"
   
 class RouterLevelTest : public oatpp::test::UnitTest {
 public:

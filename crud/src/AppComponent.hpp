@@ -11,14 +11,14 @@
 
 #include "db/Database.hpp"
 
-#include "../../lib/oatpp-lib/web/src/server/HttpConnectionHandler.hpp"
-#include "../../lib/oatpp-lib/web/src/server/HttpRouter.hpp"
-#include "../../lib/oatpp-lib/network/src/server/SimpleTCPConnectionProvider.hpp"
+#include "../../lib/oatpp/web/src/server/HttpConnectionHandler.hpp"
+#include "../../lib/oatpp/web/src/server/HttpRouter.hpp"
+#include "../../lib/oatpp/network/src/server/SimpleTCPConnectionProvider.hpp"
 
-#include "../../lib/oatpp-lib/parser/src/json/mapping/Serializer.hpp"
-#include "../../lib/oatpp-lib/parser/src/json/mapping/Deserializer.hpp"
+#include "../../lib/oatpp/parser/src/json/mapping/Serializer.hpp"
+#include "../../lib/oatpp/parser/src/json/mapping/Deserializer.hpp"
 
-#include "../../lib/oatpp-lib/core/src/macro/component.hpp"
+#include "../../lib/oatpp/core/src/macro/component.hpp"
 
 /**
  *  Class which creates and holds Application components and registers components in oatpp::base::Environment

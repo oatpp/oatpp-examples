@@ -12,7 +12,7 @@
 #include "../dto/UserDto.hpp"
 #include "model/User.hpp"
 
-#include "../../../lib/oatpp-lib/core/src/concurrency/SpinLock.hpp"
+#include "../../../lib/oatpp/core/src/concurrency/SpinLock.hpp"
 #include <unordered_map>
 
 /**
