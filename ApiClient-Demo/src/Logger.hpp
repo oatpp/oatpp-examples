@@ -9,8 +9,8 @@
 #ifndef Logger_hpp
 #define Logger_hpp
 
-#include "../../lib/oatpp-lib/core/src/concurrency/SpinLock.hpp"
-#include "../../lib/oatpp-lib/core/src/base/Environment.hpp"
+#include "oatpp/core/concurrency/SpinLock.hpp"
+#include "oatpp/core/base/Environment.hpp"
 
 #include <iostream>
 

@@ -4,12 +4,13 @@ echo "Building app. Please wait..."
 
 g++ -std=gnu++11 \
 -pthread \
-`find "../lib/oatpp-lib/" -type f -name *.cpp` \
+`find "../lib/oatpp/" -type f -name *.cpp` \
 `find "./src/" -type f -name *.cpp` \
--I "../lib/oatpp-lib/core/src/macro" \
--I "../lib/oatpp-lib/core/src/data/mapping/type/macro" \
--I "../lib/oatpp-lib/web/src/client/macro" \
--I "../lib/oatpp-lib/web/src/server/api/macro" \
+-I "../lib" \
+-I "../lib/oatpp/core/macro" \
+-I "../lib/oatpp/core/data/mapping/type/macro" \
+-I "../lib/oatpp/web/client/macro" \
+-I "../lib/oatpp/web/server/api/macro" \
 -D OATPP_USE_TARGET \
 -D OATPP_TARGET_APP \
 -D OATPP_DISABLE_ENV_OBJECT_COUNTERS \

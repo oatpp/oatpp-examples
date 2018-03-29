@@ -9,10 +9,10 @@
 #ifndef DemoApiClient_hpp
 #define DemoApiClient_hpp
 
-#include "../../lib/oatpp-lib/web/src/client/ApiClient.hpp"
+#include "oatpp/web/client/ApiClient.hpp"
 
-#include "../../lib/oatpp-lib/core/src/data/mapping/type/Object.hpp"
-#include "../../lib/oatpp-lib/core/src/macro/codegen.hpp"
+#include "oatpp/core/data/mapping/type/Object.hpp"
+#include "oatpp/core/macro/codegen.hpp"
 
 #include OATPP_CODEGEN_BEGIN(DTO) // Begin DTO codegen section
 

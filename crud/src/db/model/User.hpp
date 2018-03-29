@@ -9,8 +9,8 @@
 #ifndef db_User_hpp
 #define db_User_hpp
 
-#include "../../../../lib/oatpp/core/src/base/String.hpp"
-#include "../../../../lib/oatpp/core/src/base/Environment.hpp"
+#include "oatpp/core/base/String.hpp"
+#include "oatpp/core/base/Environment.hpp"
 
 #include <string>
 #include <list>

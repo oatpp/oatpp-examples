@@ -11,11 +11,11 @@
 
 #include "../db/Database.hpp"
 
-#include "../../../lib/oatpp/web/src/server/HttpError.hpp"
-#include "../../../lib/oatpp/web/src/server/api/ApiController.hpp"
-#include "../../../lib/oatpp/parser/src/json/mapping/ObjectMapper.hpp"
-#include "../../../lib/oatpp/core/src/macro/codegen.hpp"
-#include "../../../lib/oatpp/core/src/macro/component.hpp"
+#include "oatpp/web/server/HttpError.hpp"
+#include "oatpp/web/server/api/ApiController.hpp"
+#include "oatpp/parser/json/mapping/ObjectMapper.hpp"
+#include "oatpp/core/macro/codegen.hpp"
+#include "oatpp/core/macro/component.hpp"
 
 /**
  *  EXAMPLE ApiController

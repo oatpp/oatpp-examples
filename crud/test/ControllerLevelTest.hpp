@@ -9,7 +9,7 @@
 #ifndef ControllerLevelTest_hpp
 #define ControllerLevelTest_hpp
 
-#include "../../lib/oatpp/core/test/UnitTest.hpp"
+#include "oatpp/test/UnitTest.hpp"
 
 class ControllerLevelTest : public oatpp::test::UnitTest {
 public:

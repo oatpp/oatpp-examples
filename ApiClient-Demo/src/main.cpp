@@ -10,7 +10,7 @@
 #include "./DemoRequestExecutor.hpp"
 #include "./Logger.hpp"
 
-#include "../../lib/oatpp-lib/parser/src/json/mapping/ObjectMapper.hpp"
+#include "oatpp/parser/json/mapping/ObjectMapper.hpp"
 
 #include <iostream>
 

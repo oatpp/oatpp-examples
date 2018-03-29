@@ -9,8 +9,8 @@
 #ifndef DemoRequestExecutor_hpp
 #define DemoRequestExecutor_hpp
 
-#include "../../lib/oatpp-lib/web/src/client/RequestExecutor.hpp"
-#include "../../lib/oatpp-lib/core/src/data/stream/ChunkedBuffer.hpp"
+#include "oatpp/web/client/RequestExecutor.hpp"
+#include "oatpp/core/data/stream/ChunkedBuffer.hpp"
 
 /**
  *  RequestExecutor receives params from ApiClient, executes request and returns Response

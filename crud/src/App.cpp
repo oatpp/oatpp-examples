@@ -20,9 +20,9 @@
 // Test
 
 #ifdef OATPP_TARGET_TEST
-  #include "../test/ControllerLevelTest.hpp"
-  #include "../test/RouterLevelTest.hpp"
-  #include "../test/ConnectionHandlerLevelTest.hpp"
+  #include "test/ControllerLevelTest.hpp"
+  #include "test/RouterLevelTest.hpp"
+  #include "test/ConnectionHandlerLevelTest.hpp"
 #endif
 
 //////////////////////////////////
