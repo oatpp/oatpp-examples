@@ -10,10 +10,14 @@
 #define MyController_hpp
 
 #include "../dto/MyDTOs.hpp"
+#include "../Utils.hpp"
 
 #include "oatpp/web/server/api/ApiController.hpp"
+#include "oatpp/web/server/HttpError.hpp"
 #include "oatpp/core/macro/codegen.hpp"
 #include "oatpp/core/macro/component.hpp"
+
+#include <unordered_map>
 
 /**
  *  EXAMPLE ApiController
@@ -41,65 +45,179 @@ public:
    */
 #include OATPP_CODEGEN_BEGIN(ApiController)
   
-  /**
-   *  Hello World endpoint Coroutine mapped to the "/" (root)
-   */
-  ENDPOINT_ASYNC("GET", "/", Root) {
+  ENDPOINT_ASYNC("GET", "/favicon.ico", Favicon) {
     
-    ENDPOINT_ASYNC_INIT(Root)
+    ENDPOINT_ASYNC_INIT(Favicon)
     
-    /**
-     *  Coroutine entrypoint act()
-     *  returns Action (what to do next)
-     */
     Action act() override {
-      auto dto = HelloDto::createShared();
-      dto->message = "Hello Async!";
-      dto->server = Header::Value::SERVER;
-      dto->userAgent = request->getHeader(Header::USER_AGENT);
-      return _return(controller->createDtoResponse(Status::CODE_200, dto));
+      return _return(controller->createResponse(Status::CODE_404, ""));
     }
     
   };
   
-  /**
-   *  Echo body endpoint Coroutine. Mapped to "/body/string".
-   *  Returns body received in the request
-   */
-  ENDPOINT_ASYNC("GET", "/body/string", EchoStringBody) {
+  ENDPOINT_ASYNC("GET", "/video", Video) {
     
-    ENDPOINT_ASYNC_INIT(EchoStringBody)
+    ENDPOINT_ASYNC_INIT(Video)
+    
+    const char* page =
+    "<html lang='en'>"
+      "<head>"
+        "<meta charset=utf-8/>"
+      "</head>"
+      "<body>"
+        "<div id='player'>"
+          "<video width='352' height='198' controls>"
+            "<source src='stream_1000k_48k_640x360' type='video/mp4'>"
+          "</video>"
+        "</div>"
+      "</body>"
+    "</html>";
     
     Action act() override {
-      /* return Action to start child coroutine to read body */
-      return request->readBodyToStringAsync(this, &EchoStringBody::returnResponse);
-    }
-    
-    Action returnResponse(const oatpp::base::String::PtrWrapper& body){
-      /* return Action to return created OutgoingResponse */
-      return _return(controller->createResponse(Status::CODE_200, body));
+      return _return(controller->createResponse(Status::CODE_200, page));
     }
     
   };
   
-  /**
-   *  Echo body endpoint Coroutine. Mapped to "/body/dto".
-   *  Deserialize DTO reveived, and return same DTO
-   *  Returns body as MessageDto received in the request
-   */
-  ENDPOINT_ASYNC("GET", "/body/dto", EchoDtoBody) {
+  ENDPOINT_ASYNC("GET", "/play_list", PlayList) {
     
-    ENDPOINT_ASYNC_INIT(EchoDtoBody)
+    ENDPOINT_ASYNC_INIT(PlayList)
     
-    Action act() override {
-      return request->readBodyToDtoAsync<MessageDto>(this, &EchoDtoBody::returnResponse, controller->getDefaultObjectMapper());
+    static String::PtrWrapper& getFile() {
+      static String::PtrWrapper file = loadFromFile("/Users/leonid/Documents/test/video/out2.m3u8");
+      return file;
     }
     
-    Action returnResponse(const MessageDto::PtrWrapper& body){
-      return _return(controller->createDtoResponse(Status::CODE_200, body));
+    Action act() override {
+      OATPP_LOGD("Server", "play_list");
+      auto response = controller->createResponse(Status::CODE_200, getFile());
+      response->headers->put(Header::CONTENT_TYPE, "application/x-mpegURL");
+      response->headers->put("Access-Control-Allow-Origin", "*");
+      response->headers->put("Access-Control-Allow-Headers", "Range");
+      response->headers->put(Header::CONNECTION, Header::Value::CONNECTION_KEEP_ALIVE);
+      return _return(response);
     }
     
   };
+  
+  ENDPOINT_ASYNC("GET", "/*", Stream) {
+    
+    ENDPOINT_ASYNC_INIT(Stream)
+    
+    oatpp::base::String::PtrWrapper currFile = nullptr;
+    
+    static oatpp::base::String::PtrWrapper getFileFromDisk(const oatpp::base::String::PtrWrapper& name) {
+      oatpp::base::String::PtrWrapper dir = "/Users/leonid/Documents/test/video/";
+      oatpp::base::String::PtrWrapper filename = dir + name;
+      oatpp::base::String::PtrWrapper file = loadFromFile(filename->c_str());
+      return file;
+    }
+    
+    static std::unordered_map<std::string, oatpp::base::String::PtrWrapper>& getCache() {
+      static std::unordered_map<std::string, oatpp::base::String::PtrWrapper> cache;
+      return cache;
+    }
+    
+    static oatpp::base::String::PtrWrapper getFile(const oatpp::base::String::PtrWrapper& name) {
+      auto& file = getCache()[name->c_str()];
+      if(!file.isNull()) {
+        return file;
+      }
+      file = getFileFromDisk(name);
+      return file;
+    }
+    
+    Action act() override {
+      if(!request->getPathTail()) {
+        OATPP_LOGD("Server", "Null Tail:");
+        auto currHeader = request->headers->getFirstEntry();
+        while (currHeader != nullptr) {
+          auto key = currHeader->getKey();
+          auto val = currHeader->getValue();
+          OATPP_LOGD("Header", "'%s': '%s'", key->c_str(), val->c_str());
+          currHeader = currHeader->getNext();
+        }
+        OATPP_ASSERT_HTTP(request->getPathTail(), Status::CODE_400, "Range is invalid");
+      }
+      OATPP_LOGD("Server", "RequestFile='%s'", request->getPathTail()->c_str());
+      currFile = getFile(request->getPathTail());
+      
+      auto rangeStr = request->getHeader(Header::RANGE);
+      if(rangeStr.isNull()) {
+        return startStream();
+      }
+      
+      auto range = oatpp::web::protocol::http::Range::parse(rangeStr.getPtr());
+      OATPP_ASSERT_HTTP(range.isValid(), Status::CODE_400, "Range is invalid");
+      
+      return continueStream(range);
+    }
+    
+    Action startStream() {
+      auto range = oatpp::web::protocol::http::Range(oatpp::web::protocol::http::Range::UNIT_BYTES, 0, 0);
+      return continueStream(range);
+    }
+    
+    Action continueStream(oatpp::web::protocol::http::Range& range) {
+      //OATPP_LOGD("stream", "%d-%d", range.start, range.end);
+      OATPP_ASSERT_HTTP(range.isValid(), Status::CODE_400, "Range is invalid");
+      if(range.end == 0) {
+        //range.end = range.start + 8192;
+        range.end = currFile->getSize() - 1;
+        if(range.end >= currFile->getSize()) {
+          range.end = currFile->getSize() - 1;
+        }
+      }
+      
+      auto currHeader = request->headers->getFirstEntry();
+      while (currHeader != nullptr) {
+        auto key = currHeader->getKey();
+        auto val = currHeader->getValue();
+        OATPP_LOGD("Header", "'%s': '%s'", key->c_str(), val->c_str());
+        currHeader = currHeader->getNext();
+      }
+      
+      auto chunk = oatpp::base::String::createShared(&currFile->getData()[range.start], (v_int32)(range.end - range.start), false);
+      
+      auto response = controller->createResponse(Status::CODE_206, chunk);
+      
+      oatpp::web::protocol::http::ContentRange contentRange(oatpp::web::protocol::http::ContentRange::UNIT_BYTES,
+                                                            range.start, range.end, currFile->getSize(), true);
+      
+      OATPP_LOGD("stream", "range=%s", contentRange.toString()->c_str());
+      
+      response->headers->put("Accept-Ranges", "bytes");
+      response->headers->put(Header::CONTENT_TYPE, "video/MP2T");
+      response->headers->put(Header::CONTENT_RANGE, contentRange.toString());
+      response->headers->put(Header::CONNECTION, Header::Value::CONNECTION_KEEP_ALIVE);
+      
+      return _return(response);
+      
+    }
+    
+  };
+  
+  
+  ENDPOINT_ASYNC("OPTIONS", "/*", All) {
+    
+    ENDPOINT_ASYNC_INIT(All)
+    
+    Action act() override {
+      
+      OATPP_LOGD("url", "\n'%s'\n", request->getPathTail()->c_str());
+      
+      auto currHeader = request->headers->getFirstEntry();
+      while (currHeader != nullptr) {
+        auto key = currHeader->getKey();
+        auto val = currHeader->getValue();
+        OATPP_LOGD("Header", "'%s': '%s'", key->c_str(), val->c_str());
+        currHeader = currHeader->getNext();
+      }
+      return _return(controller->createResponse(Status::CODE_200, ""));
+    }
+    
+  };
+  
   
   /**
    *  Finish ENDPOINTs generation ('ApiController' codegen)

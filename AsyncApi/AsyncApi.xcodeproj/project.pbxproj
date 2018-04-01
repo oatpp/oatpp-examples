@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B353221C206F07C200506F9A /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B353221A206F07C200506F9A /* Utils.cpp */; };
 		B367F4B0206CF86F00668A2C /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4AE206CF86F00668A2C /* App.cpp */; };
 		B367F584206CF88900668A2C /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4B4206CF88900668A2C /* LinkedList.cpp */; };
 		B367F585206CF88900668A2C /* FastQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4B5206CF88900668A2C /* FastQueue.cpp */; };
@@ -98,6 +99,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B353221A206F07C200506F9A /* Utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		B353221B206F07C200506F9A /* Utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
 		B367F498206CF7B900668A2C /* AsyncApi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AsyncApi; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367F4A4206CF86F00668A2C /* MyDTOs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyDTOs.hpp; sourceTree = "<group>"; };
 		B367F4A5206CF86F00668A2C /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
@@ -307,6 +310,8 @@
 				B367F4A5206CF86F00668A2C /* Logger.hpp */,
 				B367F4AD206CF86F00668A2C /* AppComponent.hpp */,
 				B367F4AE206CF86F00668A2C /* App.cpp */,
+				B353221A206F07C200506F9A /* Utils.cpp */,
+				B353221B206F07C200506F9A /* Utils.hpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -968,6 +973,7 @@
 				B367F595206CF88900668A2C /* Stream.cpp in Sources */,
 				B367F58B206CF88900668A2C /* Runnable.cpp in Sources */,
 				B367F5CE206CF88900668A2C /* Utils.cpp in Sources */,
+				B353221C206F07C200506F9A /* Utils.cpp in Sources */,
 				B367F598206CF88900668A2C /* IOBuffer.cpp in Sources */,
 				B367F5B6206CF88900668A2C /* Response.cpp in Sources */,
 				B367F591206CF88900668A2C /* Primitive.cpp in Sources */,
