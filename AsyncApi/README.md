@@ -1,5 +1,5 @@
 # AsyncApi Example
-Example project of how-to asynchronous API for handling large number of simultaneous connections
+Example project of how-to use asynchronous API for handling large number of simultaneous connections
 
 ## Build and run
 
