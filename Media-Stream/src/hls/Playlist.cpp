@@ -8,6 +8,7 @@
 
 #include "Playlist.hpp"
 #include "../Utils.hpp"
+#include <cmath>
 
 Playlist Playlist::parse(oatpp::parser::ParsingCaret& caret) {
   

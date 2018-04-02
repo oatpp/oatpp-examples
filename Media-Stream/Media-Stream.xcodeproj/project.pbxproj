@@ -375,10 +375,10 @@
 		B3532246206FC48C00506F9A /* async */ = {
 			isa = PBXGroup;
 			children = (
-				B3532247206FC48C00506F9A /* Processor.cpp */,
 				B3532248206FC48C00506F9A /* Coroutine.cpp */,
-				B3532249206FC48C00506F9A /* Processor.hpp */,
 				B353224A206FC48C00506F9A /* Coroutine.hpp */,
+				B3532247206FC48C00506F9A /* Processor.cpp */,
+				B3532249206FC48C00506F9A /* Processor.hpp */,
 			);
 			path = async;
 			sourceTree = "<group>";
@@ -529,12 +529,12 @@
 		B3532280206FC48C00506F9A /* memory */ = {
 			isa = PBXGroup;
 			children = (
-				B3532281206FC48C00506F9A /* MemoryPool.hpp */,
-				B3532282206FC48C00506F9A /* ObjectPool.hpp */,
-				B3532283206FC48C00506F9A /* Allocator.hpp */,
 				B3532284206FC48C00506F9A /* Allocator.cpp */,
+				B3532283206FC48C00506F9A /* Allocator.hpp */,
 				B3532285206FC48C00506F9A /* MemoryPool.cpp */,
+				B3532281206FC48C00506F9A /* MemoryPool.hpp */,
 				B3532286206FC48C00506F9A /* ObjectPool.cpp */,
+				B3532282206FC48C00506F9A /* ObjectPool.hpp */,
 			);
 			path = memory;
 			sourceTree = "<group>";

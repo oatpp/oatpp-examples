@@ -26,7 +26,6 @@
 // std
 
 #include <iostream>
-//#include <csignal>
 
 /**
  *  run() method.
@@ -60,8 +59,6 @@ void run() {
  *  main
  */
 int main(int argc, const char * argv[]) {
-  
-  //std::signal(SIGPIPE, SIG_IGN);
   
   oatpp::base::Environment::setLogger(new Logger());
   oatpp::base::Environment::init();

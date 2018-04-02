@@ -153,7 +153,7 @@ public:
       auto filename = request->getPathTail();
       OATPP_ASSERT_HTTP(!filename.isNull(), Status::CODE_400, "Filename is empty");
       
-      OATPP_LOGD("Server", "Request filename='%s'", filename->c_str());
+      //OATPP_LOGD("Server", "Request filename='%s'", filename->c_str());
       
       auto file = controller->staticFileManager->getFile(filename);
       
@@ -181,7 +181,7 @@ public:
     }
     
     std::shared_ptr<OutgoingResponse> getFullFileResponse(const std::shared_ptr<oatpp::base::String>& file) {
-      OATPP_LOGD("Server", "fullfile");
+      //OATPP_LOGD("Server", "fullfile");
       return controller->createResponse(Status::CODE_200, file);
     }
 
