@@ -515,14 +515,14 @@
 			isa = PBXGroup;
 			children = (
 				B367F4F1206CF88900668A2C /* Controllable.cpp */,
-				B367F4F2206CF88900668A2C /* PtrWrapper.cpp */,
+				B367F4FD206CF88900668A2C /* Controllable.hpp */,
 				B367F4F3206CF88900668A2C /* Environment.cpp */,
+				B367F4FF206CF88900668A2C /* Environment.hpp */,
 				B367F4F4206CF88900668A2C /* memory */,
+				B367F4F2206CF88900668A2C /* PtrWrapper.cpp */,
+				B367F4FE206CF88900668A2C /* PtrWrapper.hpp */,
 				B367F4FB206CF88900668A2C /* String.cpp */,
 				B367F4FC206CF88900668A2C /* String.hpp */,
-				B367F4FD206CF88900668A2C /* Controllable.hpp */,
-				B367F4FE206CF88900668A2C /* PtrWrapper.hpp */,
-				B367F4FF206CF88900668A2C /* Environment.hpp */,
 			);
 			path = base;
 			sourceTree = "<group>";

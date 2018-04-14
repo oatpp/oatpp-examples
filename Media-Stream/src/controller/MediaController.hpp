@@ -199,7 +199,7 @@ public:
                         range.end > range.start &&
                         range.end < file->getSize(), Status::CODE_416, "Range is invalid");
       
-      auto chunk = oatpp::base::String::createShared(&file->getData()[range.start], (v_int32)(range.end - range.start), false);
+      auto chunk = oatpp::base::String::createShared(&file->getData()[range.start], (v_int32)(range.end - range.start + 1), false);
       
       auto response = controller->createResponse(Status::CODE_206, chunk);
       
