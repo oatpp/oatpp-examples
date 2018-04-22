@@ -53,6 +53,12 @@ class DemoApiClient : public oatpp::web::client::ApiClient {
            QUERY(String, lastName, "last_name"),
            QUERY(Int32, age))
   
+  API_CALL_ASYNC("GET", "/", getRootAsync)
+  
+  API_CALL_ASYNC("POST", "/post", postDataAsync,
+                 HEADER(String, token, "x-auth-token"),
+                 BODY_STRING(String, data))
+  
 #include OATPP_CODEGEN_END(ApiClient)
 };
 

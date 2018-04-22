@@ -65,6 +65,18 @@ public:
     return nullptr;
     
   }
+  
+  virtual Action executeAsync(oatpp::async::AbstractCoroutine* parentCoroutine,
+                              AsyncCallback callback,
+                              const String::PtrWrapper& method,
+                              const String::PtrWrapper& path,
+                              const std::shared_ptr<Headers>& headers,
+                              const std::shared_ptr<Body>& body) override {
+    OATPP_LOGD("Executor", "AsyncCall::");
+    execute(method, path, headers, body);
+    return Action::_FINISH;
+  }
+  
 };
 
 #endif /* DemoRequestExecutor_hpp */

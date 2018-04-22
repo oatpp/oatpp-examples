@@ -40,6 +40,9 @@ void run(){
   
   client.getUsers("some_auth_token", 0, 100, "userName", "userLastName", 85); // GET request with path-variables, and query-variables
   
+  client.getRootAsync(nullptr, nullptr);
+  client.postDataAsync(nullptr, nullptr, "some_auth_token", "<post-data>");
+  
 }
 
 int main(int argc, const char * argv[]) {
