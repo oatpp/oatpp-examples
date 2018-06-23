@@ -84,6 +84,9 @@
 		B367F5CC206CF88900668A2C /* ObjectMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F57E206CF88900668A2C /* ObjectMapper.cpp */; };
 		B367F5CD206CF88900668A2C /* Serializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F57F206CF88900668A2C /* Serializer.cpp */; };
 		B367F5CE206CF88900668A2C /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F580206CF88900668A2C /* Utils.cpp */; };
+		B3A9E1C620DDA2DE00427E03 /* ConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1C420DDA2DE00427E03 /* ConnectionProvider.cpp */; };
+		B3A9E1C920DDA73F00427E03 /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1C720DDA73F00427E03 /* Connection.cpp */; };
+		B3A9E1CC20DE459800427E03 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1CA20DE459800427E03 /* Config.cpp */; };
 		B3BCA4B520A0FAAF001A8E66 /* FIFOBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3BCA4B320A0FAAF001A8E66 /* FIFOBuffer.cpp */; };
 		B3BCA4BA20A26C0F001A8E66 /* Pipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3BCA4B820A26C0F001A8E66 /* Pipe.cpp */; };
 /* End PBXBuildFile section */
@@ -103,7 +106,7 @@
 /* Begin PBXFileReference section */
 		B330148820B7680A0065FD55 /* Socket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Socket.cpp; sourceTree = "<group>"; };
 		B330148920B7680A0065FD55 /* Socket.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Socket.hpp; sourceTree = "<group>"; };
-		B367F498206CF7B900668A2C /* AsyncApi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AsyncApi; sourceTree = BUILT_PRODUCTS_DIR; };
+		B367F498206CF7B900668A2C /* tls-libressl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "tls-libressl"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367F4A4206CF86F00668A2C /* MyDTOs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyDTOs.hpp; sourceTree = "<group>"; };
 		B367F4A5206CF86F00668A2C /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
 		B367F4A7206CF86F00668A2C /* MyController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyController.hpp; sourceTree = "<group>"; };
@@ -271,6 +274,16 @@
 		B367F581206CF88900668A2C /* Utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
 		B367F582206CF88900668A2C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B367F583206CF88900668A2C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B3A9E1BF20DDA29D00427E03 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B3A9E1C020DDA29D00427E03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B3A9E1C120DDA29D00427E03 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B3A9E1C420DDA2DE00427E03 /* ConnectionProvider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionProvider.cpp; sourceTree = "<group>"; };
+		B3A9E1C520DDA2DE00427E03 /* ConnectionProvider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConnectionProvider.hpp; sourceTree = "<group>"; };
+		B3A9E1C720DDA73F00427E03 /* Connection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Connection.cpp; sourceTree = "<group>"; };
+		B3A9E1C820DDA73F00427E03 /* Connection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Connection.hpp; sourceTree = "<group>"; };
+		B3A9E1CA20DE459800427E03 /* Config.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
+		B3A9E1CB20DE459800427E03 /* Config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
+		B3A9E1CF20DE4CF200427E03 /* MyApiClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyApiClient.hpp; sourceTree = "<group>"; };
 		B3BCA4B320A0FAAF001A8E66 /* FIFOBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FIFOBuffer.cpp; sourceTree = "<group>"; };
 		B3BCA4B420A0FAAF001A8E66 /* FIFOBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FIFOBuffer.hpp; sourceTree = "<group>"; };
 		B3BCA4B820A26C0F001A8E66 /* Pipe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pipe.cpp; sourceTree = "<group>"; };
@@ -291,6 +304,7 @@
 		B367F48F206CF7B900668A2C = {
 			isa = PBXGroup;
 			children = (
+				B3A9E1BE20DDA29D00427E03 /* oatpp-libressl */,
 				B367F4B1206CF88900668A2C /* oatpp */,
 				B367F4A2206CF86F00668A2C /* src */,
 				B367F499206CF7B900668A2C /* Products */,
@@ -303,7 +317,7 @@
 		B367F499206CF7B900668A2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B367F498206CF7B900668A2C /* AsyncApi */,
+				B367F498206CF7B900668A2C /* tls-libressl */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,6 +325,7 @@
 		B367F4A2206CF86F00668A2C /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B3A9E1CD20DE4CC600427E03 /* client */,
 				B367F4A6206CF86F00668A2C /* controller */,
 				B367F4A3206CF86F00668A2C /* dto */,
 				B367F4A5206CF86F00668A2C /* Logger.hpp */,
@@ -893,6 +908,47 @@
 			path = mapping;
 			sourceTree = "<group>";
 		};
+		B3A9E1BE20DDA29D00427E03 /* oatpp-libressl */ = {
+			isa = PBXGroup;
+			children = (
+				B3A9E1C120DDA29D00427E03 /* .gitignore */,
+				B3A9E1C320DDA2BA00427E03 /* client */,
+				B3A9E1C720DDA73F00427E03 /* Connection.cpp */,
+				B3A9E1C820DDA73F00427E03 /* Connection.hpp */,
+				B3A9E1BF20DDA29D00427E03 /* LICENSE */,
+				B3A9E1C020DDA29D00427E03 /* README.md */,
+				B3A9E1C220DDA2B000427E03 /* server */,
+				B3A9E1CA20DE459800427E03 /* Config.cpp */,
+				B3A9E1CB20DE459800427E03 /* Config.hpp */,
+			);
+			name = "oatpp-libressl";
+			path = "../lib/oatpp-libressl";
+			sourceTree = "<group>";
+		};
+		B3A9E1C220DDA2B000427E03 /* server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		B3A9E1C320DDA2BA00427E03 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				B3A9E1C420DDA2DE00427E03 /* ConnectionProvider.cpp */,
+				B3A9E1C520DDA2DE00427E03 /* ConnectionProvider.hpp */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		B3A9E1CD20DE4CC600427E03 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				B3A9E1CF20DE4CF200427E03 /* MyApiClient.hpp */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
 		B3BCA4B620A26B8F001A8E66 /* virtual_ */ = {
 			isa = PBXGroup;
 			children = (
@@ -907,9 +963,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B367F497206CF7B900668A2C /* AsyncApi */ = {
+		B367F497206CF7B900668A2C /* tls-libressl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B367F49F206CF7B900668A2C /* Build configuration list for PBXNativeTarget "AsyncApi" */;
+			buildConfigurationList = B367F49F206CF7B900668A2C /* Build configuration list for PBXNativeTarget "tls-libressl" */;
 			buildPhases = (
 				B367F494206CF7B900668A2C /* Sources */,
 				B367F495206CF7B900668A2C /* Frameworks */,
@@ -919,9 +975,9 @@
 			);
 			dependencies = (
 			);
-			name = AsyncApi;
+			name = "tls-libressl";
 			productName = AsyncApi;
-			productReference = B367F498206CF7B900668A2C /* AsyncApi */;
+			productReference = B367F498206CF7B900668A2C /* tls-libressl */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -939,7 +995,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B367F493206CF7B900668A2C /* Build configuration list for PBXProject "AsyncApi" */;
+			buildConfigurationList = B367F493206CF7B900668A2C /* Build configuration list for PBXProject "tls-libressl" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -951,7 +1007,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B367F497206CF7B900668A2C /* AsyncApi */,
+				B367F497206CF7B900668A2C /* tls-libressl */,
 			);
 		};
 /* End PBXProject section */
@@ -974,6 +1030,7 @@
 				B367F597206CF88900668A2C /* StreamBufferedProxy.cpp in Sources */,
 				B367F5C7206CF88900668A2C /* Connection.cpp in Sources */,
 				B367F5A3206CF88900668A2C /* RegRuleTest.cpp in Sources */,
+				B3A9E1CC20DE459800427E03 /* Config.cpp in Sources */,
 				B367F58F206CF88900668A2C /* Object.cpp in Sources */,
 				B367F596206CF88900668A2C /* ChunkedBuffer.cpp in Sources */,
 				B367F5AB206CF88900668A2C /* AsyncHttpConnectionHandler.cpp in Sources */,
@@ -995,6 +1052,7 @@
 				B367F5CE206CF88900668A2C /* Utils.cpp in Sources */,
 				B367F598206CF88900668A2C /* IOBuffer.cpp in Sources */,
 				B367F5B6206CF88900668A2C /* Response.cpp in Sources */,
+				B3A9E1C620DDA2DE00427E03 /* ConnectionProvider.cpp in Sources */,
 				B367F591206CF88900668A2C /* Primitive.cpp in Sources */,
 				B367F5AD206CF88900668A2C /* HttpProcessor.cpp in Sources */,
 				B367F5AC206CF88900668A2C /* HttpError.cpp in Sources */,
@@ -1011,6 +1069,7 @@
 				B367F586206CF88900668A2C /* ListMap.cpp in Sources */,
 				B367F590206CF88900668A2C /* List.cpp in Sources */,
 				B367F5C9206CF88900668A2C /* Hex.cpp in Sources */,
+				B3A9E1C920DDA73F00427E03 /* Connection.cpp in Sources */,
 				B367F5B3206CF88900668A2C /* Request.cpp in Sources */,
 				B367F5CB206CF88900668A2C /* Deserializer.cpp in Sources */,
 				B367F593206CF88900668A2C /* ObjectMapper.cpp in Sources */,
@@ -1157,6 +1216,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/libressl/2.7.4/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/libressl/2.7.4/lib;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-ltls";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = ../lib;
 			};
@@ -1166,6 +1229,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/libressl/2.7.4/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/libressl/2.7.4/lib;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-ltls";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = ../lib;
 			};
@@ -1174,7 +1241,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B367F493206CF7B900668A2C /* Build configuration list for PBXProject "AsyncApi" */ = {
+		B367F493206CF7B900668A2C /* Build configuration list for PBXProject "tls-libressl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B367F49D206CF7B900668A2C /* Debug */,
@@ -1183,7 +1250,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B367F49F206CF7B900668A2C /* Build configuration list for PBXNativeTarget "AsyncApi" */ = {
+		B367F49F206CF7B900668A2C /* Build configuration list for PBXNativeTarget "tls-libressl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B367F4A0206CF7B900668A2C /* Debug */,

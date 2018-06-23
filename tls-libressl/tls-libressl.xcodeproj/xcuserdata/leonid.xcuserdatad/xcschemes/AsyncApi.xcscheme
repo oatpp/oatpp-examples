@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B367F497206CF7B900668A2C"
-               BuildableName = "AsyncApi"
-               BlueprintName = "AsyncApi"
-               ReferencedContainer = "container:AsyncApi.xcodeproj">
+               BuildableName = "tls-libressl"
+               BlueprintName = "tls-libressl"
+               ReferencedContainer = "container:tls-libressl.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B367F497206CF7B900668A2C"
-            BuildableName = "AsyncApi"
-            BlueprintName = "AsyncApi"
-            ReferencedContainer = "container:AsyncApi.xcodeproj">
+            BuildableName = "tls-libressl"
+            BlueprintName = "tls-libressl"
+            ReferencedContainer = "container:tls-libressl.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B367F497206CF7B900668A2C"
-            BuildableName = "AsyncApi"
-            BlueprintName = "AsyncApi"
-            ReferencedContainer = "container:AsyncApi.xcodeproj">
+            BuildableName = "tls-libressl"
+            BlueprintName = "tls-libressl"
+            ReferencedContainer = "container:tls-libressl.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B367F497206CF7B900668A2C"
-            BuildableName = "AsyncApi"
-            BlueprintName = "AsyncApi"
-            ReferencedContainer = "container:AsyncApi.xcodeproj">
+            BuildableName = "tls-libressl"
+            BlueprintName = "tls-libressl"
+            ReferencedContainer = "container:tls-libressl.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
