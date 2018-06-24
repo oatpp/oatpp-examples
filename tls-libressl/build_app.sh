@@ -8,6 +8,7 @@ g++ -std=gnu++11 \
 -L "/usr/local/Cellar/libressl/2.7.4/lib" \
 -ltls \
 `find "../lib/oatpp/" -type f -name *.cpp` \
+`find "../lib/oatpp-libressl/" -type f -name *.cpp` \
 `find "./src/" -type f -name *.cpp` \
 -I "../lib" \
 -I "../lib/oatpp/core/macro" \

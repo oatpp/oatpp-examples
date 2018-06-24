@@ -87,6 +87,7 @@
 		B3A9E1C620DDA2DE00427E03 /* ConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1C420DDA2DE00427E03 /* ConnectionProvider.cpp */; };
 		B3A9E1C920DDA73F00427E03 /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1C720DDA73F00427E03 /* Connection.cpp */; };
 		B3A9E1CC20DE459800427E03 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1CA20DE459800427E03 /* Config.cpp */; };
+		B3A9E1D320DEE1B400427E03 /* ConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1D120DEE1B400427E03 /* ConnectionProvider.cpp */; };
 		B3BCA4B520A0FAAF001A8E66 /* FIFOBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3BCA4B320A0FAAF001A8E66 /* FIFOBuffer.cpp */; };
 		B3BCA4BA20A26C0F001A8E66 /* Pipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3BCA4B820A26C0F001A8E66 /* Pipe.cpp */; };
 /* End PBXBuildFile section */
@@ -284,6 +285,8 @@
 		B3A9E1CA20DE459800427E03 /* Config.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
 		B3A9E1CB20DE459800427E03 /* Config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
 		B3A9E1CF20DE4CF200427E03 /* MyApiClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyApiClient.hpp; sourceTree = "<group>"; };
+		B3A9E1D120DEE1B400427E03 /* ConnectionProvider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionProvider.cpp; sourceTree = "<group>"; };
+		B3A9E1D220DEE1B400427E03 /* ConnectionProvider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConnectionProvider.hpp; sourceTree = "<group>"; };
 		B3BCA4B320A0FAAF001A8E66 /* FIFOBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FIFOBuffer.cpp; sourceTree = "<group>"; };
 		B3BCA4B420A0FAAF001A8E66 /* FIFOBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FIFOBuffer.hpp; sourceTree = "<group>"; };
 		B3BCA4B820A26C0F001A8E66 /* Pipe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pipe.cpp; sourceTree = "<group>"; };
@@ -928,6 +931,8 @@
 		B3A9E1C220DDA2B000427E03 /* server */ = {
 			isa = PBXGroup;
 			children = (
+				B3A9E1D120DEE1B400427E03 /* ConnectionProvider.cpp */,
+				B3A9E1D220DEE1B400427E03 /* ConnectionProvider.hpp */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -1081,6 +1086,7 @@
 				B367F59A206CF88900668A2C /* PtrWrapper.cpp in Sources */,
 				B367F59F206CF88900668A2C /* String.cpp in Sources */,
 				B367F5B5206CF88900668A2C /* Body.cpp in Sources */,
+				B3A9E1D320DEE1B400427E03 /* ConnectionProvider.cpp in Sources */,
 				B367F58A206CF88900668A2C /* ParsingCaret.cpp in Sources */,
 				B367F58C206CF88900668A2C /* SpinLock.cpp in Sources */,
 				B367F59C206CF88900668A2C /* Allocator.cpp in Sources */,

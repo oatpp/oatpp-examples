@@ -11,6 +11,7 @@
 
 #include "client/MyApiClient.hpp"
 
+#include "oatpp-libressl/server/ConnectionProvider.hpp"
 #include "oatpp-libressl/client/ConnectionProvider.hpp"
 #include "oatpp-libressl/Config.hpp"
 
@@ -38,7 +39,8 @@ public:
    */
   OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::network::ServerConnectionProvider>, serverConnectionProvider)([] {
     /* non_blocking connections should be used with AsyncHttpConnectionHandler for AsyncIO */
-    return oatpp::network::server::SimpleTCPConnectionProvider::createShared(8000, true /* true for non_blocking */);
+    auto config = oatpp::libressl::Config::createDefaultServerConfig ("key.pem", "cert.crt");
+    return oatpp::libressl::server::ConnectionProvider::createShared(config, 8443, true /* true for non_blocking */);
   }());
   
   /**
@@ -68,19 +70,11 @@ public:
     return objectMapper;
   }());
   
-  /**
-   *  Create ssl configuration. Configuration is used by ConnectionProvider to configure new connections
-   */
-  OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::libressl::Config>, sslConfig)([] {
+  OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::network::ClientConnectionProvider>, sslClientConnectionProvider) ("clientConnectionProvider", [] {
     auto config = oatpp::libressl::Config::createShared();
     tls_config_insecure_noverifycert(config->getTLSConfig());
     tls_config_insecure_noverifyname(config->getTLSConfig());
-    return config;
-  }());
-  
-  OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::network::ClientConnectionProvider>, sslClientConnectionProvider) ("clientConnectionProvider", [] {
-    OATPP_COMPONENT(std::shared_ptr<oatpp::libressl::Config>, sslConfig);
-    return oatpp::libressl::client::ConnectionProvider::createShared("httpbin.org", 443, sslConfig);
+    return oatpp::libressl::client::ConnectionProvider::createShared(config, "httpbin.org", 443);
     //return oatpp::network::client::SimpleTCPConnectionProvider::createShared("httpbin.org", 80);
   }());
   
