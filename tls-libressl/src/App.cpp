@@ -34,7 +34,6 @@
 #include "oatpp/web/client/HttpRequestExecutor.hpp"
 #include "oatpp/network/client/SimpleTCPConnectionProvider.hpp"
 
-
 void tryLibressl() {
   
   auto config = oatpp::libressl::Config::createShared();

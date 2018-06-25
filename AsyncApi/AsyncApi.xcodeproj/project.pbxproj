@@ -7,85 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B330148A20B7680A0065FD55 /* Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B330148820B7680A0065FD55 /* Socket.cpp */; };
 		B367F4B0206CF86F00668A2C /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4AE206CF86F00668A2C /* App.cpp */; };
-		B367F584206CF88900668A2C /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4B4206CF88900668A2C /* LinkedList.cpp */; };
-		B367F585206CF88900668A2C /* FastQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4B5206CF88900668A2C /* FastQueue.cpp */; };
-		B367F586206CF88900668A2C /* ListMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4B6206CF88900668A2C /* ListMap.cpp */; };
-		B367F587206CF88900668A2C /* Processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4BB206CF88900668A2C /* Processor.cpp */; };
-		B367F588206CF88900668A2C /* Coroutine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4BC206CF88900668A2C /* Coroutine.cpp */; };
-		B367F589206CF88900668A2C /* ConversionUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4C1206CF88900668A2C /* ConversionUtils.cpp */; };
-		B367F58A206CF88900668A2C /* ParsingCaret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4C3206CF88900668A2C /* ParsingCaret.cpp */; };
-		B367F58B206CF88900668A2C /* Runnable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4C6206CF88900668A2C /* Runnable.cpp */; };
-		B367F58C206CF88900668A2C /* SpinLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4C7206CF88900668A2C /* SpinLock.cpp */; };
-		B367F58D206CF88900668A2C /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4C8206CF88900668A2C /* Thread.cpp */; };
-		B367F58E206CF88900668A2C /* Library.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4D3206CF88900668A2C /* Library.cpp */; };
-		B367F58F206CF88900668A2C /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4DA206CF88900668A2C /* Object.cpp */; };
-		B367F590206CF88900668A2C /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4E0206CF88900668A2C /* List.cpp */; };
-		B367F591206CF88900668A2C /* Primitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4E1206CF88900668A2C /* Primitive.cpp */; };
-		B367F592206CF88900668A2C /* Type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4E2206CF88900668A2C /* Type.cpp */; };
-		B367F593206CF88900668A2C /* ObjectMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4E3206CF88900668A2C /* ObjectMapper.cpp */; };
-		B367F594206CF88900668A2C /* Delegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4E6206CF88900668A2C /* Delegate.cpp */; };
-		B367F595206CF88900668A2C /* Stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4E9206CF88900668A2C /* Stream.cpp */; };
-		B367F596206CF88900668A2C /* ChunkedBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4EA206CF88900668A2C /* ChunkedBuffer.cpp */; };
-		B367F597206CF88900668A2C /* StreamBufferedProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4EC206CF88900668A2C /* StreamBufferedProxy.cpp */; };
-		B367F598206CF88900668A2C /* IOBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4EE206CF88900668A2C /* IOBuffer.cpp */; };
-		B367F599206CF88900668A2C /* Controllable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4F1206CF88900668A2C /* Controllable.cpp */; };
-		B367F59A206CF88900668A2C /* PtrWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4F2206CF88900668A2C /* PtrWrapper.cpp */; };
-		B367F59B206CF88900668A2C /* Environment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4F3206CF88900668A2C /* Environment.cpp */; };
-		B367F59C206CF88900668A2C /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4F8206CF88900668A2C /* Allocator.cpp */; };
-		B367F59D206CF88900668A2C /* MemoryPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4F9206CF88900668A2C /* MemoryPool.cpp */; };
-		B367F59E206CF88900668A2C /* ObjectPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4FA206CF88900668A2C /* ObjectPool.cpp */; };
-		B367F59F206CF88900668A2C /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4FB206CF88900668A2C /* String.cpp */; };
-		B367F5A0206CF88900668A2C /* LinkedListTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F506206CF88900668A2C /* LinkedListTest.cpp */; };
-		B367F5A1206CF88900668A2C /* PerfTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F50B206CF88900668A2C /* PerfTest.cpp */; };
-		B367F5A2206CF88900668A2C /* MemoryPoolTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F50C206CF88900668A2C /* MemoryPoolTest.cpp */; };
-		B367F5A3206CF88900668A2C /* RegRuleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F50D206CF88900668A2C /* RegRuleTest.cpp */; };
-		B367F5A4206CF88900668A2C /* UnicodeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F512206CF88900668A2C /* UnicodeTest.cpp */; };
-		B367F5A5206CF88900668A2C /* DTOMapperPerfTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F517206CF88900668A2C /* DTOMapperPerfTest.cpp */; };
-		B367F5A6206CF88900668A2C /* DeserializerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F518206CF88900668A2C /* DeserializerTest.cpp */; };
-		B367F5A7206CF88900668A2C /* DTOMapperTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F51A206CF88900668A2C /* DTOMapperTest.cpp */; };
-		B367F5A8206CF88900668A2C /* Checker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F51E206CF88900668A2C /* Checker.cpp */; };
-		B367F5A9206CF88900668A2C /* UnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F51F206CF88900668A2C /* UnitTest.cpp */; };
-		B367F5AA206CF88900668A2C /* ErrorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F523206CF88900668A2C /* ErrorHandler.cpp */; };
-		B367F5AB206CF88900668A2C /* AsyncHttpConnectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F525206CF88900668A2C /* AsyncHttpConnectionHandler.cpp */; };
-		B367F5AC206CF88900668A2C /* HttpError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F527206CF88900668A2C /* HttpError.cpp */; };
-		B367F5AD206CF88900668A2C /* HttpProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F52A206CF88900668A2C /* HttpProcessor.cpp */; };
-		B367F5AE206CF88900668A2C /* HttpConnectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F52B206CF88900668A2C /* HttpConnectionHandler.cpp */; };
-		B367F5AF206CF88900668A2C /* Endpoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F52E206CF88900668A2C /* Endpoint.cpp */; };
-		B367F5B0206CF88900668A2C /* ApiController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F533206CF88900668A2C /* ApiController.cpp */; };
-		B367F5B1206CF88900668A2C /* HttpRouter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F535206CF88900668A2C /* HttpRouter.cpp */; };
-		B367F5B2206CF88900668A2C /* ChunkedBufferBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F53B206CF88900668A2C /* ChunkedBufferBody.cpp */; };
-		B367F5B3206CF88900668A2C /* Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F53D206CF88900668A2C /* Request.cpp */; };
-		B367F5B4206CF88900668A2C /* DtoBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F53F206CF88900668A2C /* DtoBody.cpp */; };
-		B367F5B5206CF88900668A2C /* Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F541206CF88900668A2C /* Body.cpp */; };
-		B367F5B6206CF88900668A2C /* Response.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F544206CF88900668A2C /* Response.cpp */; };
-		B367F5B7206CF88900668A2C /* BufferBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F545206CF88900668A2C /* BufferBody.cpp */; };
-		B367F5B8206CF88900668A2C /* ResponseFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F546206CF88900668A2C /* ResponseFactory.cpp */; };
-		B367F5B9206CF88900668A2C /* Http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F549206CF88900668A2C /* Http.cpp */; };
-		B367F5BA206CF88900668A2C /* Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F54B206CF88900668A2C /* Request.cpp */; };
-		B367F5BB206CF88900668A2C /* BodyDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F54D206CF88900668A2C /* BodyDecoder.cpp */; };
-		B367F5BC206CF88900668A2C /* Response.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F54F206CF88900668A2C /* Response.cpp */; };
-		B367F5BD206CF88900668A2C /* Router.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F553206CF88900668A2C /* Router.cpp */; };
-		B367F5BE206CF88900668A2C /* Subscriber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F554206CF88900668A2C /* Subscriber.cpp */; };
-		B367F5BF206CF88900668A2C /* Pattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F558206CF88900668A2C /* Pattern.cpp */; };
-		B367F5C0206CF88900668A2C /* RequestExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F55A206CF88900668A2C /* RequestExecutor.cpp */; };
-		B367F5C1206CF88900668A2C /* ApiClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F55C206CF88900668A2C /* ApiClient.cpp */; };
-		B367F5C2206CF88900668A2C /* HttpRequestExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F562206CF88900668A2C /* HttpRequestExecutor.cpp */; };
-		B367F5C3206CF88900668A2C /* SimpleTCPConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F569206CF88900668A2C /* SimpleTCPConnectionProvider.cpp */; };
-		B367F5C4206CF88900668A2C /* ConnectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F56A206CF88900668A2C /* ConnectionHandler.cpp */; };
-		B367F5C5206CF88900668A2C /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F56B206CF88900668A2C /* Server.cpp */; };
-		B367F5C6206CF88900668A2C /* ConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F56D206CF88900668A2C /* ConnectionProvider.cpp */; };
-		B367F5C7206CF88900668A2C /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F56E206CF88900668A2C /* Connection.cpp */; };
-		B367F5C8206CF88900668A2C /* SimpleTCPConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F571206CF88900668A2C /* SimpleTCPConnectionProvider.cpp */; };
-		B367F5C9206CF88900668A2C /* Hex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F575206CF88900668A2C /* Hex.cpp */; };
-		B367F5CA206CF88900668A2C /* Unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F576206CF88900668A2C /* Unicode.cpp */; };
-		B367F5CB206CF88900668A2C /* Deserializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F57D206CF88900668A2C /* Deserializer.cpp */; };
-		B367F5CC206CF88900668A2C /* ObjectMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F57E206CF88900668A2C /* ObjectMapper.cpp */; };
-		B367F5CD206CF88900668A2C /* Serializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F57F206CF88900668A2C /* Serializer.cpp */; };
-		B367F5CE206CF88900668A2C /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F580206CF88900668A2C /* Utils.cpp */; };
-		B3BCA4B520A0FAAF001A8E66 /* FIFOBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3BCA4B320A0FAAF001A8E66 /* FIFOBuffer.cpp */; };
-		B3BCA4BA20A26C0F001A8E66 /* Pipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3BCA4B820A26C0F001A8E66 /* Pipe.cpp */; };
+		B3A9E2BA20E1B33D00427E03 /* Types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1DC20E1B33D00427E03 /* Types.cpp */; };
+		B3A9E2BB20E1B33D00427E03 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1DE20E1B33D00427E03 /* LinkedList.cpp */; };
+		B3A9E2BC20E1B33D00427E03 /* FastQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1DF20E1B33D00427E03 /* FastQueue.cpp */; };
+		B3A9E2BD20E1B33D00427E03 /* ListMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1E020E1B33D00427E03 /* ListMap.cpp */; };
+		B3A9E2BE20E1B33D00427E03 /* Processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1E520E1B33D00427E03 /* Processor.cpp */; };
+		B3A9E2BF20E1B33D00427E03 /* Coroutine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1E620E1B33D00427E03 /* Coroutine.cpp */; };
+		B3A9E2C020E1B33D00427E03 /* ConversionUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1EB20E1B33D00427E03 /* ConversionUtils.cpp */; };
+		B3A9E2C120E1B33D00427E03 /* ParsingCaret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1ED20E1B33D00427E03 /* ParsingCaret.cpp */; };
+		B3A9E2C220E1B33D00427E03 /* Runnable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1F020E1B33D00427E03 /* Runnable.cpp */; };
+		B3A9E2C320E1B33D00427E03 /* SpinLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1F120E1B33D00427E03 /* SpinLock.cpp */; };
+		B3A9E2C420E1B33D00427E03 /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1F220E1B33D00427E03 /* Thread.cpp */; };
+		B3A9E2C520E1B33D00427E03 /* Library.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1FD20E1B33D00427E03 /* Library.cpp */; };
+		B3A9E2C620E1B33D00427E03 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E20520E1B33D00427E03 /* Object.cpp */; };
+		B3A9E2C720E1B33D00427E03 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E20B20E1B33D00427E03 /* List.cpp */; };
+		B3A9E2C820E1B33D00427E03 /* Primitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E20C20E1B33D00427E03 /* Primitive.cpp */; };
+		B3A9E2C920E1B33D00427E03 /* Type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E20D20E1B33D00427E03 /* Type.cpp */; };
+		B3A9E2CA20E1B33D00427E03 /* ObjectMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E20E20E1B33D00427E03 /* ObjectMapper.cpp */; };
+		B3A9E2CB20E1B33D00427E03 /* Delegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E21120E1B33D00427E03 /* Delegate.cpp */; };
+		B3A9E2CC20E1B33D00427E03 /* Stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E21420E1B33D00427E03 /* Stream.cpp */; };
+		B3A9E2CD20E1B33D00427E03 /* ChunkedBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E21520E1B33D00427E03 /* ChunkedBuffer.cpp */; };
+		B3A9E2CE20E1B33D00427E03 /* StreamBufferedProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E21720E1B33D00427E03 /* StreamBufferedProxy.cpp */; };
+		B3A9E2CF20E1B33D00427E03 /* IOBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E21920E1B33D00427E03 /* IOBuffer.cpp */; };
+		B3A9E2D020E1B33D00427E03 /* FIFOBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E21A20E1B33D00427E03 /* FIFOBuffer.cpp */; };
+		B3A9E2D120E1B33D00427E03 /* Controllable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E21E20E1B33D00427E03 /* Controllable.cpp */; };
+		B3A9E2D220E1B33D00427E03 /* PtrWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E21F20E1B33D00427E03 /* PtrWrapper.cpp */; };
+		B3A9E2D320E1B33D00427E03 /* Environment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E22120E1B33D00427E03 /* Environment.cpp */; };
+		B3A9E2D420E1B33D00427E03 /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E22620E1B33D00427E03 /* Allocator.cpp */; };
+		B3A9E2D520E1B33D00427E03 /* MemoryPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E22720E1B33D00427E03 /* MemoryPool.cpp */; };
+		B3A9E2D620E1B33D00427E03 /* ObjectPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E22820E1B33D00427E03 /* ObjectPool.cpp */; };
+		B3A9E2D720E1B33D00427E03 /* StrBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E22B20E1B33D00427E03 /* StrBuffer.cpp */; };
+		B3A9E2D820E1B33D00427E03 /* LinkedListTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E23320E1B33D00427E03 /* LinkedListTest.cpp */; };
+		B3A9E2D920E1B33D00427E03 /* PerfTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E23820E1B33D00427E03 /* PerfTest.cpp */; };
+		B3A9E2DA20E1B33D00427E03 /* MemoryPoolTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E23920E1B33D00427E03 /* MemoryPoolTest.cpp */; };
+		B3A9E2DB20E1B33D00427E03 /* RegRuleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E23A20E1B33D00427E03 /* RegRuleTest.cpp */; };
+		B3A9E2DC20E1B33D00427E03 /* UnicodeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E23F20E1B33D00427E03 /* UnicodeTest.cpp */; };
+		B3A9E2DD20E1B33D00427E03 /* DTOMapperPerfTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E24420E1B33D00427E03 /* DTOMapperPerfTest.cpp */; };
+		B3A9E2DE20E1B33D00427E03 /* DeserializerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E24520E1B33D00427E03 /* DeserializerTest.cpp */; };
+		B3A9E2DF20E1B33D00427E03 /* DTOMapperTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E24720E1B33D00427E03 /* DTOMapperTest.cpp */; };
+		B3A9E2E020E1B33D00427E03 /* Checker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E24B20E1B33D00427E03 /* Checker.cpp */; };
+		B3A9E2E120E1B33D00427E03 /* UnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E24C20E1B33D00427E03 /* UnitTest.cpp */; };
+		B3A9E2E220E1B33D00427E03 /* ErrorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E25120E1B33D00427E03 /* ErrorHandler.cpp */; };
+		B3A9E2E320E1B33D00427E03 /* Interceptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E25220E1B33D00427E03 /* Interceptor.cpp */; };
+		B3A9E2E420E1B33D00427E03 /* AsyncHttpConnectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E25420E1B33D00427E03 /* AsyncHttpConnectionHandler.cpp */; };
+		B3A9E2E520E1B33D00427E03 /* HttpError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E25620E1B33D00427E03 /* HttpError.cpp */; };
+		B3A9E2E620E1B33D00427E03 /* HttpProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E25920E1B33D00427E03 /* HttpProcessor.cpp */; };
+		B3A9E2E720E1B33D00427E03 /* HttpConnectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E25A20E1B33D00427E03 /* HttpConnectionHandler.cpp */; };
+		B3A9E2E820E1B33D00427E03 /* Endpoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E25D20E1B33D00427E03 /* Endpoint.cpp */; };
+		B3A9E2E920E1B33D00427E03 /* ApiController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E26220E1B33D00427E03 /* ApiController.cpp */; };
+		B3A9E2EA20E1B33D00427E03 /* HttpRouter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E26420E1B33D00427E03 /* HttpRouter.cpp */; };
+		B3A9E2EB20E1B33D00427E03 /* ChunkedBufferBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E26A20E1B33D00427E03 /* ChunkedBufferBody.cpp */; };
+		B3A9E2EC20E1B33D00427E03 /* Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E26C20E1B33D00427E03 /* Request.cpp */; };
+		B3A9E2ED20E1B33D00427E03 /* DtoBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E26E20E1B33D00427E03 /* DtoBody.cpp */; };
+		B3A9E2EE20E1B33D00427E03 /* Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E27020E1B33D00427E03 /* Body.cpp */; };
+		B3A9E2EF20E1B33D00427E03 /* Response.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E27320E1B33D00427E03 /* Response.cpp */; };
+		B3A9E2F020E1B33D00427E03 /* BufferBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E27420E1B33D00427E03 /* BufferBody.cpp */; };
+		B3A9E2F120E1B33D00427E03 /* ResponseFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E27520E1B33D00427E03 /* ResponseFactory.cpp */; };
+		B3A9E2F220E1B33D00427E03 /* Http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E27820E1B33D00427E03 /* Http.cpp */; };
+		B3A9E2F320E1B33D00427E03 /* Request.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E27A20E1B33D00427E03 /* Request.cpp */; };
+		B3A9E2F420E1B33D00427E03 /* BodyDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E27C20E1B33D00427E03 /* BodyDecoder.cpp */; };
+		B3A9E2F520E1B33D00427E03 /* Response.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E27E20E1B33D00427E03 /* Response.cpp */; };
+		B3A9E2F620E1B33D00427E03 /* Router.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E28220E1B33D00427E03 /* Router.cpp */; };
+		B3A9E2F720E1B33D00427E03 /* Subscriber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E28320E1B33D00427E03 /* Subscriber.cpp */; };
+		B3A9E2F820E1B33D00427E03 /* Pattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E28720E1B33D00427E03 /* Pattern.cpp */; };
+		B3A9E2F920E1B33D00427E03 /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E28920E1B33D00427E03 /* Parser.cpp */; };
+		B3A9E2FA20E1B33D00427E03 /* RequestExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E28B20E1B33D00427E03 /* RequestExecutor.cpp */; };
+		B3A9E2FB20E1B33D00427E03 /* ApiClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E28D20E1B33D00427E03 /* ApiClient.cpp */; };
+		B3A9E2FC20E1B33D00427E03 /* HttpRequestExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E29320E1B33D00427E03 /* HttpRequestExecutor.cpp */; };
+		B3A9E2FD20E1B33D00427E03 /* Pipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E29720E1B33D00427E03 /* Pipe.cpp */; };
+		B3A9E2FE20E1B33D00427E03 /* Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E29820E1B33D00427E03 /* Socket.cpp */; };
+		B3A9E2FF20E1B33D00427E03 /* SimpleTCPConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E29F20E1B33D00427E03 /* SimpleTCPConnectionProvider.cpp */; };
+		B3A9E30020E1B33D00427E03 /* ConnectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2A020E1B33D00427E03 /* ConnectionHandler.cpp */; };
+		B3A9E30120E1B33D00427E03 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2A120E1B33D00427E03 /* Server.cpp */; };
+		B3A9E30220E1B33D00427E03 /* ConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2A320E1B33D00427E03 /* ConnectionProvider.cpp */; };
+		B3A9E30320E1B33D00427E03 /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2A420E1B33D00427E03 /* Connection.cpp */; };
+		B3A9E30420E1B33D00427E03 /* SimpleTCPConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2A720E1B33D00427E03 /* SimpleTCPConnectionProvider.cpp */; };
+		B3A9E30520E1B33D00427E03 /* Hex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2AB20E1B33D00427E03 /* Hex.cpp */; };
+		B3A9E30620E1B33D00427E03 /* Unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2AC20E1B33D00427E03 /* Unicode.cpp */; };
+		B3A9E30720E1B33D00427E03 /* Deserializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2B320E1B33D00427E03 /* Deserializer.cpp */; };
+		B3A9E30820E1B33D00427E03 /* ObjectMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2B420E1B33D00427E03 /* ObjectMapper.cpp */; };
+		B3A9E30920E1B33D00427E03 /* Serializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2B520E1B33D00427E03 /* Serializer.cpp */; };
+		B3A9E30A20E1B33D00427E03 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E2B620E1B33D00427E03 /* Utils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -101,180 +104,186 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B330148820B7680A0065FD55 /* Socket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Socket.cpp; sourceTree = "<group>"; };
-		B330148920B7680A0065FD55 /* Socket.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Socket.hpp; sourceTree = "<group>"; };
 		B367F498206CF7B900668A2C /* AsyncApi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AsyncApi; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367F4A4206CF86F00668A2C /* MyDTOs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyDTOs.hpp; sourceTree = "<group>"; };
 		B367F4A5206CF86F00668A2C /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
 		B367F4A7206CF86F00668A2C /* MyController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyController.hpp; sourceTree = "<group>"; };
 		B367F4AD206CF86F00668A2C /* AppComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppComponent.hpp; sourceTree = "<group>"; };
 		B367F4AE206CF86F00668A2C /* App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
-		B367F4B4206CF88900668A2C /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
-		B367F4B5206CF88900668A2C /* FastQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FastQueue.cpp; sourceTree = "<group>"; };
-		B367F4B6206CF88900668A2C /* ListMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListMap.cpp; sourceTree = "<group>"; };
-		B367F4B7206CF88900668A2C /* FastQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FastQueue.hpp; sourceTree = "<group>"; };
-		B367F4B8206CF88900668A2C /* ListMap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ListMap.hpp; sourceTree = "<group>"; };
-		B367F4B9206CF88900668A2C /* LinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
-		B367F4BB206CF88900668A2C /* Processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processor.cpp; sourceTree = "<group>"; };
-		B367F4BC206CF88900668A2C /* Coroutine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Coroutine.cpp; sourceTree = "<group>"; };
-		B367F4BD206CF88900668A2C /* Processor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Processor.hpp; sourceTree = "<group>"; };
-		B367F4BE206CF88900668A2C /* Coroutine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Coroutine.hpp; sourceTree = "<group>"; };
-		B367F4C0206CF88900668A2C /* ConversionUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConversionUtils.hpp; sourceTree = "<group>"; };
-		B367F4C1206CF88900668A2C /* ConversionUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConversionUtils.cpp; sourceTree = "<group>"; };
-		B367F4C3206CF88900668A2C /* ParsingCaret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParsingCaret.cpp; sourceTree = "<group>"; };
-		B367F4C4206CF88900668A2C /* ParsingCaret.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParsingCaret.hpp; sourceTree = "<group>"; };
-		B367F4C6206CF88900668A2C /* Runnable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Runnable.cpp; sourceTree = "<group>"; };
-		B367F4C7206CF88900668A2C /* SpinLock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpinLock.cpp; sourceTree = "<group>"; };
-		B367F4C8206CF88900668A2C /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Thread.cpp; sourceTree = "<group>"; };
-		B367F4C9206CF88900668A2C /* Runnable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Runnable.hpp; sourceTree = "<group>"; };
-		B367F4CA206CF88900668A2C /* SpinLock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpinLock.hpp; sourceTree = "<group>"; };
-		B367F4CB206CF88900668A2C /* Thread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Thread.hpp; sourceTree = "<group>"; };
-		B367F4CD206CF88900668A2C /* codegen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = codegen.hpp; sourceTree = "<group>"; };
-		B367F4CE206CF88900668A2C /* component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = component.hpp; sourceTree = "<group>"; };
-		B367F4CF206CF88900668A2C /* basic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = basic.hpp; sourceTree = "<group>"; };
-		B367F4D2206CF88900668A2C /* Library.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Library.hpp; sourceTree = "<group>"; };
-		B367F4D3206CF88900668A2C /* Library.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Library.cpp; sourceTree = "<group>"; };
-		B367F4D6206CF88900668A2C /* ObjectMapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ObjectMapper.hpp; sourceTree = "<group>"; };
-		B367F4D8206CF88900668A2C /* Primitive.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Primitive.hpp; sourceTree = "<group>"; };
-		B367F4D9206CF88900668A2C /* Type.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Type.hpp; sourceTree = "<group>"; };
-		B367F4DA206CF88900668A2C /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
-		B367F4DB206CF88900668A2C /* List.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
-		B367F4DC206CF88900668A2C /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
-		B367F4DE206CF88900668A2C /* zzz_macro_define_DTO_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_define_DTO_.hpp; sourceTree = "<group>"; };
-		B367F4DF206CF88900668A2C /* zzz_macro_undef_DTO_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_undef_DTO_.hpp; sourceTree = "<group>"; };
-		B367F4E0206CF88900668A2C /* List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
-		B367F4E1206CF88900668A2C /* Primitive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Primitive.cpp; sourceTree = "<group>"; };
-		B367F4E2206CF88900668A2C /* Type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Type.cpp; sourceTree = "<group>"; };
-		B367F4E3206CF88900668A2C /* ObjectMapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectMapper.cpp; sourceTree = "<group>"; };
-		B367F4E5206CF88900668A2C /* ChunkedBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChunkedBuffer.hpp; sourceTree = "<group>"; };
-		B367F4E6206CF88900668A2C /* Delegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Delegate.cpp; sourceTree = "<group>"; };
-		B367F4E7206CF88900668A2C /* StreamBufferedProxy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StreamBufferedProxy.hpp; sourceTree = "<group>"; };
-		B367F4E8206CF88900668A2C /* Stream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Stream.hpp; sourceTree = "<group>"; };
-		B367F4E9206CF88900668A2C /* Stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stream.cpp; sourceTree = "<group>"; };
-		B367F4EA206CF88900668A2C /* ChunkedBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChunkedBuffer.cpp; sourceTree = "<group>"; };
-		B367F4EB206CF88900668A2C /* Delegate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Delegate.hpp; sourceTree = "<group>"; };
-		B367F4EC206CF88900668A2C /* StreamBufferedProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamBufferedProxy.cpp; sourceTree = "<group>"; };
-		B367F4EE206CF88900668A2C /* IOBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOBuffer.cpp; sourceTree = "<group>"; };
-		B367F4EF206CF88900668A2C /* IOBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IOBuffer.hpp; sourceTree = "<group>"; };
-		B367F4F1206CF88900668A2C /* Controllable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controllable.cpp; sourceTree = "<group>"; };
-		B367F4F2206CF88900668A2C /* PtrWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PtrWrapper.cpp; sourceTree = "<group>"; };
-		B367F4F3206CF88900668A2C /* Environment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Environment.cpp; sourceTree = "<group>"; };
-		B367F4F5206CF88900668A2C /* MemoryPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MemoryPool.hpp; sourceTree = "<group>"; };
-		B367F4F6206CF88900668A2C /* ObjectPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ObjectPool.hpp; sourceTree = "<group>"; };
-		B367F4F7206CF88900668A2C /* Allocator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Allocator.hpp; sourceTree = "<group>"; };
-		B367F4F8206CF88900668A2C /* Allocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Allocator.cpp; sourceTree = "<group>"; };
-		B367F4F9206CF88900668A2C /* MemoryPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryPool.cpp; sourceTree = "<group>"; };
-		B367F4FA206CF88900668A2C /* ObjectPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectPool.cpp; sourceTree = "<group>"; };
-		B367F4FB206CF88900668A2C /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
-		B367F4FC206CF88900668A2C /* String.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = String.hpp; sourceTree = "<group>"; };
-		B367F4FD206CF88900668A2C /* Controllable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controllable.hpp; sourceTree = "<group>"; };
-		B367F4FE206CF88900668A2C /* PtrWrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PtrWrapper.hpp; sourceTree = "<group>"; };
-		B367F4FF206CF88900668A2C /* Environment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Environment.hpp; sourceTree = "<group>"; };
-		B367F500206CF88900668A2C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B367F504206CF88900668A2C /* RegRuleTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RegRuleTest.hpp; sourceTree = "<group>"; };
-		B367F506206CF88900668A2C /* LinkedListTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTest.cpp; sourceTree = "<group>"; };
-		B367F507206CF88900668A2C /* LinkedListTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTest.hpp; sourceTree = "<group>"; };
-		B367F509206CF88900668A2C /* MemoryPoolTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MemoryPoolTest.hpp; sourceTree = "<group>"; };
-		B367F50A206CF88900668A2C /* PerfTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PerfTest.hpp; sourceTree = "<group>"; };
-		B367F50B206CF88900668A2C /* PerfTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerfTest.cpp; sourceTree = "<group>"; };
-		B367F50C206CF88900668A2C /* MemoryPoolTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryPoolTest.cpp; sourceTree = "<group>"; };
-		B367F50D206CF88900668A2C /* RegRuleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegRuleTest.cpp; sourceTree = "<group>"; };
-		B367F50E206CF88900668A2C /* UnitTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UnitTest.hpp; sourceTree = "<group>"; };
-		B367F512206CF88900668A2C /* UnicodeTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnicodeTest.cpp; sourceTree = "<group>"; };
-		B367F513206CF88900668A2C /* UnicodeTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UnicodeTest.hpp; sourceTree = "<group>"; };
-		B367F517206CF88900668A2C /* DTOMapperPerfTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DTOMapperPerfTest.cpp; sourceTree = "<group>"; };
-		B367F518206CF88900668A2C /* DeserializerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeserializerTest.cpp; sourceTree = "<group>"; };
-		B367F519206CF88900668A2C /* DTOMapperTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DTOMapperTest.hpp; sourceTree = "<group>"; };
-		B367F51A206CF88900668A2C /* DTOMapperTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DTOMapperTest.cpp; sourceTree = "<group>"; };
-		B367F51B206CF88900668A2C /* DTOMapperPerfTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DTOMapperPerfTest.hpp; sourceTree = "<group>"; };
-		B367F51C206CF88900668A2C /* DeserializerTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DeserializerTest.hpp; sourceTree = "<group>"; };
-		B367F51D206CF88900668A2C /* Checker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Checker.hpp; sourceTree = "<group>"; };
-		B367F51E206CF88900668A2C /* Checker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Checker.cpp; sourceTree = "<group>"; };
-		B367F51F206CF88900668A2C /* UnitTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnitTest.cpp; sourceTree = "<group>"; };
-		B367F523206CF88900668A2C /* ErrorHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ErrorHandler.cpp; sourceTree = "<group>"; };
-		B367F524206CF88900668A2C /* ErrorHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ErrorHandler.hpp; sourceTree = "<group>"; };
-		B367F525206CF88900668A2C /* AsyncHttpConnectionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AsyncHttpConnectionHandler.cpp; sourceTree = "<group>"; };
-		B367F526206CF88900668A2C /* HttpRouter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpRouter.hpp; sourceTree = "<group>"; };
-		B367F527206CF88900668A2C /* HttpError.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpError.cpp; sourceTree = "<group>"; };
-		B367F528206CF88900668A2C /* HttpProcessor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpProcessor.hpp; sourceTree = "<group>"; };
-		B367F529206CF88900668A2C /* HttpConnectionHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpConnectionHandler.hpp; sourceTree = "<group>"; };
-		B367F52A206CF88900668A2C /* HttpProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpProcessor.cpp; sourceTree = "<group>"; };
-		B367F52B206CF88900668A2C /* HttpConnectionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpConnectionHandler.cpp; sourceTree = "<group>"; };
-		B367F52D206CF88900668A2C /* ApiController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ApiController.hpp; sourceTree = "<group>"; };
-		B367F52E206CF88900668A2C /* Endpoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Endpoint.cpp; sourceTree = "<group>"; };
-		B367F530206CF88900668A2C /* zzz_macro_define_ApiController_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_define_ApiController_.hpp; sourceTree = "<group>"; };
-		B367F531206CF88900668A2C /* zzz_macro_undef_ApiController_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_undef_ApiController_.hpp; sourceTree = "<group>"; };
-		B367F532206CF88900668A2C /* Endpoint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Endpoint.hpp; sourceTree = "<group>"; };
-		B367F533206CF88900668A2C /* ApiController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApiController.cpp; sourceTree = "<group>"; };
-		B367F534206CF88900668A2C /* AsyncHttpConnectionHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AsyncHttpConnectionHandler.hpp; sourceTree = "<group>"; };
-		B367F535206CF88900668A2C /* HttpRouter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpRouter.cpp; sourceTree = "<group>"; };
-		B367F536206CF88900668A2C /* HttpError.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpError.hpp; sourceTree = "<group>"; };
-		B367F53A206CF88900668A2C /* ResponseFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResponseFactory.hpp; sourceTree = "<group>"; };
-		B367F53B206CF88900668A2C /* ChunkedBufferBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChunkedBufferBody.cpp; sourceTree = "<group>"; };
-		B367F53C206CF88900668A2C /* Body.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Body.hpp; sourceTree = "<group>"; };
-		B367F53D206CF88900668A2C /* Request.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Request.cpp; sourceTree = "<group>"; };
-		B367F53E206CF88900668A2C /* Response.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Response.hpp; sourceTree = "<group>"; };
-		B367F53F206CF88900668A2C /* DtoBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DtoBody.cpp; sourceTree = "<group>"; };
-		B367F540206CF88900668A2C /* BufferBody.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BufferBody.hpp; sourceTree = "<group>"; };
-		B367F541206CF88900668A2C /* Body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Body.cpp; sourceTree = "<group>"; };
-		B367F542206CF88900668A2C /* Request.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Request.hpp; sourceTree = "<group>"; };
-		B367F543206CF88900668A2C /* DtoBody.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DtoBody.hpp; sourceTree = "<group>"; };
-		B367F544206CF88900668A2C /* Response.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Response.cpp; sourceTree = "<group>"; };
-		B367F545206CF88900668A2C /* BufferBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BufferBody.cpp; sourceTree = "<group>"; };
-		B367F546206CF88900668A2C /* ResponseFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResponseFactory.cpp; sourceTree = "<group>"; };
-		B367F547206CF88900668A2C /* ChunkedBufferBody.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChunkedBufferBody.hpp; sourceTree = "<group>"; };
-		B367F548206CF88900668A2C /* Http.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Http.hpp; sourceTree = "<group>"; };
-		B367F549206CF88900668A2C /* Http.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Http.cpp; sourceTree = "<group>"; };
-		B367F54B206CF88900668A2C /* Request.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Request.cpp; sourceTree = "<group>"; };
-		B367F54C206CF88900668A2C /* Response.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Response.hpp; sourceTree = "<group>"; };
-		B367F54D206CF88900668A2C /* BodyDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BodyDecoder.cpp; sourceTree = "<group>"; };
-		B367F54E206CF88900668A2C /* Request.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Request.hpp; sourceTree = "<group>"; };
-		B367F54F206CF88900668A2C /* Response.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Response.cpp; sourceTree = "<group>"; };
-		B367F550206CF88900668A2C /* BodyDecoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BodyDecoder.hpp; sourceTree = "<group>"; };
-		B367F553206CF88900668A2C /* Router.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Router.cpp; sourceTree = "<group>"; };
-		B367F554206CF88900668A2C /* Subscriber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Subscriber.cpp; sourceTree = "<group>"; };
-		B367F555206CF88900668A2C /* Pattern.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Pattern.hpp; sourceTree = "<group>"; };
-		B367F556206CF88900668A2C /* Router.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Router.hpp; sourceTree = "<group>"; };
-		B367F557206CF88900668A2C /* Subscriber.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Subscriber.hpp; sourceTree = "<group>"; };
-		B367F558206CF88900668A2C /* Pattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pattern.cpp; sourceTree = "<group>"; };
-		B367F55A206CF88900668A2C /* RequestExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RequestExecutor.cpp; sourceTree = "<group>"; };
-		B367F55B206CF88900668A2C /* HttpRequestExecutor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpRequestExecutor.hpp; sourceTree = "<group>"; };
-		B367F55C206CF88900668A2C /* ApiClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApiClient.cpp; sourceTree = "<group>"; };
-		B367F55E206CF88900668A2C /* zzz_macro_define_ApiClient_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_define_ApiClient_.hpp; sourceTree = "<group>"; };
-		B367F55F206CF88900668A2C /* zzz_macro_undef_ApiClient_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_undef_ApiClient_.hpp; sourceTree = "<group>"; };
-		B367F560206CF88900668A2C /* ApiClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ApiClient.hpp; sourceTree = "<group>"; };
-		B367F561206CF88900668A2C /* RequestExecutor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RequestExecutor.hpp; sourceTree = "<group>"; };
-		B367F562206CF88900668A2C /* HttpRequestExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpRequestExecutor.cpp; sourceTree = "<group>"; };
-		B367F564206CF88900668A2C /* Connection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Connection.hpp; sourceTree = "<group>"; };
-		B367F566206CF88900668A2C /* Server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Server.hpp; sourceTree = "<group>"; };
-		B367F567206CF88900668A2C /* SimpleTCPConnectionProvider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SimpleTCPConnectionProvider.hpp; sourceTree = "<group>"; };
-		B367F568206CF88900668A2C /* ConnectionHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionHandler.hpp; sourceTree = "<group>"; };
-		B367F569206CF88900668A2C /* SimpleTCPConnectionProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTCPConnectionProvider.cpp; sourceTree = "<group>"; };
-		B367F56A206CF88900668A2C /* ConnectionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionHandler.cpp; sourceTree = "<group>"; };
-		B367F56B206CF88900668A2C /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
-		B367F56C206CF88900668A2C /* ConnectionProvider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionProvider.hpp; sourceTree = "<group>"; };
-		B367F56D206CF88900668A2C /* ConnectionProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionProvider.cpp; sourceTree = "<group>"; };
-		B367F56E206CF88900668A2C /* Connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Connection.cpp; sourceTree = "<group>"; };
-		B367F570206CF88900668A2C /* SimpleTCPConnectionProvider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SimpleTCPConnectionProvider.hpp; sourceTree = "<group>"; };
-		B367F571206CF88900668A2C /* SimpleTCPConnectionProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTCPConnectionProvider.cpp; sourceTree = "<group>"; };
-		B367F573206CF88900668A2C /* Unicode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Unicode.hpp; sourceTree = "<group>"; };
-		B367F574206CF88900668A2C /* Hex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hex.hpp; sourceTree = "<group>"; };
-		B367F575206CF88900668A2C /* Hex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hex.cpp; sourceTree = "<group>"; };
-		B367F576206CF88900668A2C /* Unicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unicode.cpp; sourceTree = "<group>"; };
-		B367F57A206CF88900668A2C /* Serializer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Serializer.hpp; sourceTree = "<group>"; };
-		B367F57B206CF88900668A2C /* Deserializer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Deserializer.hpp; sourceTree = "<group>"; };
-		B367F57C206CF88900668A2C /* ObjectMapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ObjectMapper.hpp; sourceTree = "<group>"; };
-		B367F57D206CF88900668A2C /* Deserializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deserializer.cpp; sourceTree = "<group>"; };
-		B367F57E206CF88900668A2C /* ObjectMapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectMapper.cpp; sourceTree = "<group>"; };
-		B367F57F206CF88900668A2C /* Serializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Serializer.cpp; sourceTree = "<group>"; };
-		B367F580206CF88900668A2C /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
-		B367F581206CF88900668A2C /* Utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
-		B367F582206CF88900668A2C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B367F583206CF88900668A2C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B3BCA4B320A0FAAF001A8E66 /* FIFOBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FIFOBuffer.cpp; sourceTree = "<group>"; };
-		B3BCA4B420A0FAAF001A8E66 /* FIFOBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FIFOBuffer.hpp; sourceTree = "<group>"; };
-		B3BCA4B820A26C0F001A8E66 /* Pipe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pipe.cpp; sourceTree = "<group>"; };
-		B3BCA4B920A26C0F001A8E66 /* Pipe.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Pipe.hpp; sourceTree = "<group>"; };
+		B3A9E1DC20E1B33D00427E03 /* Types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Types.cpp; sourceTree = "<group>"; };
+		B3A9E1DE20E1B33D00427E03 /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
+		B3A9E1DF20E1B33D00427E03 /* FastQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FastQueue.cpp; sourceTree = "<group>"; };
+		B3A9E1E020E1B33D00427E03 /* ListMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListMap.cpp; sourceTree = "<group>"; };
+		B3A9E1E120E1B33D00427E03 /* FastQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FastQueue.hpp; sourceTree = "<group>"; };
+		B3A9E1E220E1B33D00427E03 /* ListMap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ListMap.hpp; sourceTree = "<group>"; };
+		B3A9E1E320E1B33D00427E03 /* LinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		B3A9E1E520E1B33D00427E03 /* Processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processor.cpp; sourceTree = "<group>"; };
+		B3A9E1E620E1B33D00427E03 /* Coroutine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Coroutine.cpp; sourceTree = "<group>"; };
+		B3A9E1E720E1B33D00427E03 /* Processor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Processor.hpp; sourceTree = "<group>"; };
+		B3A9E1E820E1B33D00427E03 /* Coroutine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Coroutine.hpp; sourceTree = "<group>"; };
+		B3A9E1EA20E1B33D00427E03 /* ConversionUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConversionUtils.hpp; sourceTree = "<group>"; };
+		B3A9E1EB20E1B33D00427E03 /* ConversionUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConversionUtils.cpp; sourceTree = "<group>"; };
+		B3A9E1ED20E1B33D00427E03 /* ParsingCaret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParsingCaret.cpp; sourceTree = "<group>"; };
+		B3A9E1EE20E1B33D00427E03 /* ParsingCaret.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParsingCaret.hpp; sourceTree = "<group>"; };
+		B3A9E1F020E1B33D00427E03 /* Runnable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Runnable.cpp; sourceTree = "<group>"; };
+		B3A9E1F120E1B33D00427E03 /* SpinLock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpinLock.cpp; sourceTree = "<group>"; };
+		B3A9E1F220E1B33D00427E03 /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Thread.cpp; sourceTree = "<group>"; };
+		B3A9E1F320E1B33D00427E03 /* Runnable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Runnable.hpp; sourceTree = "<group>"; };
+		B3A9E1F420E1B33D00427E03 /* SpinLock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpinLock.hpp; sourceTree = "<group>"; };
+		B3A9E1F520E1B33D00427E03 /* Thread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Thread.hpp; sourceTree = "<group>"; };
+		B3A9E1F720E1B33D00427E03 /* codegen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = codegen.hpp; sourceTree = "<group>"; };
+		B3A9E1F820E1B33D00427E03 /* component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = component.hpp; sourceTree = "<group>"; };
+		B3A9E1F920E1B33D00427E03 /* basic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = basic.hpp; sourceTree = "<group>"; };
+		B3A9E1FC20E1B33D00427E03 /* Library.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Library.hpp; sourceTree = "<group>"; };
+		B3A9E1FD20E1B33D00427E03 /* Library.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Library.cpp; sourceTree = "<group>"; };
+		B3A9E1FE20E1B33D00427E03 /* Types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Types.hpp; sourceTree = "<group>"; };
+		B3A9E20120E1B33D00427E03 /* ObjectMapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ObjectMapper.hpp; sourceTree = "<group>"; };
+		B3A9E20320E1B33D00427E03 /* Primitive.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Primitive.hpp; sourceTree = "<group>"; };
+		B3A9E20420E1B33D00427E03 /* Type.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Type.hpp; sourceTree = "<group>"; };
+		B3A9E20520E1B33D00427E03 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		B3A9E20620E1B33D00427E03 /* List.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		B3A9E20720E1B33D00427E03 /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
+		B3A9E20920E1B33D00427E03 /* zzz_macro_define_DTO_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_define_DTO_.hpp; sourceTree = "<group>"; };
+		B3A9E20A20E1B33D00427E03 /* zzz_macro_undef_DTO_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_undef_DTO_.hpp; sourceTree = "<group>"; };
+		B3A9E20B20E1B33D00427E03 /* List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
+		B3A9E20C20E1B33D00427E03 /* Primitive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Primitive.cpp; sourceTree = "<group>"; };
+		B3A9E20D20E1B33D00427E03 /* Type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Type.cpp; sourceTree = "<group>"; };
+		B3A9E20E20E1B33D00427E03 /* ObjectMapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectMapper.cpp; sourceTree = "<group>"; };
+		B3A9E21020E1B33D00427E03 /* ChunkedBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChunkedBuffer.hpp; sourceTree = "<group>"; };
+		B3A9E21120E1B33D00427E03 /* Delegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Delegate.cpp; sourceTree = "<group>"; };
+		B3A9E21220E1B33D00427E03 /* StreamBufferedProxy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StreamBufferedProxy.hpp; sourceTree = "<group>"; };
+		B3A9E21320E1B33D00427E03 /* Stream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Stream.hpp; sourceTree = "<group>"; };
+		B3A9E21420E1B33D00427E03 /* Stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stream.cpp; sourceTree = "<group>"; };
+		B3A9E21520E1B33D00427E03 /* ChunkedBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChunkedBuffer.cpp; sourceTree = "<group>"; };
+		B3A9E21620E1B33D00427E03 /* Delegate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Delegate.hpp; sourceTree = "<group>"; };
+		B3A9E21720E1B33D00427E03 /* StreamBufferedProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamBufferedProxy.cpp; sourceTree = "<group>"; };
+		B3A9E21920E1B33D00427E03 /* IOBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOBuffer.cpp; sourceTree = "<group>"; };
+		B3A9E21A20E1B33D00427E03 /* FIFOBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIFOBuffer.cpp; sourceTree = "<group>"; };
+		B3A9E21B20E1B33D00427E03 /* FIFOBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FIFOBuffer.hpp; sourceTree = "<group>"; };
+		B3A9E21C20E1B33D00427E03 /* IOBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IOBuffer.hpp; sourceTree = "<group>"; };
+		B3A9E21E20E1B33D00427E03 /* Controllable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controllable.cpp; sourceTree = "<group>"; };
+		B3A9E21F20E1B33D00427E03 /* PtrWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PtrWrapper.cpp; sourceTree = "<group>"; };
+		B3A9E22020E1B33D00427E03 /* StrBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StrBuffer.hpp; sourceTree = "<group>"; };
+		B3A9E22120E1B33D00427E03 /* Environment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Environment.cpp; sourceTree = "<group>"; };
+		B3A9E22320E1B33D00427E03 /* MemoryPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MemoryPool.hpp; sourceTree = "<group>"; };
+		B3A9E22420E1B33D00427E03 /* ObjectPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ObjectPool.hpp; sourceTree = "<group>"; };
+		B3A9E22520E1B33D00427E03 /* Allocator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Allocator.hpp; sourceTree = "<group>"; };
+		B3A9E22620E1B33D00427E03 /* Allocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Allocator.cpp; sourceTree = "<group>"; };
+		B3A9E22720E1B33D00427E03 /* MemoryPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryPool.cpp; sourceTree = "<group>"; };
+		B3A9E22820E1B33D00427E03 /* ObjectPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectPool.cpp; sourceTree = "<group>"; };
+		B3A9E22920E1B33D00427E03 /* Controllable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controllable.hpp; sourceTree = "<group>"; };
+		B3A9E22A20E1B33D00427E03 /* PtrWrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PtrWrapper.hpp; sourceTree = "<group>"; };
+		B3A9E22B20E1B33D00427E03 /* StrBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StrBuffer.cpp; sourceTree = "<group>"; };
+		B3A9E22C20E1B33D00427E03 /* Environment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Environment.hpp; sourceTree = "<group>"; };
+		B3A9E22D20E1B33D00427E03 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B3A9E23120E1B33D00427E03 /* RegRuleTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RegRuleTest.hpp; sourceTree = "<group>"; };
+		B3A9E23320E1B33D00427E03 /* LinkedListTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTest.cpp; sourceTree = "<group>"; };
+		B3A9E23420E1B33D00427E03 /* LinkedListTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTest.hpp; sourceTree = "<group>"; };
+		B3A9E23620E1B33D00427E03 /* MemoryPoolTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MemoryPoolTest.hpp; sourceTree = "<group>"; };
+		B3A9E23720E1B33D00427E03 /* PerfTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PerfTest.hpp; sourceTree = "<group>"; };
+		B3A9E23820E1B33D00427E03 /* PerfTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerfTest.cpp; sourceTree = "<group>"; };
+		B3A9E23920E1B33D00427E03 /* MemoryPoolTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryPoolTest.cpp; sourceTree = "<group>"; };
+		B3A9E23A20E1B33D00427E03 /* RegRuleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegRuleTest.cpp; sourceTree = "<group>"; };
+		B3A9E23B20E1B33D00427E03 /* UnitTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UnitTest.hpp; sourceTree = "<group>"; };
+		B3A9E23F20E1B33D00427E03 /* UnicodeTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnicodeTest.cpp; sourceTree = "<group>"; };
+		B3A9E24020E1B33D00427E03 /* UnicodeTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UnicodeTest.hpp; sourceTree = "<group>"; };
+		B3A9E24420E1B33D00427E03 /* DTOMapperPerfTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DTOMapperPerfTest.cpp; sourceTree = "<group>"; };
+		B3A9E24520E1B33D00427E03 /* DeserializerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeserializerTest.cpp; sourceTree = "<group>"; };
+		B3A9E24620E1B33D00427E03 /* DTOMapperTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DTOMapperTest.hpp; sourceTree = "<group>"; };
+		B3A9E24720E1B33D00427E03 /* DTOMapperTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DTOMapperTest.cpp; sourceTree = "<group>"; };
+		B3A9E24820E1B33D00427E03 /* DTOMapperPerfTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DTOMapperPerfTest.hpp; sourceTree = "<group>"; };
+		B3A9E24920E1B33D00427E03 /* DeserializerTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DeserializerTest.hpp; sourceTree = "<group>"; };
+		B3A9E24A20E1B33D00427E03 /* Checker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Checker.hpp; sourceTree = "<group>"; };
+		B3A9E24B20E1B33D00427E03 /* Checker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Checker.cpp; sourceTree = "<group>"; };
+		B3A9E24C20E1B33D00427E03 /* UnitTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnitTest.cpp; sourceTree = "<group>"; };
+		B3A9E25020E1B33D00427E03 /* Interceptor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Interceptor.hpp; sourceTree = "<group>"; };
+		B3A9E25120E1B33D00427E03 /* ErrorHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ErrorHandler.cpp; sourceTree = "<group>"; };
+		B3A9E25220E1B33D00427E03 /* Interceptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interceptor.cpp; sourceTree = "<group>"; };
+		B3A9E25320E1B33D00427E03 /* ErrorHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ErrorHandler.hpp; sourceTree = "<group>"; };
+		B3A9E25420E1B33D00427E03 /* AsyncHttpConnectionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AsyncHttpConnectionHandler.cpp; sourceTree = "<group>"; };
+		B3A9E25520E1B33D00427E03 /* HttpRouter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpRouter.hpp; sourceTree = "<group>"; };
+		B3A9E25620E1B33D00427E03 /* HttpError.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpError.cpp; sourceTree = "<group>"; };
+		B3A9E25720E1B33D00427E03 /* HttpProcessor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpProcessor.hpp; sourceTree = "<group>"; };
+		B3A9E25820E1B33D00427E03 /* HttpConnectionHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpConnectionHandler.hpp; sourceTree = "<group>"; };
+		B3A9E25920E1B33D00427E03 /* HttpProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpProcessor.cpp; sourceTree = "<group>"; };
+		B3A9E25A20E1B33D00427E03 /* HttpConnectionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpConnectionHandler.cpp; sourceTree = "<group>"; };
+		B3A9E25C20E1B33D00427E03 /* ApiController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ApiController.hpp; sourceTree = "<group>"; };
+		B3A9E25D20E1B33D00427E03 /* Endpoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Endpoint.cpp; sourceTree = "<group>"; };
+		B3A9E25F20E1B33D00427E03 /* zzz_macro_define_ApiController_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_define_ApiController_.hpp; sourceTree = "<group>"; };
+		B3A9E26020E1B33D00427E03 /* zzz_macro_undef_ApiController_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_undef_ApiController_.hpp; sourceTree = "<group>"; };
+		B3A9E26120E1B33D00427E03 /* Endpoint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Endpoint.hpp; sourceTree = "<group>"; };
+		B3A9E26220E1B33D00427E03 /* ApiController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApiController.cpp; sourceTree = "<group>"; };
+		B3A9E26320E1B33D00427E03 /* AsyncHttpConnectionHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AsyncHttpConnectionHandler.hpp; sourceTree = "<group>"; };
+		B3A9E26420E1B33D00427E03 /* HttpRouter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpRouter.cpp; sourceTree = "<group>"; };
+		B3A9E26520E1B33D00427E03 /* HttpError.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpError.hpp; sourceTree = "<group>"; };
+		B3A9E26920E1B33D00427E03 /* ResponseFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResponseFactory.hpp; sourceTree = "<group>"; };
+		B3A9E26A20E1B33D00427E03 /* ChunkedBufferBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChunkedBufferBody.cpp; sourceTree = "<group>"; };
+		B3A9E26B20E1B33D00427E03 /* Body.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Body.hpp; sourceTree = "<group>"; };
+		B3A9E26C20E1B33D00427E03 /* Request.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Request.cpp; sourceTree = "<group>"; };
+		B3A9E26D20E1B33D00427E03 /* Response.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Response.hpp; sourceTree = "<group>"; };
+		B3A9E26E20E1B33D00427E03 /* DtoBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DtoBody.cpp; sourceTree = "<group>"; };
+		B3A9E26F20E1B33D00427E03 /* BufferBody.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BufferBody.hpp; sourceTree = "<group>"; };
+		B3A9E27020E1B33D00427E03 /* Body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Body.cpp; sourceTree = "<group>"; };
+		B3A9E27120E1B33D00427E03 /* Request.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Request.hpp; sourceTree = "<group>"; };
+		B3A9E27220E1B33D00427E03 /* DtoBody.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DtoBody.hpp; sourceTree = "<group>"; };
+		B3A9E27320E1B33D00427E03 /* Response.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Response.cpp; sourceTree = "<group>"; };
+		B3A9E27420E1B33D00427E03 /* BufferBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BufferBody.cpp; sourceTree = "<group>"; };
+		B3A9E27520E1B33D00427E03 /* ResponseFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResponseFactory.cpp; sourceTree = "<group>"; };
+		B3A9E27620E1B33D00427E03 /* ChunkedBufferBody.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ChunkedBufferBody.hpp; sourceTree = "<group>"; };
+		B3A9E27720E1B33D00427E03 /* Http.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Http.hpp; sourceTree = "<group>"; };
+		B3A9E27820E1B33D00427E03 /* Http.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Http.cpp; sourceTree = "<group>"; };
+		B3A9E27A20E1B33D00427E03 /* Request.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Request.cpp; sourceTree = "<group>"; };
+		B3A9E27B20E1B33D00427E03 /* Response.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Response.hpp; sourceTree = "<group>"; };
+		B3A9E27C20E1B33D00427E03 /* BodyDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BodyDecoder.cpp; sourceTree = "<group>"; };
+		B3A9E27D20E1B33D00427E03 /* Request.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Request.hpp; sourceTree = "<group>"; };
+		B3A9E27E20E1B33D00427E03 /* Response.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Response.cpp; sourceTree = "<group>"; };
+		B3A9E27F20E1B33D00427E03 /* BodyDecoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BodyDecoder.hpp; sourceTree = "<group>"; };
+		B3A9E28220E1B33D00427E03 /* Router.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Router.cpp; sourceTree = "<group>"; };
+		B3A9E28320E1B33D00427E03 /* Subscriber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Subscriber.cpp; sourceTree = "<group>"; };
+		B3A9E28420E1B33D00427E03 /* Pattern.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Pattern.hpp; sourceTree = "<group>"; };
+		B3A9E28520E1B33D00427E03 /* Router.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Router.hpp; sourceTree = "<group>"; };
+		B3A9E28620E1B33D00427E03 /* Subscriber.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Subscriber.hpp; sourceTree = "<group>"; };
+		B3A9E28720E1B33D00427E03 /* Pattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pattern.cpp; sourceTree = "<group>"; };
+		B3A9E28820E1B33D00427E03 /* Parser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Parser.hpp; sourceTree = "<group>"; };
+		B3A9E28920E1B33D00427E03 /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
+		B3A9E28B20E1B33D00427E03 /* RequestExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RequestExecutor.cpp; sourceTree = "<group>"; };
+		B3A9E28C20E1B33D00427E03 /* HttpRequestExecutor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpRequestExecutor.hpp; sourceTree = "<group>"; };
+		B3A9E28D20E1B33D00427E03 /* ApiClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApiClient.cpp; sourceTree = "<group>"; };
+		B3A9E28F20E1B33D00427E03 /* zzz_macro_define_ApiClient_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_define_ApiClient_.hpp; sourceTree = "<group>"; };
+		B3A9E29020E1B33D00427E03 /* zzz_macro_undef_ApiClient_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_undef_ApiClient_.hpp; sourceTree = "<group>"; };
+		B3A9E29120E1B33D00427E03 /* ApiClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ApiClient.hpp; sourceTree = "<group>"; };
+		B3A9E29220E1B33D00427E03 /* RequestExecutor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RequestExecutor.hpp; sourceTree = "<group>"; };
+		B3A9E29320E1B33D00427E03 /* HttpRequestExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpRequestExecutor.cpp; sourceTree = "<group>"; };
+		B3A9E29520E1B33D00427E03 /* Connection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Connection.hpp; sourceTree = "<group>"; };
+		B3A9E29720E1B33D00427E03 /* Pipe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pipe.cpp; sourceTree = "<group>"; };
+		B3A9E29820E1B33D00427E03 /* Socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Socket.cpp; sourceTree = "<group>"; };
+		B3A9E29920E1B33D00427E03 /* Socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Socket.hpp; sourceTree = "<group>"; };
+		B3A9E29A20E1B33D00427E03 /* Pipe.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Pipe.hpp; sourceTree = "<group>"; };
+		B3A9E29C20E1B33D00427E03 /* Server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Server.hpp; sourceTree = "<group>"; };
+		B3A9E29D20E1B33D00427E03 /* SimpleTCPConnectionProvider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SimpleTCPConnectionProvider.hpp; sourceTree = "<group>"; };
+		B3A9E29E20E1B33D00427E03 /* ConnectionHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionHandler.hpp; sourceTree = "<group>"; };
+		B3A9E29F20E1B33D00427E03 /* SimpleTCPConnectionProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTCPConnectionProvider.cpp; sourceTree = "<group>"; };
+		B3A9E2A020E1B33D00427E03 /* ConnectionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionHandler.cpp; sourceTree = "<group>"; };
+		B3A9E2A120E1B33D00427E03 /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
+		B3A9E2A220E1B33D00427E03 /* ConnectionProvider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionProvider.hpp; sourceTree = "<group>"; };
+		B3A9E2A320E1B33D00427E03 /* ConnectionProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionProvider.cpp; sourceTree = "<group>"; };
+		B3A9E2A420E1B33D00427E03 /* Connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Connection.cpp; sourceTree = "<group>"; };
+		B3A9E2A620E1B33D00427E03 /* SimpleTCPConnectionProvider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SimpleTCPConnectionProvider.hpp; sourceTree = "<group>"; };
+		B3A9E2A720E1B33D00427E03 /* SimpleTCPConnectionProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTCPConnectionProvider.cpp; sourceTree = "<group>"; };
+		B3A9E2A920E1B33D00427E03 /* Unicode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Unicode.hpp; sourceTree = "<group>"; };
+		B3A9E2AA20E1B33D00427E03 /* Hex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hex.hpp; sourceTree = "<group>"; };
+		B3A9E2AB20E1B33D00427E03 /* Hex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hex.cpp; sourceTree = "<group>"; };
+		B3A9E2AC20E1B33D00427E03 /* Unicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unicode.cpp; sourceTree = "<group>"; };
+		B3A9E2B020E1B33D00427E03 /* Serializer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Serializer.hpp; sourceTree = "<group>"; };
+		B3A9E2B120E1B33D00427E03 /* Deserializer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Deserializer.hpp; sourceTree = "<group>"; };
+		B3A9E2B220E1B33D00427E03 /* ObjectMapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ObjectMapper.hpp; sourceTree = "<group>"; };
+		B3A9E2B320E1B33D00427E03 /* Deserializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deserializer.cpp; sourceTree = "<group>"; };
+		B3A9E2B420E1B33D00427E03 /* ObjectMapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectMapper.cpp; sourceTree = "<group>"; };
+		B3A9E2B520E1B33D00427E03 /* Serializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Serializer.cpp; sourceTree = "<group>"; };
+		B3A9E2B620E1B33D00427E03 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		B3A9E2B720E1B33D00427E03 /* Utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
+		B3A9E2B820E1B33D00427E03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B3A9E2B920E1B33D00427E03 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,7 +300,7 @@
 		B367F48F206CF7B900668A2C = {
 			isa = PBXGroup;
 			children = (
-				B367F4B1206CF88900668A2C /* oatpp */,
+				B3A9E1DA20E1B33D00427E03 /* oatpp */,
 				B367F4A2206CF86F00668A2C /* src */,
 				B367F499206CF7B900668A2C /* Products */,
 			);
@@ -336,572 +345,578 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		B367F4B1206CF88900668A2C /* oatpp */ = {
+		B3A9E1DA20E1B33D00427E03 /* oatpp */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4B2206CF88900668A2C /* core */,
-				B367F500206CF88900668A2C /* LICENSE */,
-				B367F501206CF88900668A2C /* test */,
-				B367F520206CF88900668A2C /* web */,
-				B367F563206CF88900668A2C /* network */,
-				B367F572206CF88900668A2C /* encoding */,
-				B367F577206CF88900668A2C /* parser */,
-				B367F582206CF88900668A2C /* README.md */,
-				B367F583206CF88900668A2C /* .gitignore */,
+				B3A9E1DB20E1B33D00427E03 /* core */,
+				B3A9E22D20E1B33D00427E03 /* LICENSE */,
+				B3A9E22E20E1B33D00427E03 /* test */,
+				B3A9E24D20E1B33D00427E03 /* web */,
+				B3A9E29420E1B33D00427E03 /* network */,
+				B3A9E2A820E1B33D00427E03 /* encoding */,
+				B3A9E2AD20E1B33D00427E03 /* parser */,
+				B3A9E2B820E1B33D00427E03 /* README.md */,
+				B3A9E2B920E1B33D00427E03 /* .gitignore */,
 			);
 			name = oatpp;
 			path = ../lib/oatpp;
 			sourceTree = "<group>";
 		};
-		B367F4B2206CF88900668A2C /* core */ = {
+		B3A9E1DB20E1B33D00427E03 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4BA206CF88900668A2C /* async */,
-				B367F4F0206CF88900668A2C /* base */,
-				B367F4B3206CF88900668A2C /* collection */,
-				B367F4C5206CF88900668A2C /* concurrency */,
-				B367F4D4206CF88900668A2C /* data */,
-				B367F4CC206CF88900668A2C /* macro */,
-				B367F4D0206CF88900668A2C /* os */,
-				B367F4C2206CF88900668A2C /* parser */,
-				B367F4BF206CF88900668A2C /* utils */,
+				B3A9E1DC20E1B33D00427E03 /* Types.cpp */,
+				B3A9E1DD20E1B33D00427E03 /* collection */,
+				B3A9E1E420E1B33D00427E03 /* async */,
+				B3A9E1E920E1B33D00427E03 /* utils */,
+				B3A9E1EC20E1B33D00427E03 /* parser */,
+				B3A9E1EF20E1B33D00427E03 /* concurrency */,
+				B3A9E1F620E1B33D00427E03 /* macro */,
+				B3A9E1FA20E1B33D00427E03 /* os */,
+				B3A9E1FE20E1B33D00427E03 /* Types.hpp */,
+				B3A9E1FF20E1B33D00427E03 /* data */,
+				B3A9E21D20E1B33D00427E03 /* base */,
 			);
 			path = core;
 			sourceTree = "<group>";
 		};
-		B367F4B3206CF88900668A2C /* collection */ = {
+		B3A9E1DD20E1B33D00427E03 /* collection */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4B5206CF88900668A2C /* FastQueue.cpp */,
-				B367F4B7206CF88900668A2C /* FastQueue.hpp */,
-				B367F4B4206CF88900668A2C /* LinkedList.cpp */,
-				B367F4B9206CF88900668A2C /* LinkedList.hpp */,
-				B367F4B6206CF88900668A2C /* ListMap.cpp */,
-				B367F4B8206CF88900668A2C /* ListMap.hpp */,
+				B3A9E1DE20E1B33D00427E03 /* LinkedList.cpp */,
+				B3A9E1DF20E1B33D00427E03 /* FastQueue.cpp */,
+				B3A9E1E020E1B33D00427E03 /* ListMap.cpp */,
+				B3A9E1E120E1B33D00427E03 /* FastQueue.hpp */,
+				B3A9E1E220E1B33D00427E03 /* ListMap.hpp */,
+				B3A9E1E320E1B33D00427E03 /* LinkedList.hpp */,
 			);
 			path = collection;
 			sourceTree = "<group>";
 		};
-		B367F4BA206CF88900668A2C /* async */ = {
+		B3A9E1E420E1B33D00427E03 /* async */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4BC206CF88900668A2C /* Coroutine.cpp */,
-				B367F4BE206CF88900668A2C /* Coroutine.hpp */,
-				B367F4BB206CF88900668A2C /* Processor.cpp */,
-				B367F4BD206CF88900668A2C /* Processor.hpp */,
+				B3A9E1E520E1B33D00427E03 /* Processor.cpp */,
+				B3A9E1E620E1B33D00427E03 /* Coroutine.cpp */,
+				B3A9E1E720E1B33D00427E03 /* Processor.hpp */,
+				B3A9E1E820E1B33D00427E03 /* Coroutine.hpp */,
 			);
 			path = async;
 			sourceTree = "<group>";
 		};
-		B367F4BF206CF88900668A2C /* utils */ = {
+		B3A9E1E920E1B33D00427E03 /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4C0206CF88900668A2C /* ConversionUtils.hpp */,
-				B367F4C1206CF88900668A2C /* ConversionUtils.cpp */,
+				B3A9E1EA20E1B33D00427E03 /* ConversionUtils.hpp */,
+				B3A9E1EB20E1B33D00427E03 /* ConversionUtils.cpp */,
 			);
 			path = utils;
 			sourceTree = "<group>";
 		};
-		B367F4C2206CF88900668A2C /* parser */ = {
+		B3A9E1EC20E1B33D00427E03 /* parser */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4C3206CF88900668A2C /* ParsingCaret.cpp */,
-				B367F4C4206CF88900668A2C /* ParsingCaret.hpp */,
+				B3A9E1ED20E1B33D00427E03 /* ParsingCaret.cpp */,
+				B3A9E1EE20E1B33D00427E03 /* ParsingCaret.hpp */,
 			);
 			path = parser;
 			sourceTree = "<group>";
 		};
-		B367F4C5206CF88900668A2C /* concurrency */ = {
+		B3A9E1EF20E1B33D00427E03 /* concurrency */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4C6206CF88900668A2C /* Runnable.cpp */,
-				B367F4C7206CF88900668A2C /* SpinLock.cpp */,
-				B367F4C8206CF88900668A2C /* Thread.cpp */,
-				B367F4C9206CF88900668A2C /* Runnable.hpp */,
-				B367F4CA206CF88900668A2C /* SpinLock.hpp */,
-				B367F4CB206CF88900668A2C /* Thread.hpp */,
+				B3A9E1F020E1B33D00427E03 /* Runnable.cpp */,
+				B3A9E1F120E1B33D00427E03 /* SpinLock.cpp */,
+				B3A9E1F220E1B33D00427E03 /* Thread.cpp */,
+				B3A9E1F320E1B33D00427E03 /* Runnable.hpp */,
+				B3A9E1F420E1B33D00427E03 /* SpinLock.hpp */,
+				B3A9E1F520E1B33D00427E03 /* Thread.hpp */,
 			);
 			path = concurrency;
 			sourceTree = "<group>";
 		};
-		B367F4CC206CF88900668A2C /* macro */ = {
+		B3A9E1F620E1B33D00427E03 /* macro */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4CD206CF88900668A2C /* codegen.hpp */,
-				B367F4CE206CF88900668A2C /* component.hpp */,
-				B367F4CF206CF88900668A2C /* basic.hpp */,
+				B3A9E1F720E1B33D00427E03 /* codegen.hpp */,
+				B3A9E1F820E1B33D00427E03 /* component.hpp */,
+				B3A9E1F920E1B33D00427E03 /* basic.hpp */,
 			);
 			path = macro;
 			sourceTree = "<group>";
 		};
-		B367F4D0206CF88900668A2C /* os */ = {
+		B3A9E1FA20E1B33D00427E03 /* os */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4D1206CF88900668A2C /* io */,
+				B3A9E1FB20E1B33D00427E03 /* io */,
 			);
 			path = os;
 			sourceTree = "<group>";
 		};
-		B367F4D1206CF88900668A2C /* io */ = {
+		B3A9E1FB20E1B33D00427E03 /* io */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4D2206CF88900668A2C /* Library.hpp */,
-				B367F4D3206CF88900668A2C /* Library.cpp */,
+				B3A9E1FC20E1B33D00427E03 /* Library.hpp */,
+				B3A9E1FD20E1B33D00427E03 /* Library.cpp */,
 			);
 			path = io;
 			sourceTree = "<group>";
 		};
-		B367F4D4206CF88900668A2C /* data */ = {
+		B3A9E1FF20E1B33D00427E03 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4ED206CF88900668A2C /* buffer */,
-				B367F4D5206CF88900668A2C /* mapping */,
-				B367F4E4206CF88900668A2C /* stream */,
+				B3A9E20020E1B33D00427E03 /* mapping */,
+				B3A9E20F20E1B33D00427E03 /* stream */,
+				B3A9E21820E1B33D00427E03 /* buffer */,
 			);
 			path = data;
 			sourceTree = "<group>";
 		};
-		B367F4D5206CF88900668A2C /* mapping */ = {
+		B3A9E20020E1B33D00427E03 /* mapping */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4E3206CF88900668A2C /* ObjectMapper.cpp */,
-				B367F4D6206CF88900668A2C /* ObjectMapper.hpp */,
-				B367F4D7206CF88900668A2C /* type */,
+				B3A9E20120E1B33D00427E03 /* ObjectMapper.hpp */,
+				B3A9E20220E1B33D00427E03 /* type */,
+				B3A9E20E20E1B33D00427E03 /* ObjectMapper.cpp */,
 			);
 			path = mapping;
 			sourceTree = "<group>";
 		};
-		B367F4D7206CF88900668A2C /* type */ = {
+		B3A9E20220E1B33D00427E03 /* type */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4E0206CF88900668A2C /* List.cpp */,
-				B367F4DB206CF88900668A2C /* List.hpp */,
-				B367F4DD206CF88900668A2C /* macro */,
-				B367F4DA206CF88900668A2C /* Object.cpp */,
-				B367F4DC206CF88900668A2C /* Object.hpp */,
-				B367F4E1206CF88900668A2C /* Primitive.cpp */,
-				B367F4D8206CF88900668A2C /* Primitive.hpp */,
-				B367F4E2206CF88900668A2C /* Type.cpp */,
-				B367F4D9206CF88900668A2C /* Type.hpp */,
+				B3A9E20320E1B33D00427E03 /* Primitive.hpp */,
+				B3A9E20420E1B33D00427E03 /* Type.hpp */,
+				B3A9E20520E1B33D00427E03 /* Object.cpp */,
+				B3A9E20620E1B33D00427E03 /* List.hpp */,
+				B3A9E20720E1B33D00427E03 /* Object.hpp */,
+				B3A9E20820E1B33D00427E03 /* macro */,
+				B3A9E20B20E1B33D00427E03 /* List.cpp */,
+				B3A9E20C20E1B33D00427E03 /* Primitive.cpp */,
+				B3A9E20D20E1B33D00427E03 /* Type.cpp */,
 			);
 			path = type;
 			sourceTree = "<group>";
 		};
-		B367F4DD206CF88900668A2C /* macro */ = {
+		B3A9E20820E1B33D00427E03 /* macro */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4DE206CF88900668A2C /* zzz_macro_define_DTO_.hpp */,
-				B367F4DF206CF88900668A2C /* zzz_macro_undef_DTO_.hpp */,
+				B3A9E20920E1B33D00427E03 /* zzz_macro_define_DTO_.hpp */,
+				B3A9E20A20E1B33D00427E03 /* zzz_macro_undef_DTO_.hpp */,
 			);
 			path = macro;
 			sourceTree = "<group>";
 		};
-		B367F4E4206CF88900668A2C /* stream */ = {
+		B3A9E20F20E1B33D00427E03 /* stream */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4EA206CF88900668A2C /* ChunkedBuffer.cpp */,
-				B367F4E5206CF88900668A2C /* ChunkedBuffer.hpp */,
-				B367F4E6206CF88900668A2C /* Delegate.cpp */,
-				B367F4EB206CF88900668A2C /* Delegate.hpp */,
-				B367F4E9206CF88900668A2C /* Stream.cpp */,
-				B367F4E8206CF88900668A2C /* Stream.hpp */,
-				B367F4EC206CF88900668A2C /* StreamBufferedProxy.cpp */,
-				B367F4E7206CF88900668A2C /* StreamBufferedProxy.hpp */,
+				B3A9E21020E1B33D00427E03 /* ChunkedBuffer.hpp */,
+				B3A9E21120E1B33D00427E03 /* Delegate.cpp */,
+				B3A9E21220E1B33D00427E03 /* StreamBufferedProxy.hpp */,
+				B3A9E21320E1B33D00427E03 /* Stream.hpp */,
+				B3A9E21420E1B33D00427E03 /* Stream.cpp */,
+				B3A9E21520E1B33D00427E03 /* ChunkedBuffer.cpp */,
+				B3A9E21620E1B33D00427E03 /* Delegate.hpp */,
+				B3A9E21720E1B33D00427E03 /* StreamBufferedProxy.cpp */,
 			);
 			path = stream;
 			sourceTree = "<group>";
 		};
-		B367F4ED206CF88900668A2C /* buffer */ = {
+		B3A9E21820E1B33D00427E03 /* buffer */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4EE206CF88900668A2C /* IOBuffer.cpp */,
-				B367F4EF206CF88900668A2C /* IOBuffer.hpp */,
-				B3BCA4B320A0FAAF001A8E66 /* FIFOBuffer.cpp */,
-				B3BCA4B420A0FAAF001A8E66 /* FIFOBuffer.hpp */,
+				B3A9E21920E1B33D00427E03 /* IOBuffer.cpp */,
+				B3A9E21A20E1B33D00427E03 /* FIFOBuffer.cpp */,
+				B3A9E21B20E1B33D00427E03 /* FIFOBuffer.hpp */,
+				B3A9E21C20E1B33D00427E03 /* IOBuffer.hpp */,
 			);
 			path = buffer;
 			sourceTree = "<group>";
 		};
-		B367F4F0206CF88900668A2C /* base */ = {
+		B3A9E21D20E1B33D00427E03 /* base */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4F1206CF88900668A2C /* Controllable.cpp */,
-				B367F4FD206CF88900668A2C /* Controllable.hpp */,
-				B367F4F3206CF88900668A2C /* Environment.cpp */,
-				B367F4FF206CF88900668A2C /* Environment.hpp */,
-				B367F4F4206CF88900668A2C /* memory */,
-				B367F4F2206CF88900668A2C /* PtrWrapper.cpp */,
-				B367F4FE206CF88900668A2C /* PtrWrapper.hpp */,
-				B367F4FB206CF88900668A2C /* String.cpp */,
-				B367F4FC206CF88900668A2C /* String.hpp */,
+				B3A9E21E20E1B33D00427E03 /* Controllable.cpp */,
+				B3A9E21F20E1B33D00427E03 /* PtrWrapper.cpp */,
+				B3A9E22020E1B33D00427E03 /* StrBuffer.hpp */,
+				B3A9E22120E1B33D00427E03 /* Environment.cpp */,
+				B3A9E22220E1B33D00427E03 /* memory */,
+				B3A9E22920E1B33D00427E03 /* Controllable.hpp */,
+				B3A9E22A20E1B33D00427E03 /* PtrWrapper.hpp */,
+				B3A9E22B20E1B33D00427E03 /* StrBuffer.cpp */,
+				B3A9E22C20E1B33D00427E03 /* Environment.hpp */,
 			);
 			path = base;
 			sourceTree = "<group>";
 		};
-		B367F4F4206CF88900668A2C /* memory */ = {
+		B3A9E22220E1B33D00427E03 /* memory */ = {
 			isa = PBXGroup;
 			children = (
-				B367F4F5206CF88900668A2C /* MemoryPool.hpp */,
-				B367F4F6206CF88900668A2C /* ObjectPool.hpp */,
-				B367F4F7206CF88900668A2C /* Allocator.hpp */,
-				B367F4F8206CF88900668A2C /* Allocator.cpp */,
-				B367F4F9206CF88900668A2C /* MemoryPool.cpp */,
-				B367F4FA206CF88900668A2C /* ObjectPool.cpp */,
+				B3A9E22320E1B33D00427E03 /* MemoryPool.hpp */,
+				B3A9E22420E1B33D00427E03 /* ObjectPool.hpp */,
+				B3A9E22520E1B33D00427E03 /* Allocator.hpp */,
+				B3A9E22620E1B33D00427E03 /* Allocator.cpp */,
+				B3A9E22720E1B33D00427E03 /* MemoryPool.cpp */,
+				B3A9E22820E1B33D00427E03 /* ObjectPool.cpp */,
 			);
 			path = memory;
 			sourceTree = "<group>";
 		};
-		B367F501206CF88900668A2C /* test */ = {
+		B3A9E22E20E1B33D00427E03 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				B367F502206CF88900668A2C /* core */,
-				B367F50E206CF88900668A2C /* UnitTest.hpp */,
-				B367F50F206CF88900668A2C /* web */,
-				B367F510206CF88900668A2C /* network */,
-				B367F511206CF88900668A2C /* encoding */,
-				B367F514206CF88900668A2C /* parser */,
-				B367F51D206CF88900668A2C /* Checker.hpp */,
-				B367F51E206CF88900668A2C /* Checker.cpp */,
-				B367F51F206CF88900668A2C /* UnitTest.cpp */,
+				B3A9E22F20E1B33D00427E03 /* core */,
+				B3A9E23B20E1B33D00427E03 /* UnitTest.hpp */,
+				B3A9E23C20E1B33D00427E03 /* web */,
+				B3A9E23D20E1B33D00427E03 /* network */,
+				B3A9E23E20E1B33D00427E03 /* encoding */,
+				B3A9E24120E1B33D00427E03 /* parser */,
+				B3A9E24A20E1B33D00427E03 /* Checker.hpp */,
+				B3A9E24B20E1B33D00427E03 /* Checker.cpp */,
+				B3A9E24C20E1B33D00427E03 /* UnitTest.cpp */,
 			);
 			path = test;
 			sourceTree = "<group>";
 		};
-		B367F502206CF88900668A2C /* core */ = {
+		B3A9E22F20E1B33D00427E03 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				B367F503206CF88900668A2C /* base */,
+				B3A9E23020E1B33D00427E03 /* base */,
 			);
 			path = core;
 			sourceTree = "<group>";
 		};
-		B367F503206CF88900668A2C /* base */ = {
+		B3A9E23020E1B33D00427E03 /* base */ = {
 			isa = PBXGroup;
 			children = (
-				B367F504206CF88900668A2C /* RegRuleTest.hpp */,
-				B367F505206CF88900668A2C /* collection */,
-				B367F508206CF88900668A2C /* memory */,
-				B367F50D206CF88900668A2C /* RegRuleTest.cpp */,
+				B3A9E23120E1B33D00427E03 /* RegRuleTest.hpp */,
+				B3A9E23220E1B33D00427E03 /* collection */,
+				B3A9E23520E1B33D00427E03 /* memory */,
+				B3A9E23A20E1B33D00427E03 /* RegRuleTest.cpp */,
 			);
 			path = base;
 			sourceTree = "<group>";
 		};
-		B367F505206CF88900668A2C /* collection */ = {
+		B3A9E23220E1B33D00427E03 /* collection */ = {
 			isa = PBXGroup;
 			children = (
-				B367F506206CF88900668A2C /* LinkedListTest.cpp */,
-				B367F507206CF88900668A2C /* LinkedListTest.hpp */,
+				B3A9E23320E1B33D00427E03 /* LinkedListTest.cpp */,
+				B3A9E23420E1B33D00427E03 /* LinkedListTest.hpp */,
 			);
 			path = collection;
 			sourceTree = "<group>";
 		};
-		B367F508206CF88900668A2C /* memory */ = {
+		B3A9E23520E1B33D00427E03 /* memory */ = {
 			isa = PBXGroup;
 			children = (
-				B367F509206CF88900668A2C /* MemoryPoolTest.hpp */,
-				B367F50A206CF88900668A2C /* PerfTest.hpp */,
-				B367F50B206CF88900668A2C /* PerfTest.cpp */,
-				B367F50C206CF88900668A2C /* MemoryPoolTest.cpp */,
+				B3A9E23620E1B33D00427E03 /* MemoryPoolTest.hpp */,
+				B3A9E23720E1B33D00427E03 /* PerfTest.hpp */,
+				B3A9E23820E1B33D00427E03 /* PerfTest.cpp */,
+				B3A9E23920E1B33D00427E03 /* MemoryPoolTest.cpp */,
 			);
 			path = memory;
 			sourceTree = "<group>";
 		};
-		B367F50F206CF88900668A2C /* web */ = {
+		B3A9E23C20E1B33D00427E03 /* web */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = web;
 			sourceTree = "<group>";
 		};
-		B367F510206CF88900668A2C /* network */ = {
+		B3A9E23D20E1B33D00427E03 /* network */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = network;
 			sourceTree = "<group>";
 		};
-		B367F511206CF88900668A2C /* encoding */ = {
+		B3A9E23E20E1B33D00427E03 /* encoding */ = {
 			isa = PBXGroup;
 			children = (
-				B367F512206CF88900668A2C /* UnicodeTest.cpp */,
-				B367F513206CF88900668A2C /* UnicodeTest.hpp */,
+				B3A9E23F20E1B33D00427E03 /* UnicodeTest.cpp */,
+				B3A9E24020E1B33D00427E03 /* UnicodeTest.hpp */,
 			);
 			path = encoding;
 			sourceTree = "<group>";
 		};
-		B367F514206CF88900668A2C /* parser */ = {
+		B3A9E24120E1B33D00427E03 /* parser */ = {
 			isa = PBXGroup;
 			children = (
-				B367F515206CF88900668A2C /* json */,
+				B3A9E24220E1B33D00427E03 /* json */,
 			);
 			path = parser;
 			sourceTree = "<group>";
 		};
-		B367F515206CF88900668A2C /* json */ = {
+		B3A9E24220E1B33D00427E03 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				B367F516206CF88900668A2C /* mapping */,
+				B3A9E24320E1B33D00427E03 /* mapping */,
 			);
 			path = json;
 			sourceTree = "<group>";
 		};
-		B367F516206CF88900668A2C /* mapping */ = {
+		B3A9E24320E1B33D00427E03 /* mapping */ = {
 			isa = PBXGroup;
 			children = (
-				B367F517206CF88900668A2C /* DTOMapperPerfTest.cpp */,
-				B367F518206CF88900668A2C /* DeserializerTest.cpp */,
-				B367F519206CF88900668A2C /* DTOMapperTest.hpp */,
-				B367F51A206CF88900668A2C /* DTOMapperTest.cpp */,
-				B367F51B206CF88900668A2C /* DTOMapperPerfTest.hpp */,
-				B367F51C206CF88900668A2C /* DeserializerTest.hpp */,
+				B3A9E24420E1B33D00427E03 /* DTOMapperPerfTest.cpp */,
+				B3A9E24520E1B33D00427E03 /* DeserializerTest.cpp */,
+				B3A9E24620E1B33D00427E03 /* DTOMapperTest.hpp */,
+				B3A9E24720E1B33D00427E03 /* DTOMapperTest.cpp */,
+				B3A9E24820E1B33D00427E03 /* DTOMapperPerfTest.hpp */,
+				B3A9E24920E1B33D00427E03 /* DeserializerTest.hpp */,
 			);
 			path = mapping;
 			sourceTree = "<group>";
 		};
-		B367F520206CF88900668A2C /* web */ = {
+		B3A9E24D20E1B33D00427E03 /* web */ = {
 			isa = PBXGroup;
 			children = (
-				B367F559206CF88900668A2C /* client */,
-				B367F537206CF88900668A2C /* protocol */,
-				B367F521206CF88900668A2C /* server */,
-				B367F551206CF88900668A2C /* url */,
+				B3A9E24E20E1B33D00427E03 /* server */,
+				B3A9E26620E1B33D00427E03 /* protocol */,
+				B3A9E28020E1B33D00427E03 /* url */,
+				B3A9E28A20E1B33D00427E03 /* client */,
 			);
 			path = web;
 			sourceTree = "<group>";
 		};
-		B367F521206CF88900668A2C /* server */ = {
+		B3A9E24E20E1B33D00427E03 /* server */ = {
 			isa = PBXGroup;
 			children = (
-				B367F52C206CF88900668A2C /* api */,
-				B367F525206CF88900668A2C /* AsyncHttpConnectionHandler.cpp */,
-				B367F534206CF88900668A2C /* AsyncHttpConnectionHandler.hpp */,
-				B367F522206CF88900668A2C /* handler */,
-				B367F52B206CF88900668A2C /* HttpConnectionHandler.cpp */,
-				B367F529206CF88900668A2C /* HttpConnectionHandler.hpp */,
-				B367F527206CF88900668A2C /* HttpError.cpp */,
-				B367F536206CF88900668A2C /* HttpError.hpp */,
-				B367F52A206CF88900668A2C /* HttpProcessor.cpp */,
-				B367F528206CF88900668A2C /* HttpProcessor.hpp */,
-				B367F535206CF88900668A2C /* HttpRouter.cpp */,
-				B367F526206CF88900668A2C /* HttpRouter.hpp */,
+				B3A9E24F20E1B33D00427E03 /* handler */,
+				B3A9E25420E1B33D00427E03 /* AsyncHttpConnectionHandler.cpp */,
+				B3A9E25520E1B33D00427E03 /* HttpRouter.hpp */,
+				B3A9E25620E1B33D00427E03 /* HttpError.cpp */,
+				B3A9E25720E1B33D00427E03 /* HttpProcessor.hpp */,
+				B3A9E25820E1B33D00427E03 /* HttpConnectionHandler.hpp */,
+				B3A9E25920E1B33D00427E03 /* HttpProcessor.cpp */,
+				B3A9E25A20E1B33D00427E03 /* HttpConnectionHandler.cpp */,
+				B3A9E25B20E1B33D00427E03 /* api */,
+				B3A9E26320E1B33D00427E03 /* AsyncHttpConnectionHandler.hpp */,
+				B3A9E26420E1B33D00427E03 /* HttpRouter.cpp */,
+				B3A9E26520E1B33D00427E03 /* HttpError.hpp */,
 			);
 			path = server;
 			sourceTree = "<group>";
 		};
-		B367F522206CF88900668A2C /* handler */ = {
+		B3A9E24F20E1B33D00427E03 /* handler */ = {
 			isa = PBXGroup;
 			children = (
-				B367F523206CF88900668A2C /* ErrorHandler.cpp */,
-				B367F524206CF88900668A2C /* ErrorHandler.hpp */,
+				B3A9E25020E1B33D00427E03 /* Interceptor.hpp */,
+				B3A9E25120E1B33D00427E03 /* ErrorHandler.cpp */,
+				B3A9E25220E1B33D00427E03 /* Interceptor.cpp */,
+				B3A9E25320E1B33D00427E03 /* ErrorHandler.hpp */,
 			);
 			path = handler;
 			sourceTree = "<group>";
 		};
-		B367F52C206CF88900668A2C /* api */ = {
+		B3A9E25B20E1B33D00427E03 /* api */ = {
 			isa = PBXGroup;
 			children = (
-				B367F52D206CF88900668A2C /* ApiController.hpp */,
-				B367F52E206CF88900668A2C /* Endpoint.cpp */,
-				B367F52F206CF88900668A2C /* macro */,
-				B367F532206CF88900668A2C /* Endpoint.hpp */,
-				B367F533206CF88900668A2C /* ApiController.cpp */,
+				B3A9E25C20E1B33D00427E03 /* ApiController.hpp */,
+				B3A9E25D20E1B33D00427E03 /* Endpoint.cpp */,
+				B3A9E25E20E1B33D00427E03 /* macro */,
+				B3A9E26120E1B33D00427E03 /* Endpoint.hpp */,
+				B3A9E26220E1B33D00427E03 /* ApiController.cpp */,
 			);
 			path = api;
 			sourceTree = "<group>";
 		};
-		B367F52F206CF88900668A2C /* macro */ = {
+		B3A9E25E20E1B33D00427E03 /* macro */ = {
 			isa = PBXGroup;
 			children = (
-				B367F530206CF88900668A2C /* zzz_macro_define_ApiController_.hpp */,
-				B367F531206CF88900668A2C /* zzz_macro_undef_ApiController_.hpp */,
+				B3A9E25F20E1B33D00427E03 /* zzz_macro_define_ApiController_.hpp */,
+				B3A9E26020E1B33D00427E03 /* zzz_macro_undef_ApiController_.hpp */,
 			);
 			path = macro;
 			sourceTree = "<group>";
 		};
-		B367F537206CF88900668A2C /* protocol */ = {
+		B3A9E26620E1B33D00427E03 /* protocol */ = {
 			isa = PBXGroup;
 			children = (
-				B367F538206CF88900668A2C /* http */,
+				B3A9E26720E1B33D00427E03 /* http */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
 		};
-		B367F538206CF88900668A2C /* http */ = {
+		B3A9E26720E1B33D00427E03 /* http */ = {
 			isa = PBXGroup;
 			children = (
-				B367F549206CF88900668A2C /* Http.cpp */,
-				B367F548206CF88900668A2C /* Http.hpp */,
-				B367F54A206CF88900668A2C /* incoming */,
-				B367F539206CF88900668A2C /* outgoing */,
+				B3A9E26820E1B33D00427E03 /* outgoing */,
+				B3A9E27720E1B33D00427E03 /* Http.hpp */,
+				B3A9E27820E1B33D00427E03 /* Http.cpp */,
+				B3A9E27920E1B33D00427E03 /* incoming */,
 			);
 			path = http;
 			sourceTree = "<group>";
 		};
-		B367F539206CF88900668A2C /* outgoing */ = {
+		B3A9E26820E1B33D00427E03 /* outgoing */ = {
 			isa = PBXGroup;
 			children = (
-				B367F541206CF88900668A2C /* Body.cpp */,
-				B367F53C206CF88900668A2C /* Body.hpp */,
-				B367F545206CF88900668A2C /* BufferBody.cpp */,
-				B367F540206CF88900668A2C /* BufferBody.hpp */,
-				B367F53B206CF88900668A2C /* ChunkedBufferBody.cpp */,
-				B367F547206CF88900668A2C /* ChunkedBufferBody.hpp */,
-				B367F53F206CF88900668A2C /* DtoBody.cpp */,
-				B367F543206CF88900668A2C /* DtoBody.hpp */,
-				B367F53D206CF88900668A2C /* Request.cpp */,
-				B367F542206CF88900668A2C /* Request.hpp */,
-				B367F544206CF88900668A2C /* Response.cpp */,
-				B367F53E206CF88900668A2C /* Response.hpp */,
-				B367F546206CF88900668A2C /* ResponseFactory.cpp */,
-				B367F53A206CF88900668A2C /* ResponseFactory.hpp */,
+				B3A9E26920E1B33D00427E03 /* ResponseFactory.hpp */,
+				B3A9E26A20E1B33D00427E03 /* ChunkedBufferBody.cpp */,
+				B3A9E26B20E1B33D00427E03 /* Body.hpp */,
+				B3A9E26C20E1B33D00427E03 /* Request.cpp */,
+				B3A9E26D20E1B33D00427E03 /* Response.hpp */,
+				B3A9E26E20E1B33D00427E03 /* DtoBody.cpp */,
+				B3A9E26F20E1B33D00427E03 /* BufferBody.hpp */,
+				B3A9E27020E1B33D00427E03 /* Body.cpp */,
+				B3A9E27120E1B33D00427E03 /* Request.hpp */,
+				B3A9E27220E1B33D00427E03 /* DtoBody.hpp */,
+				B3A9E27320E1B33D00427E03 /* Response.cpp */,
+				B3A9E27420E1B33D00427E03 /* BufferBody.cpp */,
+				B3A9E27520E1B33D00427E03 /* ResponseFactory.cpp */,
+				B3A9E27620E1B33D00427E03 /* ChunkedBufferBody.hpp */,
 			);
 			path = outgoing;
 			sourceTree = "<group>";
 		};
-		B367F54A206CF88900668A2C /* incoming */ = {
+		B3A9E27920E1B33D00427E03 /* incoming */ = {
 			isa = PBXGroup;
 			children = (
-				B367F54D206CF88900668A2C /* BodyDecoder.cpp */,
-				B367F550206CF88900668A2C /* BodyDecoder.hpp */,
-				B367F54B206CF88900668A2C /* Request.cpp */,
-				B367F54E206CF88900668A2C /* Request.hpp */,
-				B367F54F206CF88900668A2C /* Response.cpp */,
-				B367F54C206CF88900668A2C /* Response.hpp */,
+				B3A9E27A20E1B33D00427E03 /* Request.cpp */,
+				B3A9E27B20E1B33D00427E03 /* Response.hpp */,
+				B3A9E27C20E1B33D00427E03 /* BodyDecoder.cpp */,
+				B3A9E27D20E1B33D00427E03 /* Request.hpp */,
+				B3A9E27E20E1B33D00427E03 /* Response.cpp */,
+				B3A9E27F20E1B33D00427E03 /* BodyDecoder.hpp */,
 			);
 			path = incoming;
 			sourceTree = "<group>";
 		};
-		B367F551206CF88900668A2C /* url */ = {
+		B3A9E28020E1B33D00427E03 /* url */ = {
 			isa = PBXGroup;
 			children = (
-				B367F552206CF88900668A2C /* mapping */,
+				B3A9E28120E1B33D00427E03 /* mapping */,
+				B3A9E28820E1B33D00427E03 /* Parser.hpp */,
+				B3A9E28920E1B33D00427E03 /* Parser.cpp */,
 			);
 			path = url;
 			sourceTree = "<group>";
 		};
-		B367F552206CF88900668A2C /* mapping */ = {
+		B3A9E28120E1B33D00427E03 /* mapping */ = {
 			isa = PBXGroup;
 			children = (
-				B367F553206CF88900668A2C /* Router.cpp */,
-				B367F554206CF88900668A2C /* Subscriber.cpp */,
-				B367F555206CF88900668A2C /* Pattern.hpp */,
-				B367F556206CF88900668A2C /* Router.hpp */,
-				B367F557206CF88900668A2C /* Subscriber.hpp */,
-				B367F558206CF88900668A2C /* Pattern.cpp */,
+				B3A9E28220E1B33D00427E03 /* Router.cpp */,
+				B3A9E28320E1B33D00427E03 /* Subscriber.cpp */,
+				B3A9E28420E1B33D00427E03 /* Pattern.hpp */,
+				B3A9E28520E1B33D00427E03 /* Router.hpp */,
+				B3A9E28620E1B33D00427E03 /* Subscriber.hpp */,
+				B3A9E28720E1B33D00427E03 /* Pattern.cpp */,
 			);
 			path = mapping;
 			sourceTree = "<group>";
 		};
-		B367F559206CF88900668A2C /* client */ = {
+		B3A9E28A20E1B33D00427E03 /* client */ = {
 			isa = PBXGroup;
 			children = (
-				B367F55C206CF88900668A2C /* ApiClient.cpp */,
-				B367F560206CF88900668A2C /* ApiClient.hpp */,
-				B367F562206CF88900668A2C /* HttpRequestExecutor.cpp */,
-				B367F55B206CF88900668A2C /* HttpRequestExecutor.hpp */,
-				B367F55D206CF88900668A2C /* macro */,
-				B367F55A206CF88900668A2C /* RequestExecutor.cpp */,
-				B367F561206CF88900668A2C /* RequestExecutor.hpp */,
+				B3A9E28B20E1B33D00427E03 /* RequestExecutor.cpp */,
+				B3A9E28C20E1B33D00427E03 /* HttpRequestExecutor.hpp */,
+				B3A9E28D20E1B33D00427E03 /* ApiClient.cpp */,
+				B3A9E28E20E1B33D00427E03 /* macro */,
+				B3A9E29120E1B33D00427E03 /* ApiClient.hpp */,
+				B3A9E29220E1B33D00427E03 /* RequestExecutor.hpp */,
+				B3A9E29320E1B33D00427E03 /* HttpRequestExecutor.cpp */,
 			);
 			path = client;
 			sourceTree = "<group>";
 		};
-		B367F55D206CF88900668A2C /* macro */ = {
+		B3A9E28E20E1B33D00427E03 /* macro */ = {
 			isa = PBXGroup;
 			children = (
-				B367F55E206CF88900668A2C /* zzz_macro_define_ApiClient_.hpp */,
-				B367F55F206CF88900668A2C /* zzz_macro_undef_ApiClient_.hpp */,
+				B3A9E28F20E1B33D00427E03 /* zzz_macro_define_ApiClient_.hpp */,
+				B3A9E29020E1B33D00427E03 /* zzz_macro_undef_ApiClient_.hpp */,
 			);
 			path = macro;
 			sourceTree = "<group>";
 		};
-		B367F563206CF88900668A2C /* network */ = {
+		B3A9E29420E1B33D00427E03 /* network */ = {
 			isa = PBXGroup;
 			children = (
-				B3BCA4B620A26B8F001A8E66 /* virtual_ */,
-				B367F56F206CF88900668A2C /* client */,
-				B367F56E206CF88900668A2C /* Connection.cpp */,
-				B367F564206CF88900668A2C /* Connection.hpp */,
-				B367F56D206CF88900668A2C /* ConnectionProvider.cpp */,
-				B367F56C206CF88900668A2C /* ConnectionProvider.hpp */,
-				B367F565206CF88900668A2C /* server */,
+				B3A9E29520E1B33D00427E03 /* Connection.hpp */,
+				B3A9E29620E1B33D00427E03 /* virtual_ */,
+				B3A9E29B20E1B33D00427E03 /* server */,
+				B3A9E2A220E1B33D00427E03 /* ConnectionProvider.hpp */,
+				B3A9E2A320E1B33D00427E03 /* ConnectionProvider.cpp */,
+				B3A9E2A420E1B33D00427E03 /* Connection.cpp */,
+				B3A9E2A520E1B33D00427E03 /* client */,
 			);
 			path = network;
 			sourceTree = "<group>";
 		};
-		B367F565206CF88900668A2C /* server */ = {
+		B3A9E29620E1B33D00427E03 /* virtual_ */ = {
 			isa = PBXGroup;
 			children = (
-				B367F56A206CF88900668A2C /* ConnectionHandler.cpp */,
-				B367F568206CF88900668A2C /* ConnectionHandler.hpp */,
-				B367F56B206CF88900668A2C /* Server.cpp */,
-				B367F566206CF88900668A2C /* Server.hpp */,
-				B367F569206CF88900668A2C /* SimpleTCPConnectionProvider.cpp */,
-				B367F567206CF88900668A2C /* SimpleTCPConnectionProvider.hpp */,
+				B3A9E29720E1B33D00427E03 /* Pipe.cpp */,
+				B3A9E29820E1B33D00427E03 /* Socket.cpp */,
+				B3A9E29920E1B33D00427E03 /* Socket.hpp */,
+				B3A9E29A20E1B33D00427E03 /* Pipe.hpp */,
+			);
+			path = virtual_;
+			sourceTree = "<group>";
+		};
+		B3A9E29B20E1B33D00427E03 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				B3A9E29C20E1B33D00427E03 /* Server.hpp */,
+				B3A9E29D20E1B33D00427E03 /* SimpleTCPConnectionProvider.hpp */,
+				B3A9E29E20E1B33D00427E03 /* ConnectionHandler.hpp */,
+				B3A9E29F20E1B33D00427E03 /* SimpleTCPConnectionProvider.cpp */,
+				B3A9E2A020E1B33D00427E03 /* ConnectionHandler.cpp */,
+				B3A9E2A120E1B33D00427E03 /* Server.cpp */,
 			);
 			path = server;
 			sourceTree = "<group>";
 		};
-		B367F56F206CF88900668A2C /* client */ = {
+		B3A9E2A520E1B33D00427E03 /* client */ = {
 			isa = PBXGroup;
 			children = (
-				B367F570206CF88900668A2C /* SimpleTCPConnectionProvider.hpp */,
-				B367F571206CF88900668A2C /* SimpleTCPConnectionProvider.cpp */,
+				B3A9E2A620E1B33D00427E03 /* SimpleTCPConnectionProvider.hpp */,
+				B3A9E2A720E1B33D00427E03 /* SimpleTCPConnectionProvider.cpp */,
 			);
 			path = client;
 			sourceTree = "<group>";
 		};
-		B367F572206CF88900668A2C /* encoding */ = {
+		B3A9E2A820E1B33D00427E03 /* encoding */ = {
 			isa = PBXGroup;
 			children = (
-				B367F573206CF88900668A2C /* Unicode.hpp */,
-				B367F574206CF88900668A2C /* Hex.hpp */,
-				B367F575206CF88900668A2C /* Hex.cpp */,
-				B367F576206CF88900668A2C /* Unicode.cpp */,
+				B3A9E2A920E1B33D00427E03 /* Unicode.hpp */,
+				B3A9E2AA20E1B33D00427E03 /* Hex.hpp */,
+				B3A9E2AB20E1B33D00427E03 /* Hex.cpp */,
+				B3A9E2AC20E1B33D00427E03 /* Unicode.cpp */,
 			);
 			path = encoding;
 			sourceTree = "<group>";
 		};
-		B367F577206CF88900668A2C /* parser */ = {
+		B3A9E2AD20E1B33D00427E03 /* parser */ = {
 			isa = PBXGroup;
 			children = (
-				B367F578206CF88900668A2C /* json */,
+				B3A9E2AE20E1B33D00427E03 /* json */,
 			);
 			path = parser;
 			sourceTree = "<group>";
 		};
-		B367F578206CF88900668A2C /* json */ = {
+		B3A9E2AE20E1B33D00427E03 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				B367F579206CF88900668A2C /* mapping */,
-				B367F580206CF88900668A2C /* Utils.cpp */,
-				B367F581206CF88900668A2C /* Utils.hpp */,
+				B3A9E2AF20E1B33D00427E03 /* mapping */,
+				B3A9E2B620E1B33D00427E03 /* Utils.cpp */,
+				B3A9E2B720E1B33D00427E03 /* Utils.hpp */,
 			);
 			path = json;
 			sourceTree = "<group>";
 		};
-		B367F579206CF88900668A2C /* mapping */ = {
+		B3A9E2AF20E1B33D00427E03 /* mapping */ = {
 			isa = PBXGroup;
 			children = (
-				B367F57A206CF88900668A2C /* Serializer.hpp */,
-				B367F57B206CF88900668A2C /* Deserializer.hpp */,
-				B367F57C206CF88900668A2C /* ObjectMapper.hpp */,
-				B367F57D206CF88900668A2C /* Deserializer.cpp */,
-				B367F57E206CF88900668A2C /* ObjectMapper.cpp */,
-				B367F57F206CF88900668A2C /* Serializer.cpp */,
+				B3A9E2B020E1B33D00427E03 /* Serializer.hpp */,
+				B3A9E2B120E1B33D00427E03 /* Deserializer.hpp */,
+				B3A9E2B220E1B33D00427E03 /* ObjectMapper.hpp */,
+				B3A9E2B320E1B33D00427E03 /* Deserializer.cpp */,
+				B3A9E2B420E1B33D00427E03 /* ObjectMapper.cpp */,
+				B3A9E2B520E1B33D00427E03 /* Serializer.cpp */,
 			);
 			path = mapping;
-			sourceTree = "<group>";
-		};
-		B3BCA4B620A26B8F001A8E66 /* virtual_ */ = {
-			isa = PBXGroup;
-			children = (
-				B3BCA4B820A26C0F001A8E66 /* Pipe.cpp */,
-				B3BCA4B920A26C0F001A8E66 /* Pipe.hpp */,
-				B330148820B7680A0065FD55 /* Socket.cpp */,
-				B330148920B7680A0065FD55 /* Socket.hpp */,
-			);
-			path = virtual_;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -961,85 +976,88 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B367F594206CF88900668A2C /* Delegate.cpp in Sources */,
-				B367F58E206CF88900668A2C /* Library.cpp in Sources */,
-				B367F5A2206CF88900668A2C /* MemoryPoolTest.cpp in Sources */,
-				B367F5B8206CF88900668A2C /* ResponseFactory.cpp in Sources */,
-				B367F588206CF88900668A2C /* Coroutine.cpp in Sources */,
-				B367F585206CF88900668A2C /* FastQueue.cpp in Sources */,
-				B367F59E206CF88900668A2C /* ObjectPool.cpp in Sources */,
-				B3BCA4B520A0FAAF001A8E66 /* FIFOBuffer.cpp in Sources */,
-				B367F5BF206CF88900668A2C /* Pattern.cpp in Sources */,
-				B367F5AE206CF88900668A2C /* HttpConnectionHandler.cpp in Sources */,
-				B367F597206CF88900668A2C /* StreamBufferedProxy.cpp in Sources */,
-				B367F5C7206CF88900668A2C /* Connection.cpp in Sources */,
-				B367F5A3206CF88900668A2C /* RegRuleTest.cpp in Sources */,
-				B367F58F206CF88900668A2C /* Object.cpp in Sources */,
-				B367F596206CF88900668A2C /* ChunkedBuffer.cpp in Sources */,
-				B367F5AB206CF88900668A2C /* AsyncHttpConnectionHandler.cpp in Sources */,
-				B330148A20B7680A0065FD55 /* Socket.cpp in Sources */,
-				B367F5C2206CF88900668A2C /* HttpRequestExecutor.cpp in Sources */,
-				B367F5A8206CF88900668A2C /* Checker.cpp in Sources */,
-				B367F5A5206CF88900668A2C /* DTOMapperPerfTest.cpp in Sources */,
-				B367F5C3206CF88900668A2C /* SimpleTCPConnectionProvider.cpp in Sources */,
-				B367F5A9206CF88900668A2C /* UnitTest.cpp in Sources */,
-				B367F5B1206CF88900668A2C /* HttpRouter.cpp in Sources */,
-				B367F589206CF88900668A2C /* ConversionUtils.cpp in Sources */,
-				B367F5A1206CF88900668A2C /* PerfTest.cpp in Sources */,
-				B367F5CA206CF88900668A2C /* Unicode.cpp in Sources */,
-				B367F5BE206CF88900668A2C /* Subscriber.cpp in Sources */,
-				B367F5A7206CF88900668A2C /* DTOMapperTest.cpp in Sources */,
-				B367F5C8206CF88900668A2C /* SimpleTCPConnectionProvider.cpp in Sources */,
-				B367F595206CF88900668A2C /* Stream.cpp in Sources */,
-				B367F58B206CF88900668A2C /* Runnable.cpp in Sources */,
-				B367F5CE206CF88900668A2C /* Utils.cpp in Sources */,
-				B367F598206CF88900668A2C /* IOBuffer.cpp in Sources */,
-				B367F5B6206CF88900668A2C /* Response.cpp in Sources */,
-				B367F591206CF88900668A2C /* Primitive.cpp in Sources */,
-				B367F5AD206CF88900668A2C /* HttpProcessor.cpp in Sources */,
-				B367F5AC206CF88900668A2C /* HttpError.cpp in Sources */,
-				B367F5BD206CF88900668A2C /* Router.cpp in Sources */,
-				B367F5BB206CF88900668A2C /* BodyDecoder.cpp in Sources */,
-				B367F5B7206CF88900668A2C /* BufferBody.cpp in Sources */,
-				B367F5CC206CF88900668A2C /* ObjectMapper.cpp in Sources */,
-				B367F587206CF88900668A2C /* Processor.cpp in Sources */,
-				B367F5BA206CF88900668A2C /* Request.cpp in Sources */,
-				B367F5B0206CF88900668A2C /* ApiController.cpp in Sources */,
-				B367F5C5206CF88900668A2C /* Server.cpp in Sources */,
-				B367F5B4206CF88900668A2C /* DtoBody.cpp in Sources */,
-				B367F5A6206CF88900668A2C /* DeserializerTest.cpp in Sources */,
-				B367F586206CF88900668A2C /* ListMap.cpp in Sources */,
-				B367F590206CF88900668A2C /* List.cpp in Sources */,
-				B367F5C9206CF88900668A2C /* Hex.cpp in Sources */,
-				B367F5B3206CF88900668A2C /* Request.cpp in Sources */,
-				B367F5CB206CF88900668A2C /* Deserializer.cpp in Sources */,
-				B367F593206CF88900668A2C /* ObjectMapper.cpp in Sources */,
-				B367F592206CF88900668A2C /* Type.cpp in Sources */,
-				B367F5C6206CF88900668A2C /* ConnectionProvider.cpp in Sources */,
-				B367F5BC206CF88900668A2C /* Response.cpp in Sources */,
-				B367F599206CF88900668A2C /* Controllable.cpp in Sources */,
-				B367F59B206CF88900668A2C /* Environment.cpp in Sources */,
-				B367F59A206CF88900668A2C /* PtrWrapper.cpp in Sources */,
-				B367F59F206CF88900668A2C /* String.cpp in Sources */,
-				B367F5B5206CF88900668A2C /* Body.cpp in Sources */,
-				B367F58A206CF88900668A2C /* ParsingCaret.cpp in Sources */,
-				B367F58C206CF88900668A2C /* SpinLock.cpp in Sources */,
-				B367F59C206CF88900668A2C /* Allocator.cpp in Sources */,
-				B367F5B2206CF88900668A2C /* ChunkedBufferBody.cpp in Sources */,
-				B367F5AF206CF88900668A2C /* Endpoint.cpp in Sources */,
-				B367F584206CF88900668A2C /* LinkedList.cpp in Sources */,
-				B367F5C1206CF88900668A2C /* ApiClient.cpp in Sources */,
-				B367F5B9206CF88900668A2C /* Http.cpp in Sources */,
-				B367F5A4206CF88900668A2C /* UnicodeTest.cpp in Sources */,
-				B3BCA4BA20A26C0F001A8E66 /* Pipe.cpp in Sources */,
-				B367F5AA206CF88900668A2C /* ErrorHandler.cpp in Sources */,
-				B367F5CD206CF88900668A2C /* Serializer.cpp in Sources */,
+				B3A9E2D720E1B33D00427E03 /* StrBuffer.cpp in Sources */,
+				B3A9E2F320E1B33D00427E03 /* Request.cpp in Sources */,
+				B3A9E2EC20E1B33D00427E03 /* Request.cpp in Sources */,
+				B3A9E2CB20E1B33D00427E03 /* Delegate.cpp in Sources */,
+				B3A9E2C520E1B33D00427E03 /* Library.cpp in Sources */,
+				B3A9E2DC20E1B33D00427E03 /* UnicodeTest.cpp in Sources */,
+				B3A9E2FB20E1B33D00427E03 /* ApiClient.cpp in Sources */,
 				B367F4B0206CF86F00668A2C /* App.cpp in Sources */,
-				B367F59D206CF88900668A2C /* MemoryPool.cpp in Sources */,
-				B367F58D206CF88900668A2C /* Thread.cpp in Sources */,
-				B367F5C4206CF88900668A2C /* ConnectionHandler.cpp in Sources */,
-				B367F5C0206CF88900668A2C /* RequestExecutor.cpp in Sources */,
-				B367F5A0206CF88900668A2C /* LinkedListTest.cpp in Sources */,
+				B3A9E2D320E1B33D00427E03 /* Environment.cpp in Sources */,
+				B3A9E2BF20E1B33D00427E03 /* Coroutine.cpp in Sources */,
+				B3A9E2BC20E1B33D00427E03 /* FastQueue.cpp in Sources */,
+				B3A9E2CE20E1B33D00427E03 /* StreamBufferedProxy.cpp in Sources */,
+				B3A9E2FD20E1B33D00427E03 /* Pipe.cpp in Sources */,
+				B3A9E30820E1B33D00427E03 /* ObjectMapper.cpp in Sources */,
+				B3A9E2E920E1B33D00427E03 /* ApiController.cpp in Sources */,
+				B3A9E2F620E1B33D00427E03 /* Router.cpp in Sources */,
+				B3A9E30620E1B33D00427E03 /* Unicode.cpp in Sources */,
+				B3A9E2F720E1B33D00427E03 /* Subscriber.cpp in Sources */,
+				B3A9E2EA20E1B33D00427E03 /* HttpRouter.cpp in Sources */,
+				B3A9E2E220E1B33D00427E03 /* ErrorHandler.cpp in Sources */,
+				B3A9E30220E1B33D00427E03 /* ConnectionProvider.cpp in Sources */,
+				B3A9E2C620E1B33D00427E03 /* Object.cpp in Sources */,
+				B3A9E2E320E1B33D00427E03 /* Interceptor.cpp in Sources */,
+				B3A9E30320E1B33D00427E03 /* Connection.cpp in Sources */,
+				B3A9E30020E1B33D00427E03 /* ConnectionHandler.cpp in Sources */,
+				B3A9E2CD20E1B33D00427E03 /* ChunkedBuffer.cpp in Sources */,
+				B3A9E2D220E1B33D00427E03 /* PtrWrapper.cpp in Sources */,
+				B3A9E30520E1B33D00427E03 /* Hex.cpp in Sources */,
+				B3A9E2F220E1B33D00427E03 /* Http.cpp in Sources */,
+				B3A9E2C020E1B33D00427E03 /* ConversionUtils.cpp in Sources */,
+				B3A9E2CC20E1B33D00427E03 /* Stream.cpp in Sources */,
+				B3A9E2C220E1B33D00427E03 /* Runnable.cpp in Sources */,
+				B3A9E2FF20E1B33D00427E03 /* SimpleTCPConnectionProvider.cpp in Sources */,
+				B3A9E2CF20E1B33D00427E03 /* IOBuffer.cpp in Sources */,
+				B3A9E2C820E1B33D00427E03 /* Primitive.cpp in Sources */,
+				B3A9E2F820E1B33D00427E03 /* Pattern.cpp in Sources */,
+				B3A9E2D120E1B33D00427E03 /* Controllable.cpp in Sources */,
+				B3A9E2D020E1B33D00427E03 /* FIFOBuffer.cpp in Sources */,
+				B3A9E2E520E1B33D00427E03 /* HttpError.cpp in Sources */,
+				B3A9E2DB20E1B33D00427E03 /* RegRuleTest.cpp in Sources */,
+				B3A9E2D920E1B33D00427E03 /* PerfTest.cpp in Sources */,
+				B3A9E30A20E1B33D00427E03 /* Utils.cpp in Sources */,
+				B3A9E2EE20E1B33D00427E03 /* Body.cpp in Sources */,
+				B3A9E2F520E1B33D00427E03 /* Response.cpp in Sources */,
+				B3A9E30920E1B33D00427E03 /* Serializer.cpp in Sources */,
+				B3A9E2BE20E1B33D00427E03 /* Processor.cpp in Sources */,
+				B3A9E2E120E1B33D00427E03 /* UnitTest.cpp in Sources */,
+				B3A9E30720E1B33D00427E03 /* Deserializer.cpp in Sources */,
+				B3A9E2F420E1B33D00427E03 /* BodyDecoder.cpp in Sources */,
+				B3A9E2BD20E1B33D00427E03 /* ListMap.cpp in Sources */,
+				B3A9E2F920E1B33D00427E03 /* Parser.cpp in Sources */,
+				B3A9E2F020E1B33D00427E03 /* BufferBody.cpp in Sources */,
+				B3A9E2EF20E1B33D00427E03 /* Response.cpp in Sources */,
+				B3A9E2EB20E1B33D00427E03 /* ChunkedBufferBody.cpp in Sources */,
+				B3A9E2D420E1B33D00427E03 /* Allocator.cpp in Sources */,
+				B3A9E2DA20E1B33D00427E03 /* MemoryPoolTest.cpp in Sources */,
+				B3A9E2E020E1B33D00427E03 /* Checker.cpp in Sources */,
+				B3A9E2C720E1B33D00427E03 /* List.cpp in Sources */,
+				B3A9E2D820E1B33D00427E03 /* LinkedListTest.cpp in Sources */,
+				B3A9E2CA20E1B33D00427E03 /* ObjectMapper.cpp in Sources */,
+				B3A9E2C920E1B33D00427E03 /* Type.cpp in Sources */,
+				B3A9E2F120E1B33D00427E03 /* ResponseFactory.cpp in Sources */,
+				B3A9E2C120E1B33D00427E03 /* ParsingCaret.cpp in Sources */,
+				B3A9E2FC20E1B33D00427E03 /* HttpRequestExecutor.cpp in Sources */,
+				B3A9E2D620E1B33D00427E03 /* ObjectPool.cpp in Sources */,
+				B3A9E2DD20E1B33D00427E03 /* DTOMapperPerfTest.cpp in Sources */,
+				B3A9E2E720E1B33D00427E03 /* HttpConnectionHandler.cpp in Sources */,
+				B3A9E2DF20E1B33D00427E03 /* DTOMapperTest.cpp in Sources */,
+				B3A9E2DE20E1B33D00427E03 /* DeserializerTest.cpp in Sources */,
+				B3A9E30120E1B33D00427E03 /* Server.cpp in Sources */,
+				B3A9E2C320E1B33D00427E03 /* SpinLock.cpp in Sources */,
+				B3A9E2E420E1B33D00427E03 /* AsyncHttpConnectionHandler.cpp in Sources */,
+				B3A9E2BB20E1B33D00427E03 /* LinkedList.cpp in Sources */,
+				B3A9E2BA20E1B33D00427E03 /* Types.cpp in Sources */,
+				B3A9E2D520E1B33D00427E03 /* MemoryPool.cpp in Sources */,
+				B3A9E2FE20E1B33D00427E03 /* Socket.cpp in Sources */,
+				B3A9E2E620E1B33D00427E03 /* HttpProcessor.cpp in Sources */,
+				B3A9E2E820E1B33D00427E03 /* Endpoint.cpp in Sources */,
+				B3A9E30420E1B33D00427E03 /* SimpleTCPConnectionProvider.cpp in Sources */,
+				B3A9E2ED20E1B33D00427E03 /* DtoBody.cpp in Sources */,
+				B3A9E2FA20E1B33D00427E03 /* RequestExecutor.cpp in Sources */,
+				B3A9E2C420E1B33D00427E03 /* Thread.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

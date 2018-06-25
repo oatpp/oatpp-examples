@@ -81,7 +81,7 @@ public:
       return request->readBodyToStringAsync(this, &EchoStringBody::returnResponse);
     }
     
-    Action returnResponse(const oatpp::base::String::PtrWrapper& body){
+    Action returnResponse(const oatpp::String& body){
       /* return Action to return created OutgoingResponse */
       return _return(controller->createResponse(Status::CODE_200, body));
     }
@@ -120,7 +120,7 @@ public:
       return response->readBodyToStringAsync(this, &TestApiGet::returnResult);
     }
     
-    Action returnResult(const oatpp::base::String::PtrWrapper& body) {
+    Action returnResult(const oatpp::String& body) {
       return _return(controller->createResponse(Status::CODE_200, body));
     }
     

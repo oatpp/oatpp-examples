@@ -39,7 +39,9 @@ public:
    */
   OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::network::ServerConnectionProvider>, serverConnectionProvider)([] {
     /* non_blocking connections should be used with AsyncHttpConnectionHandler for AsyncIO */
-    auto config = oatpp::libressl::Config::createDefaultServerConfig ("key.pem", "cert.crt");
+    auto config = oatpp::libressl::Config::createDefaultServerConfig
+    ("/Users/leonid/Documents/Development/repos/oatpp/oatpp-examples/tls-libressl/cert/test_key.pem",
+     "/Users/leonid/Documents/Development/repos/oatpp/oatpp-examples/tls-libressl/cert/test_cert.crt");
     return oatpp::libressl::server::ConnectionProvider::createShared(config, 8443, true /* true for non_blocking */);
   }());
   
