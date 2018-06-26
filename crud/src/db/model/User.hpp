@@ -9,8 +9,7 @@
 #ifndef db_User_hpp
 #define db_User_hpp
 
-#include "oatpp/core/base/String.hpp"
-#include "oatpp/core/base/Environment.hpp"
+#include "oatpp/core/Types.hpp"
 
 #include <string>
 #include <list>
@@ -21,9 +20,9 @@
 class User {
 public:
   v_int32 id;
-  std::string firstName;
-  std::string lastName;
-  std::list<std::string> friends;
+  oatpp::String firstName;
+  oatpp::String lastName;
+  std::list<oatpp::String> friends;
 };
 
 #endif /* db_User_hpp */

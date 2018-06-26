@@ -12,7 +12,7 @@
 #include <cstring>
 #include <stdarg.h>
 
-oatpp::base::String::PtrWrapper StaticFilesManager::getExtension(const oatpp::base::String::PtrWrapper& filename) {
+oatpp::String StaticFilesManager::getExtension(const oatpp::String& filename) {
   v_int32 dotPos = 0;
   for(v_int32 i = filename->getSize() - 1; i > 0; i--) {
     if(filename->getData()[i] == '.') {
@@ -21,27 +21,27 @@ oatpp::base::String::PtrWrapper StaticFilesManager::getExtension(const oatpp::ba
     }
   }
   if(dotPos != 0 && dotPos < filename->getSize() - 1) {
-    return oatpp::base::String::createShared(&filename->getData()[dotPos + 1], filename->getSize() - dotPos - 1);
+    return oatpp::String((const char*)&filename->getData()[dotPos + 1], filename->getSize() - dotPos - 1);
   }
-  return oatpp::base::String::PtrWrapper::empty();
+  return oatpp::String::empty();
 }
 
-std::shared_ptr<oatpp::base::String> StaticFilesManager::getFile(const oatpp::base::String::PtrWrapper& path) {
-  if(path.isNull()) {
+oatpp::String StaticFilesManager::getFile(const oatpp::String& path) {
+  if(!path) {
     return nullptr;
   }
-  auto& file = m_cache [path->std_str()];
+  auto& file = m_cache [path];
   if(file) {
     return file;
   }
-  oatpp::base::String::PtrWrapper filename = m_basePath + "/" + path;
+  oatpp::String filename = m_basePath + "/" + path;
   file = loadFromFile(filename->c_str());
   return file;
 }
 
-oatpp::base::String::PtrWrapper StaticFilesManager::guessMimeType(const oatpp::base::String::PtrWrapper& filename) {
+oatpp::String StaticFilesManager::guessMimeType(const oatpp::String& filename) {
   auto extension = getExtension(filename);
-  if(!extension.isNull()) {
+  if(extension) {
     
     if(extension->equals("m3u8")){
       return "application/x-mpegURL";
@@ -54,16 +54,16 @@ oatpp::base::String::PtrWrapper StaticFilesManager::guessMimeType(const oatpp::b
     }
     
   }
-  return oatpp::base::String::PtrWrapper::empty();
+  return oatpp::String::empty();
 }
 
-std::shared_ptr<oatpp::base::String> loadFromFile(const char* fileName) {
+oatpp::String loadFromFile(const char* fileName) {
   
   std::ifstream file (fileName, std::ios::in|std::ios::binary|std::ios::ate);
   
   if (file.is_open()) {
     
-    auto result = oatpp::base::String::createShared((v_int32) file.tellg());
+    auto result = oatpp::String((v_int32) file.tellg());
     file.seekg(0, std::ios::beg);
     file.read((char*)result->getData(), result->getSize());
     file.close();
@@ -75,13 +75,13 @@ std::shared_ptr<oatpp::base::String> loadFromFile(const char* fileName) {
   
 }
 
-oatpp::base::String::PtrWrapper formatText(const char* text, ...) {
+oatpp::String formatText(const char* text, ...) {
   char buffer[4097];
   va_list args;
   va_start (args, text);
   vsnprintf(buffer, 4096, text, args);
   va_end(args);
-  return oatpp::base::String::createShared(buffer);
+  return oatpp::String(buffer);
 }
 
 v_int64 getMillisTickCount(){

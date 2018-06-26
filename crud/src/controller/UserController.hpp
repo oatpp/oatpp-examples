@@ -54,20 +54,20 @@ public:
    */
   
   ENDPOINT("POST", "demo/api/users", createUser,
-           BODY_DTO(UserDto::PtrWrapper, userDto)) {
+           BODY_DTO(UserDto::ObjectWrapper, userDto)) {
     return createDtoResponse(Status::CODE_200, m_database->createUser(userDto));
   }
   
   ENDPOINT("PUT", "demo/api/users/{userId}", putUser,
            PATH(Int32, userId),
-           BODY_DTO(UserDto::PtrWrapper, userDto)) {
+           BODY_DTO(UserDto::ObjectWrapper, userDto)) {
     return createDtoResponse(Status::CODE_200, m_database->updateUser(userDto));
   }
   
   ENDPOINT("GET", "demo/api/users/{userId}", getUserById,
            PATH(Int32, userId)) {
     auto user = m_database->getUserById(userId);
-    OATPP_ASSERT_HTTP(!user.isNull(), Status::CODE_404, "User not found");
+    OATPP_ASSERT_HTTP(user, Status::CODE_404, "User not found");
     return createDtoResponse(Status::CODE_200, user);
   }
   

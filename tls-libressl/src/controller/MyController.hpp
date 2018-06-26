@@ -101,7 +101,7 @@ public:
       return request->readBodyToDtoAsync<MessageDto>(this, &EchoDtoBody::returnResponse, controller->getDefaultObjectMapper());
     }
     
-    Action returnResponse(const MessageDto::PtrWrapper& body){
+    Action returnResponse(const MessageDto::ObjectWrapper& body){
       return _return(controller->createDtoResponse(Status::CODE_200, body));
     }
     

@@ -10,33 +10,33 @@
 #define Utils_hpp
 
 #include "oatpp/core/concurrency/SpinLock.hpp"
-#include "oatpp/core/base/String.hpp"
+#include "oatpp/core/Types.hpp"
 
 #include <unordered_map>
 #include <string>
 
 class StaticFilesManager {
 private:
-  oatpp::base::String::PtrWrapper m_basePath;
+  oatpp::String m_basePath;
   oatpp::concurrency::SpinLock::Atom m_atom;
-  std::unordered_map<std::string, std::shared_ptr<oatpp::base::String>> m_cache;
+  std::unordered_map<oatpp::String, oatpp::String> m_cache;
 private:
-  oatpp::base::String::PtrWrapper getExtension(const oatpp::base::String::PtrWrapper& filename);
+  oatpp::String getExtension(const oatpp::String& filename);
 public:
   
-  StaticFilesManager(const oatpp::base::String::PtrWrapper& basePath)
+  StaticFilesManager(const oatpp::String& basePath)
     : m_basePath(basePath)
     , m_atom(false)
   {}
   
-  std::shared_ptr<oatpp::base::String> getFile(const oatpp::base::String::PtrWrapper& path);
+  oatpp::String getFile(const oatpp::String& path);
   
-  oatpp::base::String::PtrWrapper guessMimeType(const oatpp::base::String::PtrWrapper& filename);
+  oatpp::String guessMimeType(const oatpp::String& filename);
   
 };
 
-std::shared_ptr<oatpp::base::String> loadFromFile(const char* fileName);
-oatpp::base::String::PtrWrapper formatText(const char* text, ...);
+oatpp::String loadFromFile(const char* fileName);
+oatpp::String formatText(const char* text, ...);
 v_int64 getMillisTickCount();
 
 #endif /* Utils_hpp */

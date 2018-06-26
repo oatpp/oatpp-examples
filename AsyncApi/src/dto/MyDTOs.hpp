@@ -9,7 +9,7 @@
 #ifndef MyDTOs_hpp
 #define MyDTOs_hpp
 
-#include "oatpp/core/data/mapping/type/Object.hpp"
+#include "oatpp/core/Types.hpp"
 #include "oatpp/core/macro/codegen.hpp"
 
 #include OATPP_CODEGEN_BEGIN(DTO)
