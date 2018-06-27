@@ -21,7 +21,7 @@ Playlist Playlist::parse(oatpp::parser::ParsingCaret& caret) {
       caret.findNextLine();
       oatpp::parser::ParsingCaret::Label uriLabel(caret);
       caret.findChar('\n');
-      result->pushBack({secs, oatpp::base::String::PtrWrapper(uriLabel.toString())});
+      result->pushBack({secs, oatpp::String(uriLabel.toString())});
     }
     caret.findNextLine();
   }

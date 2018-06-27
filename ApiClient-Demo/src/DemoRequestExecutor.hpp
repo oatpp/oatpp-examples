@@ -18,8 +18,8 @@
  */
 class DemoRequestExecutor : public oatpp::web::client::RequestExecutor {
 public:
-  std::shared_ptr<Response> execute(const String::PtrWrapper& method,
-                                    const String::PtrWrapper& path,
+  std::shared_ptr<Response> execute(const String& method,
+                                    const String& path,
                                     const std::shared_ptr<Headers>& userDefinedHeaders,
                                     const std::shared_ptr<Body>& body) override
   {
@@ -68,8 +68,8 @@ public:
   
   virtual Action executeAsync(oatpp::async::AbstractCoroutine* parentCoroutine,
                               AsyncCallback callback,
-                              const String::PtrWrapper& method,
-                              const String::PtrWrapper& path,
+                              const String& method,
+                              const String& path,
                               const std::shared_ptr<Headers>& headers,
                               const std::shared_ptr<Body>& body) override {
     OATPP_LOGD("Executor", "AsyncCall::");

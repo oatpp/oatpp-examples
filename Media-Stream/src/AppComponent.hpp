@@ -63,11 +63,11 @@ public:
   }());
   
   OATPP_CREATE_COMPONENT(std::shared_ptr<StaticFilesManager>, staticFilesManager)([] {
-    return std::make_shared<StaticFilesManager>("video" /* path to 'video' folder. Put full, absolute path here */) ;
+    return std::make_shared<StaticFilesManager>("video" /* path to '<this-repo>/Media-Stream/video' folder. Put full, absolute path here */) ;
   }());
   
   OATPP_CREATE_COMPONENT(std::shared_ptr<Playlist>, livePlayList)([] {
-    auto playlist = Playlist::parseFromFile("video/playlist_live.m3u8" /* path to 'playlist_live.m3u8' file. Put full, absolute path here */);
+    auto playlist = Playlist::parseFromFile("video/playlist_live.m3u8" /* path to '<this-repo>/Media-Stream/video/playlist_live.m3u8' file. Put full, absolute path here */);
     return std::make_shared<Playlist>(playlist);
   }());
 

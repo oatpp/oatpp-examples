@@ -19,7 +19,7 @@ private:
   
   struct RecordMarker {
     v_float64 duration;
-    oatpp::base::String::PtrWrapper uri;
+    oatpp::String uri;
   };
   
 private:

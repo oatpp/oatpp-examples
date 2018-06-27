@@ -8,20 +8,20 @@
 
 #include "Database.hpp"
 
-User Database::serializeFromDto(const UserDto::PtrWrapper& userDto){
+User Database::serializeFromDto(const UserDto::ObjectWrapper& userDto){
   User user;
-  if(!userDto->id.isNull()){
+  if(userDto->id){
     user.id = userDto->id->getValue();
   }
   user.firstName = userDto->firstName;
   user.lastName = userDto->lastName;
-  userDto->friends->forEach([&user](const oatpp::data::mapping::type::StringPtrWrapper& friendId){
+  userDto->friends->forEach([&user](const oatpp::String& friendId){
     user.friends.push_back(friendId);
   });
   return user;
 }
 
-UserDto::PtrWrapper Database::deserializeToDto(const User& user){
+UserDto::ObjectWrapper Database::deserializeToDto(const User& user){
   auto dto = UserDto::createShared();
   dto->id = user.id;
   dto->firstName = user.firstName;
@@ -33,7 +33,7 @@ UserDto::PtrWrapper Database::deserializeToDto(const User& user){
   return dto;
 }
 
-UserDto::PtrWrapper Database::createUser(const UserDto::PtrWrapper& userDto){
+UserDto::ObjectWrapper Database::createUser(const UserDto::ObjectWrapper& userDto){
   oatpp::concurrency::SpinLock lock(m_atom);
   auto user = serializeFromDto(userDto);
   user.id = m_idCounter++;
@@ -41,7 +41,7 @@ UserDto::PtrWrapper Database::createUser(const UserDto::PtrWrapper& userDto){
   return deserializeToDto(user);
 }
 
-UserDto::PtrWrapper Database::updateUser(const UserDto::PtrWrapper& userDto){
+UserDto::ObjectWrapper Database::updateUser(const UserDto::ObjectWrapper& userDto){
   oatpp::concurrency::SpinLock lock(m_atom);
   auto user = serializeFromDto(userDto);
   if(user.id < 0){
@@ -51,18 +51,18 @@ UserDto::PtrWrapper Database::updateUser(const UserDto::PtrWrapper& userDto){
   return deserializeToDto(user);
 }
 
-UserDto::PtrWrapper Database::getUserById(v_int32 id){
+UserDto::ObjectWrapper Database::getUserById(v_int32 id){
   oatpp::concurrency::SpinLock lock(m_atom);
   auto it = m_usersById.find(id);
   if(it == m_usersById.end()){
-    return UserDto::PtrWrapper::empty();
+    return UserDto::ObjectWrapper::empty();
   }
   return deserializeToDto(it->second);
 }
 
-oatpp::data::mapping::type::List<UserDto::PtrWrapper>::PtrWrapper Database::getUsers(){
+oatpp::data::mapping::type::List<UserDto::ObjectWrapper>::ObjectWrapper Database::getUsers(){
   oatpp::concurrency::SpinLock lock(m_atom);
-  auto result = oatpp::data::mapping::type::List<UserDto::PtrWrapper>::createShared();
+  auto result = oatpp::data::mapping::type::List<UserDto::ObjectWrapper>::createShared();
   auto it = m_usersById.begin();
   while (it != m_usersById.end()) {
     result->pushBack(deserializeToDto(it->second));
