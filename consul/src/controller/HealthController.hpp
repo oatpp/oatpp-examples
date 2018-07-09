@@ -28,12 +28,6 @@ protected:
   HealthController(const std::shared_ptr<ObjectMapper>& objectMapper)
     : oatpp::web::server::api::ApiController(objectMapper)
   {}
-private:
-  
-  /**
-   *  Inject Database component
-   */
-  OATPP_COMPONENT(std::shared_ptr<Database>, m_database);
 public:
   
   /**
@@ -58,9 +52,6 @@ public:
     
     auto status = HealthDto::createShared();
     status->status = "healthy";
-    
-    //auto o = oatpp::consul::rest::AgentCheckRegisterPayload::createShared();
-    //o->http = "http://localhost:8000/check/health";
     
     OATPP_LOGD("health", "check");
     

@@ -9,10 +9,12 @@
 #ifndef AppComponent_hpp
 #define AppComponent_hpp
 
-#include "db/Database.hpp"
+#include "oatpp-consul/Client.hpp"
 
+#include "oatpp/web/client/HttpRequestExecutor.hpp"
 #include "oatpp/web/server/HttpConnectionHandler.hpp"
 #include "oatpp/web/server/HttpRouter.hpp"
+#include "oatpp/network/client/SimpleTCPConnectionProvider.hpp"
 #include "oatpp/network/server/SimpleTCPConnectionProvider.hpp"
 
 #include "oatpp/parser/json/mapping/Serializer.hpp"
@@ -66,10 +68,19 @@ public:
   }());
   
   /**
-   *  Create Demo-Database component which stores information about users
+   *  Create Demo-oatpp::consul::Client component
    */
-  OATPP_CREATE_COMPONENT(std::shared_ptr<Database>, database)([] {
-    return std::make_shared<Database>();
+  OATPP_CREATE_COMPONENT(std::shared_ptr<oatpp::consul::Client>, consulClient)([] {
+    
+    // Create connection provider for Consul
+    // In case you need secure connection provider so you can connect to Consul via https see oatpp-libressl and tls-libressl example project
+    auto connectionProvider = oatpp::network::client::SimpleTCPConnectionProvider::createShared("localhost", 8500);
+    
+    // Create httpRequestExecutor
+    auto requestExecutor = oatpp::web::client::HttpRequestExecutor::createShared(connectionProvider);
+    
+    // Create and return consul client
+    return oatpp::consul::Client::createShared(requestExecutor);
   }());
 
 };

@@ -4,6 +4,7 @@ echo "Building app. Please wait..."
 
 g++ -std=gnu++11 \
 -pthread \
+`find "../lib/oatpp-consul/" -type f -name *.cpp` \
 `find "../lib/oatpp/" -type f -name *.cpp` \
 `find "./src/" -type f -name *.cpp` \
 -I "../lib" \

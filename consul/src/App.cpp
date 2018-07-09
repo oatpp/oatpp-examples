@@ -12,7 +12,7 @@
 //////////////////////////////////
 // App
 
-#include "./controller/UserController.hpp"
+#include "./controller/DemoController.hpp"
 #include "./controller/HealthController.hpp"
 #include "./AppComponent.hpp"
 #include "./Logger.hpp"
@@ -31,44 +31,6 @@
 
 #include <iostream>
 
-///
-
-#include "oatpp-consul/rest/Client.hpp"
-#include "oatpp/web/client/HttpRequestExecutor.hpp"
-#include "oatpp/network/client/SimpleTCPConnectionProvider.hpp"
-
-void tryConsul() {
-  
-  auto serializerConfig = oatpp::parser::json::mapping::Serializer::Config::createShared();
-  serializerConfig->includeNullFields = false;
-  
-  auto deserializerConfig = oatpp::parser::json::mapping::Deserializer::Config::createShared();
-  deserializerConfig->allowUnknownFields = false;
-  
-  auto objectMapper = oatpp::parser::json::mapping::ObjectMapper::createShared(serializerConfig, deserializerConfig);
-  
-  auto connectionProvider = oatpp::network::client::SimpleTCPConnectionProvider::createShared("localhost", 8500);
-  auto requestExecutor = oatpp::web::client::HttpRequestExecutor::createShared(connectionProvider);
-  
-  auto client = oatpp::consul::rest::Client::createShared(requestExecutor, objectMapper);
-  
-  auto payload = oatpp::consul::rest::AgentCheckRegisterPayload::createShared();
-  payload->id = "MyService";
-  payload->name = "MyService health-check";
-  payload->notes = "Check on the MyService/Health endpoint";
-  payload->http = "http://host.docker.internal:8000/check/health";
-  payload->method = "GET";
-  payload->interval = "1s";
-  payload->timeout = "1s";
-  
-  auto response = client->putAgentChecksRegister(payload);
-  
-  auto result = response->readBodyToString();
-  
-  OATPP_LOGD("consul", "response='%s'", result->c_str());
-  
-}
-
 /**
  *  run() method.
  *  1) set Environment components.
@@ -83,8 +45,8 @@ void run() {
   
   auto router = components.httpRouter.getObject();
   
-  auto userController = UserController::createShared();
-  userController->addEndpointsToRouter(router);
+  auto DemoController = DemoController::createShared();
+  DemoController->addEndpointsToRouter(router);
   
   auto healthController = HealthController::createShared();
   healthController->addEndpointsToRouter(router);
@@ -109,7 +71,6 @@ int main(int argc, const char * argv[]) {
   oatpp::base::Environment::init();
   
 #if !defined(OATPP_USE_TARGET) | defined(OATPP_TARGET_APP)
-  tryConsul();
   run();
 #endif
   
