@@ -1,6 +1,10 @@
 # Consul Example
 Example project of how-to use oatpp-consul integration library. 
 
+- oatpp docs [https://oatpp.io/docs/start](https://oatpp.io/docs/start)
+- oatpp-consul repo [https://github.com/oatpp/oatpp-consul](https://github.com/oatpp/oatpp-consul)
+- Consul API docs [https://www.consul.io/api/index.html](https://www.consul.io/api/index.html)
+
 ## Build and run
 
 1) Git-Clone examples repo:
