@@ -1,6 +1,8 @@
 # oatpp-examples
 List of example projects of how to use oat++ framework
 
+More about oatpp see [https://oatpp.io/](https://oatpp.io/)  
+
 ## Examples:
 
 - [Media-Stream (Http-Live-Streaming)](https://github.com/oatpp/oatpp-examples/tree/master/Media-Stream) - Example project of how-to build HLS-streaming server using oat++ Async-API.
