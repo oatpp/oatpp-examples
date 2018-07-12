@@ -411,10 +411,10 @@
 		B37B5DD320E433B4003A7683 /* async */ = {
 			isa = PBXGroup;
 			children = (
-				B37B5DD420E433B4003A7683 /* Processor.cpp */,
 				B37B5DD520E433B4003A7683 /* Coroutine.cpp */,
-				B37B5DD620E433B4003A7683 /* Processor.hpp */,
 				B37B5DD720E433B4003A7683 /* Coroutine.hpp */,
+				B37B5DD420E433B4003A7683 /* Processor.cpp */,
+				B37B5DD620E433B4003A7683 /* Processor.hpp */,
 			);
 			path = async;
 			sourceTree = "<group>";
@@ -821,13 +821,13 @@
 		B37B5E7720E433B4003A7683 /* client */ = {
 			isa = PBXGroup;
 			children = (
-				B37B5E7820E433B4003A7683 /* RequestExecutor.cpp */,
-				B37B5E7920E433B4003A7683 /* HttpRequestExecutor.hpp */,
 				B37B5E7A20E433B4003A7683 /* ApiClient.cpp */,
-				B37B5E7B20E433B4003A7683 /* macro */,
 				B37B5E7E20E433B4003A7683 /* ApiClient.hpp */,
-				B37B5E7F20E433B4003A7683 /* RequestExecutor.hpp */,
 				B37B5E8020E433B4003A7683 /* HttpRequestExecutor.cpp */,
+				B37B5E7920E433B4003A7683 /* HttpRequestExecutor.hpp */,
+				B37B5E7B20E433B4003A7683 /* macro */,
+				B37B5E7820E433B4003A7683 /* RequestExecutor.cpp */,
+				B37B5E7F20E433B4003A7683 /* RequestExecutor.hpp */,
 			);
 			path = client;
 			sourceTree = "<group>";

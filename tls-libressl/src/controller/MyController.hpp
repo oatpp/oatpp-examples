@@ -112,8 +112,7 @@ public:
     ENDPOINT_ASYNC_INIT(TestApiGet)
     
     Action act() override {
-      auto callback = static_cast<oatpp::web::client::RequestExecutor::AsyncCallback>(&TestApiGet::onResponse);
-      return controller->myApiClient->apiGetAsync(this, callback);
+      return controller->myApiClient->apiGetAsync(this, &TestApiGet::onResponse);
     }
     
     Action onResponse(const std::shared_ptr<IncomingResponse>& response){
