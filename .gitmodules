@@ -7,3 +7,9 @@
 [submodule "lib/oatpp-consul"]
 	path = lib/oatpp-consul
 	url = https://github.com/oatpp/oatpp-consul
+[submodule "lib/oatpp-kafka"]
+	path = lib/oatpp-kafka
+	url = https://github.com/oatpp/oatpp-kafka
+[submodule "lib/oatpp-swagger"]
+	path = lib/oatpp-swagger
+	url = https://github.com/oatpp/oatpp-swagger
