@@ -47,7 +47,12 @@ UserDto::ObjectWrapper Database::updateUser(const UserDto::ObjectWrapper& userDt
   if(user.id < 0){
     throw std::runtime_error("User Id cannot be less than 0");
   }
-  m_usersById[user.id] = user;
+  auto it = m_usersById.find(user.id);
+  if(it != m_usersById.end()) {
+    m_usersById[user.id] = user;
+  } else {
+    throw new std::runtime_error("Such user not found");
+  }
   return deserializeToDto(user);
 }
 

@@ -11,6 +11,8 @@
 
 #include "db/Database.hpp"
 
+#include "SwaggerComponent.hpp"
+
 #include "oatpp/web/server/HttpConnectionHandler.hpp"
 #include "oatpp/web/server/HttpRouter.hpp"
 #include "oatpp/network/server/SimpleTCPConnectionProvider.hpp"
@@ -26,6 +28,11 @@
  */
 class AppComponent {
 public:
+  
+  /**
+   *  Swagger component
+   */
+  SwaggerComponent swaggerComponent;
   
   /**
    *  Create ConnectionProvider component which listens on the port
