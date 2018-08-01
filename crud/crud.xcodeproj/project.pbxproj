@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3756D1421111E9D00F49E60 /* Generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3756D0E21111E9D00F49E60 /* Generator.cpp */; };
-		B3756D1721111ED100F49E60 /* Resources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3756D1521111ED100F49E60 /* Resources.cpp */; };
+		B33E4C52211263C400304F2A /* Generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B33E4C49211263C400304F2A /* Generator.cpp */; };
+		B33E4C53211263C400304F2A /* Resources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B33E4C4C211263C400304F2A /* Resources.cpp */; };
 		B37B5FD820E435A6003A7683 /* Types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B37B5EFC20E435A6003A7683 /* Types.cpp */; };
 		B37B5FD920E435A6003A7683 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B37B5EFE20E435A6003A7683 /* LinkedList.cpp */; };
 		B37B5FDA20E435A6003A7683 /* FastQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B37B5EFF20E435A6003A7683 /* FastQueue.cpp */; };
@@ -109,29 +109,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B33E4C39211263C400304F2A /* Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
+		B33E4C3B211263C400304F2A /* favicon-16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-16x16.png"; sourceTree = "<group>"; };
+		B33E4C3C211263C400304F2A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		B33E4C3D211263C400304F2A /* swagger-ui.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "swagger-ui.js"; sourceTree = "<group>"; };
+		B33E4C3E211263C400304F2A /* swagger-ui-standalone-preset.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "swagger-ui-standalone-preset.js.map"; sourceTree = "<group>"; };
+		B33E4C3F211263C400304F2A /* swagger-ui.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "swagger-ui.css"; sourceTree = "<group>"; };
+		B33E4C40211263C400304F2A /* swagger-ui.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "swagger-ui.js.map"; sourceTree = "<group>"; };
+		B33E4C41211263C400304F2A /* swagger-ui-bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "swagger-ui-bundle.js"; sourceTree = "<group>"; };
+		B33E4C42211263C400304F2A /* swagger-ui.css.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "swagger-ui.css.map"; sourceTree = "<group>"; };
+		B33E4C43211263C400304F2A /* swagger-ui-standalone-preset.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "swagger-ui-standalone-preset.js"; sourceTree = "<group>"; };
+		B33E4C44211263C400304F2A /* swagger-ui-bundle.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "swagger-ui-bundle.js.map"; sourceTree = "<group>"; };
+		B33E4C45211263C400304F2A /* oauth2-redirect.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "oauth2-redirect.html"; sourceTree = "<group>"; };
+		B33E4C46211263C400304F2A /* favicon-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-32x32.png"; sourceTree = "<group>"; };
+		B33E4C47211263C400304F2A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B33E4C49211263C400304F2A /* Generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Generator.cpp; sourceTree = "<group>"; };
+		B33E4C4A211263C400304F2A /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
+		B33E4C4B211263C400304F2A /* Generator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Generator.hpp; sourceTree = "<group>"; };
+		B33E4C4C211263C400304F2A /* Resources.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Resources.cpp; sourceTree = "<group>"; };
+		B33E4C4D211263C400304F2A /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
+		B33E4C4E211263C400304F2A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B33E4C4F211263C400304F2A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B33E4C50211263C400304F2A /* Resources.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Resources.hpp; sourceTree = "<group>"; };
+		B33E4C51211263C400304F2A /* AsyncController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AsyncController.hpp; sourceTree = "<group>"; };
 		B3756CF62110FA2C00F49E60 /* SwaggerComponent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SwaggerComponent.hpp; sourceTree = "<group>"; };
-		B3756CFE21111E9D00F49E60 /* Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
-		B3756D0021111E9D00F49E60 /* favicon-16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-16x16.png"; sourceTree = "<group>"; };
-		B3756D0121111E9D00F49E60 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		B3756D0221111E9D00F49E60 /* swagger-ui.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "swagger-ui.js"; sourceTree = "<group>"; };
-		B3756D0321111E9D00F49E60 /* swagger-ui-standalone-preset.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "swagger-ui-standalone-preset.js.map"; sourceTree = "<group>"; };
-		B3756D0421111E9D00F49E60 /* swagger-ui.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "swagger-ui.css"; sourceTree = "<group>"; };
-		B3756D0521111E9D00F49E60 /* swagger-ui.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "swagger-ui.js.map"; sourceTree = "<group>"; };
-		B3756D0621111E9D00F49E60 /* swagger-ui-bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "swagger-ui-bundle.js"; sourceTree = "<group>"; };
-		B3756D0721111E9D00F49E60 /* swagger-ui.css.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "swagger-ui.css.map"; sourceTree = "<group>"; };
-		B3756D0821111E9D00F49E60 /* swagger-ui-standalone-preset.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "swagger-ui-standalone-preset.js"; sourceTree = "<group>"; };
-		B3756D0921111E9D00F49E60 /* swagger-ui-bundle.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "swagger-ui-bundle.js.map"; sourceTree = "<group>"; };
-		B3756D0A21111E9D00F49E60 /* oauth2-redirect.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "oauth2-redirect.html"; sourceTree = "<group>"; };
-		B3756D0B21111E9D00F49E60 /* favicon-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-32x32.png"; sourceTree = "<group>"; };
-		B3756D0C21111E9D00F49E60 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B3756D0E21111E9D00F49E60 /* Generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Generator.cpp; sourceTree = "<group>"; };
-		B3756D0F21111E9D00F49E60 /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
-		B3756D1021111E9D00F49E60 /* Generator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Generator.hpp; sourceTree = "<group>"; };
-		B3756D1121111E9D00F49E60 /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
-		B3756D1221111E9D00F49E60 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B3756D1321111E9D00F49E60 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B3756D1521111ED100F49E60 /* Resources.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resources.cpp; sourceTree = "<group>"; };
-		B3756D1621111ED100F49E60 /* Resources.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Resources.hpp; sourceTree = "<group>"; };
 		B37B5EFC20E435A6003A7683 /* Types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Types.cpp; sourceTree = "<group>"; };
 		B37B5EFE20E435A6003A7683 /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
 		B37B5EFF20E435A6003A7683 /* FastQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FastQueue.cpp; sourceTree = "<group>"; };
@@ -332,48 +333,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3756CFD21111E9D00F49E60 /* oatpp-swagger */ = {
+		B33E4C38211263C400304F2A /* oatpp-swagger */ = {
 			isa = PBXGroup;
 			children = (
-				B3756D1321111E9D00F49E60 /* .gitignore */,
-				B3756CFE21111E9D00F49E60 /* Controller.hpp */,
-				B3756D0C21111E9D00F49E60 /* LICENSE */,
-				B3756D1121111E9D00F49E60 /* Model.hpp */,
-				B3756D0D21111E9D00F49E60 /* oas3 */,
-				B3756D1221111E9D00F49E60 /* README.md */,
-				B3756CFF21111E9D00F49E60 /* res */,
-				B3756D1521111ED100F49E60 /* Resources.cpp */,
-				B3756D1621111ED100F49E60 /* Resources.hpp */,
+				B33E4C39211263C400304F2A /* Controller.hpp */,
+				B33E4C3A211263C400304F2A /* res */,
+				B33E4C47211263C400304F2A /* LICENSE */,
+				B33E4C48211263C400304F2A /* oas3 */,
+				B33E4C4C211263C400304F2A /* Resources.cpp */,
+				B33E4C4D211263C400304F2A /* Model.hpp */,
+				B33E4C4E211263C400304F2A /* README.md */,
+				B33E4C4F211263C400304F2A /* .gitignore */,
+				B33E4C50211263C400304F2A /* Resources.hpp */,
+				B33E4C51211263C400304F2A /* AsyncController.hpp */,
 			);
 			name = "oatpp-swagger";
 			path = "../lib/oatpp-swagger";
 			sourceTree = "<group>";
 		};
-		B3756CFF21111E9D00F49E60 /* res */ = {
+		B33E4C3A211263C400304F2A /* res */ = {
 			isa = PBXGroup;
 			children = (
-				B3756D0021111E9D00F49E60 /* favicon-16x16.png */,
-				B3756D0B21111E9D00F49E60 /* favicon-32x32.png */,
-				B3756D0121111E9D00F49E60 /* index.html */,
-				B3756D0A21111E9D00F49E60 /* oauth2-redirect.html */,
-				B3756D0621111E9D00F49E60 /* swagger-ui-bundle.js */,
-				B3756D0921111E9D00F49E60 /* swagger-ui-bundle.js.map */,
-				B3756D0821111E9D00F49E60 /* swagger-ui-standalone-preset.js */,
-				B3756D0321111E9D00F49E60 /* swagger-ui-standalone-preset.js.map */,
-				B3756D0421111E9D00F49E60 /* swagger-ui.css */,
-				B3756D0721111E9D00F49E60 /* swagger-ui.css.map */,
-				B3756D0221111E9D00F49E60 /* swagger-ui.js */,
-				B3756D0521111E9D00F49E60 /* swagger-ui.js.map */,
+				B33E4C3B211263C400304F2A /* favicon-16x16.png */,
+				B33E4C3C211263C400304F2A /* index.html */,
+				B33E4C3D211263C400304F2A /* swagger-ui.js */,
+				B33E4C3E211263C400304F2A /* swagger-ui-standalone-preset.js.map */,
+				B33E4C3F211263C400304F2A /* swagger-ui.css */,
+				B33E4C40211263C400304F2A /* swagger-ui.js.map */,
+				B33E4C41211263C400304F2A /* swagger-ui-bundle.js */,
+				B33E4C42211263C400304F2A /* swagger-ui.css.map */,
+				B33E4C43211263C400304F2A /* swagger-ui-standalone-preset.js */,
+				B33E4C44211263C400304F2A /* swagger-ui-bundle.js.map */,
+				B33E4C45211263C400304F2A /* oauth2-redirect.html */,
+				B33E4C46211263C400304F2A /* favicon-32x32.png */,
 			);
 			path = res;
 			sourceTree = "<group>";
 		};
-		B3756D0D21111E9D00F49E60 /* oas3 */ = {
+		B33E4C48211263C400304F2A /* oas3 */ = {
 			isa = PBXGroup;
 			children = (
-				B3756D0E21111E9D00F49E60 /* Generator.cpp */,
-				B3756D1021111E9D00F49E60 /* Generator.hpp */,
-				B3756D0F21111E9D00F49E60 /* Model.hpp */,
+				B33E4C49211263C400304F2A /* Generator.cpp */,
+				B33E4C4A211263C400304F2A /* Model.hpp */,
+				B33E4C4B211263C400304F2A /* Generator.hpp */,
 			);
 			path = oas3;
 			sourceTree = "<group>";
@@ -953,7 +955,7 @@
 		B3F7A7692058233200DA8A39 = {
 			isa = PBXGroup;
 			children = (
-				B3756CFD21111E9D00F49E60 /* oatpp-swagger */,
+				B33E4C38211263C400304F2A /* oatpp-swagger */,
 				B37B5EFA20E435A6003A7683 /* oatpp */,
 				B3F7AAD52058293F00DA8A39 /* src */,
 				B3F7AAE72058630600DA8A39 /* test */,
@@ -1147,7 +1149,7 @@
 				B3F7AAE32058293F00DA8A39 /* App.cpp in Sources */,
 				B37B5FFC20E435A6003A7683 /* DTOMapperTest.cpp in Sources */,
 				B37B5FDB20E435A6003A7683 /* ListMap.cpp in Sources */,
-				B3756D1421111E9D00F49E60 /* Generator.cpp in Sources */,
+				B33E4C52211263C400304F2A /* Generator.cpp in Sources */,
 				B37B5FFB20E435A6003A7683 /* DeserializerTest.cpp in Sources */,
 				B37B600920E435A6003A7683 /* Request.cpp in Sources */,
 				B37B5FF820E435A6003A7683 /* RegRuleTest.cpp in Sources */,
@@ -1156,7 +1158,7 @@
 				B37B602020E435A6003A7683 /* Connection.cpp in Sources */,
 				B37B602520E435A6003A7683 /* ObjectMapper.cpp in Sources */,
 				B37B5FEE20E435A6003A7683 /* FIFOBuffer.cpp in Sources */,
-				B3756D1721111ED100F49E60 /* Resources.cpp in Sources */,
+				B33E4C53211263C400304F2A /* Resources.cpp in Sources */,
 				B37B5FE020E435A6003A7683 /* Runnable.cpp in Sources */,
 				B37B600A20E435A6003A7683 /* DtoBody.cpp in Sources */,
 				B37B5FDF20E435A6003A7683 /* ParsingCaret.cpp in Sources */,
