@@ -31,11 +31,15 @@
 #include <iostream>
 
 #include "oatpp-kafka/protocol/V0.hpp"
+#include "oatpp-kafka/protocol/Produce.hpp"
 #include "oatpp-kafka/protocol/mapping/ObjectMapper.hpp"
 
 #include "oatpp-kafka/protocol/MessageSet.hpp"
 
 #include "oatpp/network/client/SimpleTCPConnectionProvider.hpp"
+
+#include "oatpp/algorithm/CRC.hpp"
+#include "oatpp/encoding/Hex.hpp"
 
 void sendMessage(oatpp::data::stream::OutputStream* stream, const oatpp::String& message) {
   v_int32 size = htonl(message->getSize());
@@ -44,6 +48,13 @@ void sendMessage(oatpp::data::stream::OutputStream* stream, const oatpp::String&
 }
 
 void test() {
+  
+  oatpp::String str = " ";
+  oatpp::String strHex(8);
+  auto value = oatpp::algorithm::CRC32::calc(str->getData(), str->getSize());
+  oatpp::encoding::Hex::writeWord32(value, strHex->getData());
+  
+  OATPP_LOGD("crc32", "value='%s'", strHex->c_str());
   
   auto serializerConfig = oatpp::parser::json::mapping::Serializer::Config::createShared();
   auto deserializerConfig = oatpp::parser::json::mapping::Deserializer::Config::createShared();
@@ -60,28 +71,63 @@ void test() {
   auto mapper = oatpp::kafka::protocol::mapping::ObjectMapper::createShared();
   
   auto stream = oatpp::data::stream::ChunkedBuffer::createShared();
-  auto request = oatpp::kafka::protocol::v0::MetadataRequest::createRequest();
+  /*auto request = oatpp::kafka::protocol::v0::MetadataRequest::createRequest();
   request->topics->pushBack("test");
   //request->topics->pushBack("demo");
   
   mapper->write(stream, request);
   
   sendMessage(c.get(), stream->toString());
+   */
+  
+  auto request = oatpp::kafka::protocol::ProduceRequest::createRequest();
+  request->requiredAcks = 1;
+  request->timeout = 10000;
+  request->topics = request->topics->createShared();
+  
+  auto topic = oatpp::kafka::protocol::TopicData::createShared();
+  request->topics->pushBack(topic);
+  topic->topicName = "test";
+  topic->partitions = topic->partitions->createShared();
+  
+  auto partitionData = oatpp::kafka::protocol::ProduceRequestTopicPartitionData::createShared();
+  topic->partitions->pushBack(partitionData);
+  partitionData->partition = 0;
+  
+  auto messageSet = oatpp::kafka::protocol::MessageSet::createShared();
+  partitionData->messageSet = messageSet;
+  
+  auto message = oatpp::kafka::protocol::MessageV0::createShared();
+  messageSet->addMessage(message);
+  
+  message->crc = 0;
+  message->attributes = 0;
+  message->key = oatpp::kafka::protocol::Bytes(oatpp::base::StrBuffer::createShared("some key"));
+  message->value = oatpp::kafka::protocol::Bytes(oatpp::base::StrBuffer::createShared("hello from oatpp!!!"));
+  
+  mapper->write(stream, request);
+  
+  auto json = jsonMapper->writeToString(request);
+  OATPP_LOGD("kafka", "request='%s'", json->c_str());
+  
+  sendMessage(c.get(), stream->toString());
   
   auto buffer = oatpp::data::buffer::IOBuffer::createShared();
   v_int64 read = c->read(buffer->getData(), buffer->getSize());
   if(read == 0) {
-    OATPP_LOGD("kafka", "zero response, retry");
-    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    OATPP_LOGD("kafka", "zero response");
+    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
   } else {
    
     oatpp::parser::ParsingCaret caret(&((p_char8)buffer->getData())[4], buffer->getSize() - 4);
-    auto response = mapper->readFromCaret<oatpp::kafka::protocol::v0::MetadataResponse>(caret);
+    //auto response = mapper->readFromCaret<oatpp::kafka::protocol::v0::MetadataResponse>(caret);
+    auto response = mapper->readFromCaret<oatpp::kafka::protocol::ProduceResponse>(caret);
     
     if(response) {
       auto json = jsonMapper->writeToString(response);
       OATPP_LOGD("kafka", "response='%s'", json->c_str());
     }
+    
     
   }
   
