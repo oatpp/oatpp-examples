@@ -6,7 +6,7 @@ g++ -std=gnu++11 \
 -pthread \
 -I "/usr/local/Cellar/libressl/2.7.4/include" \
 -L "/usr/local/Cellar/libressl/2.7.4/lib" \
--ltls \
+-ltls -lssl -lcrypto \
 `find "../lib/oatpp/" -type f -name *.cpp` \
 `find "../lib/oatpp-libressl/" -type f -name *.cpp` \
 `find "./src/" -type f -name *.cpp` \

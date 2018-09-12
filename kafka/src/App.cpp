@@ -172,8 +172,8 @@ int main(int argc, const char * argv[]) {
   oatpp::base::Environment::init();
   
 #if !defined(OATPP_USE_TARGET) | defined(OATPP_TARGET_APP)
-  test();
-  //run();
+  //test();
+  run();
 #endif
   
 #ifdef OATPP_TARGET_TEST

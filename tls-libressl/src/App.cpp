@@ -30,6 +30,7 @@
 
 #include "oatpp-libressl/client/ConnectionProvider.hpp"
 #include "oatpp-libressl/Config.hpp"
+#include "oatpp-libressl/Callbacks.hpp"
 
 #include "oatpp/web/client/HttpRequestExecutor.hpp"
 #include "oatpp/network/client/SimpleTCPConnectionProvider.hpp"
@@ -60,6 +61,9 @@ void tryLibressl() {
  *  3) run server
  */
 void run() {
+  
+  /* set lockingCallback for libressl */
+  oatpp::libressl::Callbacks::setDefaultCallbacks();
   
   AppComponent components; // Create scope Environment components
   

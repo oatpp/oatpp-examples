@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3476F8D2149B28C005D4C64 /* ConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3476F842149B28C005D4C64 /* ConnectionProvider.cpp */; };
+		B3476F8E2149B28C005D4C64 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3476F872149B28C005D4C64 /* Config.cpp */; };
+		B3476F8F2149B28C005D4C64 /* Callbacks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3476F882149B28C005D4C64 /* Callbacks.cpp */; };
+		B3476F902149B28C005D4C64 /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3476F892149B28C005D4C64 /* Connection.cpp */; };
+		B3476F912149B28C005D4C64 /* ConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3476F8C2149B28C005D4C64 /* ConnectionProvider.cpp */; };
 		B367F4B0206CF86F00668A2C /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B367F4AE206CF86F00668A2C /* App.cpp */; };
 		B37B5EA920E433B4003A7683 /* Types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B37B5DCB20E433B4003A7683 /* Types.cpp */; };
 		B37B5EAA20E433B4003A7683 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B37B5DCD20E433B4003A7683 /* LinkedList.cpp */; };
@@ -88,10 +93,6 @@
 		B37B5EF720E433B4003A7683 /* ObjectMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B37B5EA320E433B4003A7683 /* ObjectMapper.cpp */; };
 		B37B5EF820E433B4003A7683 /* Serializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B37B5EA420E433B4003A7683 /* Serializer.cpp */; };
 		B37B5EF920E433B4003A7683 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B37B5EA520E433B4003A7683 /* Utils.cpp */; };
-		B3A9E1C620DDA2DE00427E03 /* ConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1C420DDA2DE00427E03 /* ConnectionProvider.cpp */; };
-		B3A9E1C920DDA73F00427E03 /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1C720DDA73F00427E03 /* Connection.cpp */; };
-		B3A9E1CC20DE459800427E03 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1CA20DE459800427E03 /* Config.cpp */; };
-		B3A9E1D320DEE1B400427E03 /* ConnectionProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9E1D120DEE1B400427E03 /* ConnectionProvider.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,6 +108,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B3476F7E2149B28C005D4C64 /* Connection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Connection.hpp; sourceTree = "<group>"; };
+		B3476F7F2149B28C005D4C64 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B3476F802149B28C005D4C64 /* Callbacks.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Callbacks.hpp; sourceTree = "<group>"; };
+		B3476F812149B28C005D4C64 /* Config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
+		B3476F832149B28C005D4C64 /* ConnectionProvider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionProvider.hpp; sourceTree = "<group>"; };
+		B3476F842149B28C005D4C64 /* ConnectionProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionProvider.cpp; sourceTree = "<group>"; };
+		B3476F852149B28C005D4C64 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B3476F862149B28C005D4C64 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B3476F872149B28C005D4C64 /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
+		B3476F882149B28C005D4C64 /* Callbacks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Callbacks.cpp; sourceTree = "<group>"; };
+		B3476F892149B28C005D4C64 /* Connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Connection.cpp; sourceTree = "<group>"; };
+		B3476F8B2149B28C005D4C64 /* ConnectionProvider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionProvider.hpp; sourceTree = "<group>"; };
+		B3476F8C2149B28C005D4C64 /* ConnectionProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionProvider.cpp; sourceTree = "<group>"; };
 		B367F498206CF7B900668A2C /* tls-libressl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "tls-libressl"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B367F4A4206CF86F00668A2C /* MyDTOs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyDTOs.hpp; sourceTree = "<group>"; };
 		B367F4A5206CF86F00668A2C /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
@@ -285,18 +299,7 @@
 		B37B5EA620E433B4003A7683 /* Utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
 		B37B5EA720E433B4003A7683 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B37B5EA820E433B4003A7683 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B3A9E1BF20DDA29D00427E03 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B3A9E1C020DDA29D00427E03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B3A9E1C120DDA29D00427E03 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B3A9E1C420DDA2DE00427E03 /* ConnectionProvider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionProvider.cpp; sourceTree = "<group>"; };
-		B3A9E1C520DDA2DE00427E03 /* ConnectionProvider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConnectionProvider.hpp; sourceTree = "<group>"; };
-		B3A9E1C720DDA73F00427E03 /* Connection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Connection.cpp; sourceTree = "<group>"; };
-		B3A9E1C820DDA73F00427E03 /* Connection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Connection.hpp; sourceTree = "<group>"; };
-		B3A9E1CA20DE459800427E03 /* Config.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cpp; sourceTree = "<group>"; };
-		B3A9E1CB20DE459800427E03 /* Config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
 		B3A9E1CF20DE4CF200427E03 /* MyApiClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyApiClient.hpp; sourceTree = "<group>"; };
-		B3A9E1D120DEE1B400427E03 /* ConnectionProvider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionProvider.cpp; sourceTree = "<group>"; };
-		B3A9E1D220DEE1B400427E03 /* ConnectionProvider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConnectionProvider.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,11 +313,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3476F7D2149B28C005D4C64 /* oatpp-libressl */ = {
+			isa = PBXGroup;
+			children = (
+				B3476F7E2149B28C005D4C64 /* Connection.hpp */,
+				B3476F7F2149B28C005D4C64 /* LICENSE */,
+				B3476F802149B28C005D4C64 /* Callbacks.hpp */,
+				B3476F812149B28C005D4C64 /* Config.hpp */,
+				B3476F822149B28C005D4C64 /* server */,
+				B3476F852149B28C005D4C64 /* README.md */,
+				B3476F862149B28C005D4C64 /* .gitignore */,
+				B3476F872149B28C005D4C64 /* Config.cpp */,
+				B3476F882149B28C005D4C64 /* Callbacks.cpp */,
+				B3476F892149B28C005D4C64 /* Connection.cpp */,
+				B3476F8A2149B28C005D4C64 /* client */,
+			);
+			name = "oatpp-libressl";
+			path = "../lib/oatpp-libressl";
+			sourceTree = "<group>";
+		};
+		B3476F822149B28C005D4C64 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				B3476F832149B28C005D4C64 /* ConnectionProvider.hpp */,
+				B3476F842149B28C005D4C64 /* ConnectionProvider.cpp */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		B3476F8A2149B28C005D4C64 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				B3476F8B2149B28C005D4C64 /* ConnectionProvider.hpp */,
+				B3476F8C2149B28C005D4C64 /* ConnectionProvider.cpp */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
 		B367F48F206CF7B900668A2C = {
 			isa = PBXGroup;
 			children = (
+				B3476F7D2149B28C005D4C64 /* oatpp-libressl */,
 				B37B5DC920E433B4003A7683 /* oatpp */,
-				B3A9E1BE20DDA29D00427E03 /* oatpp-libressl */,
 				B367F4A2206CF86F00668A2C /* src */,
 				B367F499206CF7B900668A2C /* Products */,
 			);
@@ -932,41 +972,6 @@
 			path = mapping;
 			sourceTree = "<group>";
 		};
-		B3A9E1BE20DDA29D00427E03 /* oatpp-libressl */ = {
-			isa = PBXGroup;
-			children = (
-				B3A9E1C120DDA29D00427E03 /* .gitignore */,
-				B3A9E1C320DDA2BA00427E03 /* client */,
-				B3A9E1C720DDA73F00427E03 /* Connection.cpp */,
-				B3A9E1C820DDA73F00427E03 /* Connection.hpp */,
-				B3A9E1BF20DDA29D00427E03 /* LICENSE */,
-				B3A9E1C020DDA29D00427E03 /* README.md */,
-				B3A9E1C220DDA2B000427E03 /* server */,
-				B3A9E1CA20DE459800427E03 /* Config.cpp */,
-				B3A9E1CB20DE459800427E03 /* Config.hpp */,
-			);
-			name = "oatpp-libressl";
-			path = "../lib/oatpp-libressl";
-			sourceTree = "<group>";
-		};
-		B3A9E1C220DDA2B000427E03 /* server */ = {
-			isa = PBXGroup;
-			children = (
-				B3A9E1D120DEE1B400427E03 /* ConnectionProvider.cpp */,
-				B3A9E1D220DEE1B400427E03 /* ConnectionProvider.hpp */,
-			);
-			path = server;
-			sourceTree = "<group>";
-		};
-		B3A9E1C320DDA2BA00427E03 /* client */ = {
-			isa = PBXGroup;
-			children = (
-				B3A9E1C420DDA2DE00427E03 /* ConnectionProvider.cpp */,
-				B3A9E1C520DDA2DE00427E03 /* ConnectionProvider.hpp */,
-			);
-			path = client;
-			sourceTree = "<group>";
-		};
 		B3A9E1CD20DE4CC600427E03 /* client */ = {
 			isa = PBXGroup;
 			children = (
@@ -1033,7 +1038,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B37B5EC420E433B4003A7683 /* ObjectPool.cpp in Sources */,
-				B3A9E1CC20DE459800427E03 /* Config.cpp in Sources */,
 				B37B5EAB20E433B4003A7683 /* FastQueue.cpp in Sources */,
 				B37B5EB220E433B4003A7683 /* SpinLock.cpp in Sources */,
 				B37B5EB320E433B4003A7683 /* Thread.cpp in Sources */,
@@ -1041,6 +1045,7 @@
 				B37B5EE920E433B4003A7683 /* ApiClient.cpp in Sources */,
 				B37B5EBC20E433B4003A7683 /* ChunkedBuffer.cpp in Sources */,
 				B37B5EAD20E433B4003A7683 /* Processor.cpp in Sources */,
+				B3476F8D2149B28C005D4C64 /* ConnectionProvider.cpp in Sources */,
 				B37B5EE520E433B4003A7683 /* Subscriber.cpp in Sources */,
 				B37B5EF420E433B4003A7683 /* Hex.cpp in Sources */,
 				B37B5EB920E433B4003A7683 /* ObjectMapper.cpp in Sources */,
@@ -1056,14 +1061,13 @@
 				B37B5EB420E433B4003A7683 /* Library.cpp in Sources */,
 				B37B5EDD20E433B4003A7683 /* Response.cpp in Sources */,
 				B37B5EE120E433B4003A7683 /* Request.cpp in Sources */,
-				B3A9E1C620DDA2DE00427E03 /* ConnectionProvider.cpp in Sources */,
 				B37B5ED820E433B4003A7683 /* HttpRouter.cpp in Sources */,
 				B37B5EB520E433B4003A7683 /* Object.cpp in Sources */,
 				B37B5ED420E433B4003A7683 /* HttpProcessor.cpp in Sources */,
 				B37B5EBA20E433B4003A7683 /* Delegate.cpp in Sources */,
+				B3476F912149B28C005D4C64 /* ConnectionProvider.cpp in Sources */,
 				B37B5ECB20E433B4003A7683 /* DTOMapperPerfTest.cpp in Sources */,
 				B37B5EE420E433B4003A7683 /* Router.cpp in Sources */,
-				B3A9E1C920DDA73F00427E03 /* Connection.cpp in Sources */,
 				B37B5EEE20E433B4003A7683 /* SimpleTCPConnectionProvider.cpp in Sources */,
 				B37B5EEB20E433B4003A7683 /* Url.cpp in Sources */,
 				B37B5EA920E433B4003A7683 /* Types.cpp in Sources */,
@@ -1085,10 +1089,10 @@
 				B37B5EF820E433B4003A7683 /* Serializer.cpp in Sources */,
 				B37B5EE620E433B4003A7683 /* Pattern.cpp in Sources */,
 				B37B5EBB20E433B4003A7683 /* Stream.cpp in Sources */,
-				B3A9E1D320DEE1B400427E03 /* ConnectionProvider.cpp in Sources */,
 				B37B5EF720E433B4003A7683 /* ObjectMapper.cpp in Sources */,
 				B37B5ECD20E433B4003A7683 /* DTOMapperTest.cpp in Sources */,
 				B37B5EAC20E433B4003A7683 /* ListMap.cpp in Sources */,
+				B3476F8F2149B28C005D4C64 /* Callbacks.cpp in Sources */,
 				B37B5ECC20E433B4003A7683 /* DeserializerTest.cpp in Sources */,
 				B37B5EDA20E433B4003A7683 /* Request.cpp in Sources */,
 				B37B5EC920E433B4003A7683 /* RegRuleTest.cpp in Sources */,
@@ -1105,6 +1109,7 @@
 				B37B5ED520E433B4003A7683 /* HttpConnectionHandler.cpp in Sources */,
 				B37B5EF020E433B4003A7683 /* Server.cpp in Sources */,
 				B37B5ECA20E433B4003A7683 /* UnicodeTest.cpp in Sources */,
+				B3476F902149B28C005D4C64 /* Connection.cpp in Sources */,
 				B37B5EF520E433B4003A7683 /* Unicode.cpp in Sources */,
 				B37B5EEC20E433B4003A7683 /* Pipe.cpp in Sources */,
 				B37B5ED720E433B4003A7683 /* ApiController.cpp in Sources */,
@@ -1115,6 +1120,7 @@
 				B37B5EF620E433B4003A7683 /* Deserializer.cpp in Sources */,
 				B37B5ECF20E433B4003A7683 /* UnitTest.cpp in Sources */,
 				B37B5EB720E433B4003A7683 /* Primitive.cpp in Sources */,
+				B3476F8E2149B28C005D4C64 /* Config.cpp in Sources */,
 				B37B5ED620E433B4003A7683 /* Endpoint.cpp in Sources */,
 				B37B5EBE20E433B4003A7683 /* IOBuffer.cpp in Sources */,
 			);
@@ -1237,7 +1243,11 @@
 				HEADER_SEARCH_PATHS = /usr/local/Cellar/libressl/2.7.4/include;
 				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/libressl/2.7.4/lib;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-ltls";
+				OTHER_LDFLAGS = (
+					"-ltls",
+					"-lssl",
+					"-lcrypto",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = ../lib;
 			};
@@ -1250,7 +1260,11 @@
 				HEADER_SEARCH_PATHS = /usr/local/Cellar/libressl/2.7.4/include;
 				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/libressl/2.7.4/lib;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-ltls";
+				OTHER_LDFLAGS = (
+					"-ltls",
+					"-lssl",
+					"-lcrypto",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = ../lib;
 			};

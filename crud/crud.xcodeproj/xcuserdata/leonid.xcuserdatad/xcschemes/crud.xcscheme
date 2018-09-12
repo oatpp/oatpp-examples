@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B367F497206CF7B900668A2C"
-               BuildableName = "AsyncApi"
-               BlueprintName = "AsyncApi"
-               ReferencedContainer = "container:AsyncApi.xcodeproj">
+               BlueprintIdentifier = "B3F7A7712058233200DA8A39"
+               BuildableName = "crud"
+               BlueprintName = "crud"
+               ReferencedContainer = "container:crud.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B367F497206CF7B900668A2C"
-            BuildableName = "AsyncApi"
-            BlueprintName = "AsyncApi"
-            ReferencedContainer = "container:AsyncApi.xcodeproj">
+            BlueprintIdentifier = "B3F7A7712058233200DA8A39"
+            BuildableName = "crud"
+            BlueprintName = "crud"
+            ReferencedContainer = "container:crud.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B367F497206CF7B900668A2C"
-            BuildableName = "AsyncApi"
-            BlueprintName = "AsyncApi"
-            ReferencedContainer = "container:AsyncApi.xcodeproj">
+            BlueprintIdentifier = "B3F7A7712058233200DA8A39"
+            BuildableName = "crud"
+            BlueprintName = "crud"
+            ReferencedContainer = "container:crud.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B367F497206CF7B900668A2C"
-            BuildableName = "AsyncApi"
-            BlueprintName = "AsyncApi"
-            ReferencedContainer = "container:AsyncApi.xcodeproj">
+            BlueprintIdentifier = "B3F7A7712058233200DA8A39"
+            BuildableName = "crud"
+            BlueprintName = "crud"
+            ReferencedContainer = "container:crud.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
