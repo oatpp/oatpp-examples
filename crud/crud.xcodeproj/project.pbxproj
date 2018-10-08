@@ -148,8 +148,8 @@
 		B3917345216102A800E6E60F /* List.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		B3917346216102A800E6E60F /* ListMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListMap.cpp; sourceTree = "<group>"; };
 		B3917347216102A800E6E60F /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
-		B3917349216102A800E6E60F /* zzz_macro_define_DTO_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_define_DTO_.hpp; sourceTree = "<group>"; };
-		B391734A216102A800E6E60F /* zzz_macro_undef_DTO_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_undef_DTO_.hpp; sourceTree = "<group>"; };
+		B3917349216102A800E6E60F /* codegen_define_DTO_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = codegen_define_DTO_.hpp; sourceTree = "<group>"; };
+		B391734A216102A800E6E60F /* codegen_undef_DTO_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = codegen_undef_DTO_.hpp; sourceTree = "<group>"; };
 		B391734B216102A800E6E60F /* List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
 		B391734C216102A800E6E60F /* ListMap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ListMap.hpp; sourceTree = "<group>"; };
 		B391734D216102A800E6E60F /* Primitive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Primitive.cpp; sourceTree = "<group>"; };
@@ -214,8 +214,8 @@
 		B391739A216102A800E6E60F /* HttpConnectionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpConnectionHandler.cpp; sourceTree = "<group>"; };
 		B391739C216102A800E6E60F /* ApiController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ApiController.hpp; sourceTree = "<group>"; };
 		B391739D216102A800E6E60F /* Endpoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Endpoint.cpp; sourceTree = "<group>"; };
-		B391739F216102A800E6E60F /* zzz_macro_define_ApiController_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_define_ApiController_.hpp; sourceTree = "<group>"; };
-		B39173A0216102A800E6E60F /* zzz_macro_undef_ApiController_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_undef_ApiController_.hpp; sourceTree = "<group>"; };
+		B391739F216102A800E6E60F /* codegen_define_ApiController_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = codegen_define_ApiController_.hpp; sourceTree = "<group>"; };
+		B39173A0216102A800E6E60F /* codegen_undef_ApiController_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = codegen_undef_ApiController_.hpp; sourceTree = "<group>"; };
 		B39173A1216102A800E6E60F /* Endpoint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Endpoint.hpp; sourceTree = "<group>"; };
 		B39173A2216102A800E6E60F /* ApiController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApiController.cpp; sourceTree = "<group>"; };
 		B39173A3216102A800E6E60F /* AsyncHttpConnectionHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AsyncHttpConnectionHandler.hpp; sourceTree = "<group>"; };
@@ -254,8 +254,8 @@
 		B39173CB216102A800E6E60F /* RequestExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RequestExecutor.cpp; sourceTree = "<group>"; };
 		B39173CC216102A800E6E60F /* HttpRequestExecutor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HttpRequestExecutor.hpp; sourceTree = "<group>"; };
 		B39173CD216102A800E6E60F /* ApiClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApiClient.cpp; sourceTree = "<group>"; };
-		B39173CF216102A800E6E60F /* zzz_macro_define_ApiClient_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_define_ApiClient_.hpp; sourceTree = "<group>"; };
-		B39173D0216102A800E6E60F /* zzz_macro_undef_ApiClient_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = zzz_macro_undef_ApiClient_.hpp; sourceTree = "<group>"; };
+		B39173CF216102A800E6E60F /* codegen_define_ApiClient_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = codegen_define_ApiClient_.hpp; sourceTree = "<group>"; };
+		B39173D0216102A800E6E60F /* codegen_undef_ApiClient_.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = codegen_undef_ApiClient_.hpp; sourceTree = "<group>"; };
 		B39173D1216102A800E6E60F /* ApiClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ApiClient.hpp; sourceTree = "<group>"; };
 		B39173D2216102A800E6E60F /* RequestExecutor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RequestExecutor.hpp; sourceTree = "<group>"; };
 		B39173D3216102A800E6E60F /* HttpRequestExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpRequestExecutor.cpp; sourceTree = "<group>"; };
@@ -350,6 +350,7 @@
 		B3917319216102A800E6E60F /* oatpp */ = {
 			isa = PBXGroup;
 			children = (
+				B391812F216B932100E6E60F /* codegen */,
 				B391731A216102A800E6E60F /* core */,
 				B391736D216102A800E6E60F /* LICENSE */,
 				B391736E216102A800E6E60F /* test */,
@@ -368,17 +369,17 @@
 		B391731A216102A800E6E60F /* core */ = {
 			isa = PBXGroup;
 			children = (
-				B391731B216102A800E6E60F /* Types.cpp */,
-				B391731C216102A800E6E60F /* collection */,
 				B3917323216102A800E6E60F /* async */,
-				B3917328216102A800E6E60F /* utils */,
-				B391732B216102A800E6E60F /* parser */,
+				B391735E216102A800E6E60F /* base */,
+				B391731C216102A800E6E60F /* collection */,
 				B391732E216102A800E6E60F /* concurrency */,
+				B391733E216102A800E6E60F /* data */,
 				B3917335216102A800E6E60F /* macro */,
 				B3917339216102A800E6E60F /* os */,
+				B391732B216102A800E6E60F /* parser */,
+				B391731B216102A800E6E60F /* Types.cpp */,
 				B391733D216102A800E6E60F /* Types.hpp */,
-				B391733E216102A800E6E60F /* data */,
-				B391735E216102A800E6E60F /* base */,
+				B3917328216102A800E6E60F /* utils */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -468,9 +469,9 @@
 		B391733E216102A800E6E60F /* data */ = {
 			isa = PBXGroup;
 			children = (
+				B3917359216102A800E6E60F /* buffer */,
 				B391733F216102A800E6E60F /* mapping */,
 				B3917350216102A800E6E60F /* stream */,
-				B3917359216102A800E6E60F /* buffer */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -478,9 +479,9 @@
 		B391733F216102A800E6E60F /* mapping */ = {
 			isa = PBXGroup;
 			children = (
+				B391734F216102A800E6E60F /* ObjectMapper.cpp */,
 				B3917340216102A800E6E60F /* ObjectMapper.hpp */,
 				B3917341216102A800E6E60F /* type */,
-				B391734F216102A800E6E60F /* ObjectMapper.cpp */,
 			);
 			path = mapping;
 			sourceTree = "<group>";
@@ -488,28 +489,18 @@
 		B3917341216102A800E6E60F /* type */ = {
 			isa = PBXGroup;
 			children = (
-				B3917342216102A800E6E60F /* Primitive.hpp */,
-				B3917343216102A800E6E60F /* Type.hpp */,
-				B3917344216102A800E6E60F /* Object.cpp */,
+				B391734B216102A800E6E60F /* List.cpp */,
 				B3917345216102A800E6E60F /* List.hpp */,
 				B3917346216102A800E6E60F /* ListMap.cpp */,
-				B3917347216102A800E6E60F /* Object.hpp */,
-				B3917348216102A800E6E60F /* macro */,
-				B391734B216102A800E6E60F /* List.cpp */,
 				B391734C216102A800E6E60F /* ListMap.hpp */,
+				B3917344216102A800E6E60F /* Object.cpp */,
+				B3917347216102A800E6E60F /* Object.hpp */,
 				B391734D216102A800E6E60F /* Primitive.cpp */,
+				B3917342216102A800E6E60F /* Primitive.hpp */,
 				B391734E216102A800E6E60F /* Type.cpp */,
+				B3917343216102A800E6E60F /* Type.hpp */,
 			);
 			path = type;
-			sourceTree = "<group>";
-		};
-		B3917348216102A800E6E60F /* macro */ = {
-			isa = PBXGroup;
-			children = (
-				B3917349216102A800E6E60F /* zzz_macro_define_DTO_.hpp */,
-				B391734A216102A800E6E60F /* zzz_macro_undef_DTO_.hpp */,
-			);
-			path = macro;
 			sourceTree = "<group>";
 		};
 		B3917350216102A800E6E60F /* stream */ = {
@@ -541,14 +532,14 @@
 		B391735E216102A800E6E60F /* base */ = {
 			isa = PBXGroup;
 			children = (
-				B391735F216102A800E6E60F /* Controllable.cpp */,
-				B3917360216102A800E6E60F /* StrBuffer.hpp */,
-				B3917361216102A800E6E60F /* Environment.cpp */,
-				B3917362216102A800E6E60F /* memory */,
 				B3917369216102A800E6E60F /* Config.hpp */,
+				B391735F216102A800E6E60F /* Controllable.cpp */,
 				B391736A216102A800E6E60F /* Controllable.hpp */,
-				B391736B216102A800E6E60F /* StrBuffer.cpp */,
+				B3917361216102A800E6E60F /* Environment.cpp */,
 				B391736C216102A800E6E60F /* Environment.hpp */,
+				B3917362216102A800E6E60F /* memory */,
+				B391736B216102A800E6E60F /* StrBuffer.cpp */,
+				B3917360216102A800E6E60F /* StrBuffer.hpp */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -687,18 +678,18 @@
 		B391738E216102A800E6E60F /* server */ = {
 			isa = PBXGroup;
 			children = (
-				B391738F216102A800E6E60F /* handler */,
-				B3917394216102A800E6E60F /* AsyncHttpConnectionHandler.cpp */,
-				B3917395216102A800E6E60F /* HttpRouter.hpp */,
-				B3917396216102A800E6E60F /* HttpError.cpp */,
-				B3917397216102A800E6E60F /* HttpProcessor.hpp */,
-				B3917398216102A800E6E60F /* HttpConnectionHandler.hpp */,
-				B3917399216102A800E6E60F /* HttpProcessor.cpp */,
-				B391739A216102A800E6E60F /* HttpConnectionHandler.cpp */,
 				B391739B216102A800E6E60F /* api */,
+				B3917394216102A800E6E60F /* AsyncHttpConnectionHandler.cpp */,
 				B39173A3216102A800E6E60F /* AsyncHttpConnectionHandler.hpp */,
-				B39173A4216102A800E6E60F /* HttpRouter.cpp */,
+				B391738F216102A800E6E60F /* handler */,
+				B391739A216102A800E6E60F /* HttpConnectionHandler.cpp */,
+				B3917398216102A800E6E60F /* HttpConnectionHandler.hpp */,
+				B3917396216102A800E6E60F /* HttpError.cpp */,
 				B39173A5216102A800E6E60F /* HttpError.hpp */,
+				B3917399216102A800E6E60F /* HttpProcessor.cpp */,
+				B3917397216102A800E6E60F /* HttpProcessor.hpp */,
+				B39173A4216102A800E6E60F /* HttpRouter.cpp */,
+				B3917395216102A800E6E60F /* HttpRouter.hpp */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -706,10 +697,10 @@
 		B391738F216102A800E6E60F /* handler */ = {
 			isa = PBXGroup;
 			children = (
-				B3917390216102A800E6E60F /* Interceptor.hpp */,
 				B3917391216102A800E6E60F /* ErrorHandler.cpp */,
-				B3917392216102A800E6E60F /* Interceptor.cpp */,
 				B3917393216102A800E6E60F /* ErrorHandler.hpp */,
+				B3917392216102A800E6E60F /* Interceptor.cpp */,
+				B3917390216102A800E6E60F /* Interceptor.hpp */,
 			);
 			path = handler;
 			sourceTree = "<group>";
@@ -717,22 +708,12 @@
 		B391739B216102A800E6E60F /* api */ = {
 			isa = PBXGroup;
 			children = (
+				B39173A2216102A800E6E60F /* ApiController.cpp */,
 				B391739C216102A800E6E60F /* ApiController.hpp */,
 				B391739D216102A800E6E60F /* Endpoint.cpp */,
-				B391739E216102A800E6E60F /* macro */,
 				B39173A1216102A800E6E60F /* Endpoint.hpp */,
-				B39173A2216102A800E6E60F /* ApiController.cpp */,
 			);
 			path = api;
-			sourceTree = "<group>";
-		};
-		B391739E216102A800E6E60F /* macro */ = {
-			isa = PBXGroup;
-			children = (
-				B391739F216102A800E6E60F /* zzz_macro_define_ApiController_.hpp */,
-				B39173A0216102A800E6E60F /* zzz_macro_undef_ApiController_.hpp */,
-			);
-			path = macro;
 			sourceTree = "<group>";
 		};
 		B39173A6216102A800E6E60F /* protocol */ = {
@@ -814,24 +795,14 @@
 		B39173CA216102A800E6E60F /* client */ = {
 			isa = PBXGroup;
 			children = (
-				B39173CB216102A800E6E60F /* RequestExecutor.cpp */,
-				B39173CC216102A800E6E60F /* HttpRequestExecutor.hpp */,
 				B39173CD216102A800E6E60F /* ApiClient.cpp */,
-				B39173CE216102A800E6E60F /* macro */,
 				B39173D1216102A800E6E60F /* ApiClient.hpp */,
-				B39173D2216102A800E6E60F /* RequestExecutor.hpp */,
 				B39173D3216102A800E6E60F /* HttpRequestExecutor.cpp */,
+				B39173CC216102A800E6E60F /* HttpRequestExecutor.hpp */,
+				B39173CB216102A800E6E60F /* RequestExecutor.cpp */,
+				B39173D2216102A800E6E60F /* RequestExecutor.hpp */,
 			);
 			path = client;
-			sourceTree = "<group>";
-		};
-		B39173CE216102A800E6E60F /* macro */ = {
-			isa = PBXGroup;
-			children = (
-				B39173CF216102A800E6E60F /* zzz_macro_define_ApiClient_.hpp */,
-				B39173D0216102A800E6E60F /* zzz_macro_undef_ApiClient_.hpp */,
-			);
-			path = macro;
 			sourceTree = "<group>";
 		};
 		B39173D4216102A800E6E60F /* network */ = {
@@ -982,6 +953,19 @@
 				B3917414216102A800E6E60F /* Generator.hpp */,
 			);
 			path = oas3;
+			sourceTree = "<group>";
+		};
+		B391812F216B932100E6E60F /* codegen */ = {
+			isa = PBXGroup;
+			children = (
+				B39173CF216102A800E6E60F /* codegen_define_ApiClient_.hpp */,
+				B391739F216102A800E6E60F /* codegen_define_ApiController_.hpp */,
+				B3917349216102A800E6E60F /* codegen_define_DTO_.hpp */,
+				B39173D0216102A800E6E60F /* codegen_undef_ApiClient_.hpp */,
+				B39173A0216102A800E6E60F /* codegen_undef_ApiController_.hpp */,
+				B391734A216102A800E6E60F /* codegen_undef_DTO_.hpp */,
+			);
+			path = codegen;
 			sourceTree = "<group>";
 		};
 		B3F7A7692058233200DA8A39 = {
