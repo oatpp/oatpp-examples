@@ -6,6 +6,7 @@ Live stream tested with Safari-Browser and VLC-player
 More about oat++:
 - Website: [https://oatpp.io](https://oatpp.io)
 - Docs: [https://oatpp.io/docs/start](https://oatpp.io/docs/start)
+- Oat++ Repo: [https://github.com/oatpp/oatpp](https://github.com/oatpp/oatpp)
 
 ## Overview
 
@@ -23,7 +24,16 @@ Server is built using oat++ Async-Api and has following endpoints:
 ### Screenshots
 <img src="https://github.com/oatpp/oatpp-examples/blob/master/Media-Stream/screenshots/screen-2.png" width="33%"><img src="https://github.com/oatpp/oatpp-examples/blob/master/Media-Stream/screenshots/screen-3.png" width="33%"><img src="https://github.com/oatpp/oatpp-examples/blob/master/Media-Stream/screenshots/screen-4.png" width="33%">
 
+### Files and Folders
 
+```
+
+- src/                      - code is here
+- video/                    - media files and playlists here
+   |- generate_pls.sh       - example how to use ```ffmpeg``` to generate initial playlist and video chunks
+   |- playlist_live.m3u8    - playlist used to generate infinite playlist for http-live-streaming
+   
+```
 
 ## Build and run
 
