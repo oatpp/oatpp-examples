@@ -3,47 +3,50 @@ Example project of how-to build HLS-streaming server using oat++ Async-API.
 
 Live stream tested with Safari-Browser and VLC-player
 
+More about oat++:
+- Website: [https://oatpp.io](https://oatpp.io)
+- Docs: [https://oatpp.io/docs/start](https://oatpp.io/docs/start)
+
+## Overview
+
+Server generates infinite .m3u8 playlist from the pre-generated 
+```playlist_live.m3u8``` file in the ```video``` folder.  
+File ```video/playlist_live.m3u8``` together with video chunks is generated using ```ffmpeg```.  
+
+Server is built using oat++ Async-Api and has following endpoints:
+
+- ```("GET", "/", Root)``` - Starting html-page aka index.html
+- ```("GET", "video/*", Video)``` - Embedded video html-page 
+- ```("GET", "media/live", Live)``` - Infinite HLS playlist for live-stream describing video chunks
+- ```("GET", "media/*", Static)``` - Endpoint serving media files with range requests support
+
+### Screenshots
+<img src="https://github.com/oatpp/oatpp-examples/blob/master/Media-Stream/screenshots/screen-2.png" width="33%"><img src="https://github.com/oatpp/oatpp-examples/blob/master/Media-Stream/screenshots/screen-3.png" width="33%"><img src="https://github.com/oatpp/oatpp-examples/blob/master/Media-Stream/screenshots/screen-4.png" width="33%">
+
+
+
 ## Build and run
 
 1) Git-Clone examples repo:
 ```
-git clone https://github.com/oatpp/oatpp-examples
+$ git clone --recurse-submodules https://github.com/oatpp/oatpp-examples
 ```
 
-2) Get oatpp-lib (it is included as git submodule)
+2) CD to this example 
 ```
-git submodule init
-git submodule update --remote --merge
+$ cd oatpp-examples/Media-Stream/
 ```
+3) Build project
+```
+$ ./build_app.sh
+```
+This will just call g++
 
-3) CD to crud example-project
-```
-cd crud/
-```
-4) Build project
-```
-./build_app.sh
-```
-or (same as in build_app.sh)
-```
-g++ -std=gnu++11 \
--pthread \
-`find "../lib/oatpp-lib/" -type f -name *.cpp` \
-`find "./src/" -type f -name *.cpp` \
--D OATPP_USE_TARGET \
--D OATPP_TARGET_APP \
--D OATPP_DISABLE_ENV_OBJECT_COUNTERS \
--O2 \
--Wall \
--o run_app
-
-chmod +x run_app
-```
-5) Run app
+4) Run app
 ```
 ./run_app
 ```
-6) Read 'Documentation' section of README
+5) Read 'Documentation' section of README
 
 enjoy!
 
