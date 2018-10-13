@@ -23,7 +23,7 @@
  *  More details on oatpp.io
  */
 class UserController : public oatpp::web::server::api::ApiController {
-protected:
+public:
   UserController(const std::shared_ptr<ObjectMapper>& objectMapper)
     : oatpp::web::server::api::ApiController(objectMapper)
   {}
@@ -41,7 +41,7 @@ public:
    */
   static std::shared_ptr<UserController> createShared(OATPP_COMPONENT(std::shared_ptr<ObjectMapper>,
                                                                  objectMapper)){
-    return std::shared_ptr<UserController>(new UserController(objectMapper));
+    return std::make_shared<UserController>(objectMapper);
   }
   
   /**
