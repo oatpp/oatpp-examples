@@ -1,4 +1,4 @@
-# Media-Stream (Http-Live-Streaming) Example
+# Media-Stream (Http-Live-Streaming) Server Example
 Example project of how-to build HLS-streaming server using oat++ Async-API.
 
 Live stream tested with Safari-Browser and VLC-player
