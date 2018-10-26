@@ -1,7 +1,11 @@
 # oatpp-examples
 List of example projects of how to use oat++ framework
 
-More about oatpp see [https://oatpp.io/](https://oatpp.io/)  
+More about oat++:
+- Website: [https://oatpp.io](https://oatpp.io)
+- Docs: [https://oatpp.io/docs/start](https://oatpp.io/docs/start)
+- Oat++ Repo: [https://github.com/oatpp/oatpp](https://github.com/oatpp/oatpp)
+
 
 ## Examples:
 
