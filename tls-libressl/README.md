@@ -99,7 +99,9 @@ $ curl -X GET "https://localhost:8443/api/get" --insecure
   "url": "https://httpbin.org/get"
 }
 ```
+## Requires
 
+LibreSSL installed.
 
 ## Build and run
 
