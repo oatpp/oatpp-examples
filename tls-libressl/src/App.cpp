@@ -26,6 +26,7 @@
 // std
 
 #include <iostream>
+#include <csignal>
 ///
 
 #include "oatpp-libressl/client/ConnectionProvider.hpp"
@@ -64,6 +65,9 @@ void run() {
   
   /* set lockingCallback for libressl */
   oatpp::libressl::Callbacks::setDefaultCallbacks();
+  
+  /* ignore SIGPIPE */
+  std::signal(SIGPIPE, SIG_IGN);
   
   AppComponent components; // Create scope Environment components
   
