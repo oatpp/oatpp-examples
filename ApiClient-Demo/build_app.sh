@@ -4,7 +4,11 @@ echo "Building app. Please wait..."
 
 g++ -std=gnu++11 \
 -pthread \
+-lcurl \
+-I "/usr/local/curl/include" \
+-L "/usr/local/curl/lib" \
 `find "../lib/oatpp/" -type f -name *.cpp` \
+`find "../lib/oatpp-curl/" -type f -name *.cpp` \
 `find "./src/" -type f -name *.cpp` \
 -I "../lib" \
 -D OATPP_USE_TARGET \

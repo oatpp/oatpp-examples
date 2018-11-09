@@ -13,3 +13,6 @@
 [submodule "lib/oatpp-swagger"]
 	path = lib/oatpp-swagger
 	url = https://github.com/oatpp/oatpp-swagger
+[submodule "lib/oatpp-curl"]
+	path = lib/oatpp-curl
+	url = https://github.com/oatpp/oatpp-curl

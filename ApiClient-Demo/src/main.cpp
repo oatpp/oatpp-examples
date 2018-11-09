@@ -6,40 +6,46 @@
 //  Copyright © 2018 oatpp. All rights reserved.
 //
 
-#include "./DemoApiClient.hpp"
-#include "./DemoRequestExecutor.hpp"
-#include "./Logger.hpp"
+#include "AsyncExample.hpp"
+#include "SimpleExample.hpp"
+
+#include "DemoApiClient.hpp"
+#include "Logger.hpp"
+
+#include "oatpp-curl/RequestExecutor.hpp"
+
+#include "oatpp/web/client/HttpRequestExecutor.hpp"
+#include "oatpp/network/client/SimpleTCPConnectionProvider.hpp"
 
 #include "oatpp/parser/json/mapping/ObjectMapper.hpp"
 
 #include <iostream>
 
+std::shared_ptr<oatpp::web::client::RequestExecutor> createOatppExecutor() {
+  auto connectionProvider = oatpp::network::client::SimpleTCPConnectionProvider::createShared("httpbin.org", 80);
+  return oatpp::web::client::HttpRequestExecutor::createShared(connectionProvider);
+}
+
+std::shared_ptr<oatpp::web::client::RequestExecutor> createCurlExecutor() {
+  return oatpp::curl::RequestExecutor::createShared("http://httpbin.org/", false /* set verbose=true for dubug info */);
+}
+
 void run(){
-  
-  /* Create RequestExecutor which will execute ApiClient's requests */
-  auto requestExecutor = std::make_shared<DemoRequestExecutor>();
   
   /* Create ObjectMapper for serialization of DTOs  */
   auto objectMapper = oatpp::parser::json::mapping::ObjectMapper::createShared();
   
+  /* Create RequestExecutor which will execute ApiClient's requests */
+  //auto requestExecutor = createOatppExecutor();
+  auto requestExecutor = createCurlExecutor();
+  
   /* DemoApiClient uses DemoRequestExecutor and json::mapping::ObjectMapper */
-  DemoApiClient client(requestExecutor, objectMapper);
+  /* ObjectMapper passed here is used for serialization of outgoing DTOs */
+  auto client = DemoApiClient::createShared(requestExecutor, objectMapper);
   
-  /* Call methods of DemoApiClient. DemoRequestExecutor will print request data to console */
+  SimpleExample::runExample(client);
+  AsyncExample::runExample(client);
   
-  client.getRoot();
-  
-  client.postData("some_auth_token", "<post-data>"); // simple POST request with string data
-  
-  auto user = UserDto::createShared();
-  user->id = 123456789;
-  user->name = "Ivan";
-  user->surname = "Ovsyanochka";
-  
-  client.postUser("some_auth_token", user); // POST request with DTO serialized via ObjectMapper
-  
-  client.getUsers("some_auth_token", 0, 100, "userName", "userLastName", 85); // GET request with path-variables, and query-variables
- 
 }
 
 int main(int argc, const char * argv[]) {
