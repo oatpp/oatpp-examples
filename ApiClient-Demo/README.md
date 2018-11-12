@@ -11,6 +11,10 @@ oatpp ```ApiClient``` is a mechanism which enables you to generate Web Api Clien
 Under the hood it uses provided ```RequestExecutor``` to perform http requests. Thus you are abstracted from the low-level http-client library implementation and can substitute any other http-client library at any time with zero code changes.  
 *Roughly you may treat oatpp ```ApiClient``` as Java Retrofit for C++.*
 
+In this example you can configure to use such RequestExecutors:
+- [oatpp-curl](https://github.com/oatpp/oatpp-curl) - RequestExecutor for oatpp's ApiClient based on libcurl.
+- ```oatpp::web::client::HttpRequestExecutor``` - oatpp out-of-the-box provided RequestExecutor
+
 ## Example overview
 
 In this example you will find: 
@@ -27,6 +31,75 @@ In this example you will find:
    |- SimpleExample.hpp     // Simple (Synchronous) API calls example
    |- AsyncExample.hpp      // Async API calls example
    |- main.cpp              // main is here
+```
+
+#### ApiClient declaration overview
+
+Use ```API_CALL``` for simple (synchronous) calls.  
+Use ```API_CALL_ASYNC``` for non-blocking Async calls.
+
+```c++
+class DemoApiClient : public oatpp::web::client::ApiClient {
+#include OATPP_CODEGEN_BEGIN(ApiClient)
+  
+  API_CLIENT_INIT(DemoApiClient)
+  
+  ...
+  
+  API_CALL("GET", "get", doGet)
+  API_CALL("POST", "post", doPost, BODY_STRING(String, body))
+  
+  ...
+  
+  API_CALL_ASYNC("GET", "get", doGetAsync)
+  API_CALL_ASYNC("POST", "post", doPostAsync, BODY_STRING(String, body))
+
+  ...
+  
+#include OATPP_CODEGEN_END(ApiClient)
+};
+```
+
+#### Example calls overview
+
+##### SimpleExample.hpp
+
+```c++
+{
+  auto data = client->doGet()->readBodyToString();
+  OATPP_LOGD(TAG, "[doGet] data='%s'", data->c_str());
+}
+
+{
+  auto data = client->doPost("Some data passed to POST")->readBodyToString();
+  OATPP_LOGD(TAG, "[doPost] data='%s'", data->c_str());
+}
+```
+
+##### AsyncExample.hpp
+
+```c++
+class SendCoroutine : public oatpp::async::Coroutine<SendCoroutine> {
+private:
+  std::shared_ptr<DemoApiClient> m_client;
+public:
+
+  SendCoroutine(const std::shared_ptr<DemoApiClient> client) : m_client(client) {}
+
+  Action act() override {
+    return m_client->doPostAsync(this, &SendDtoCoroutine::onResponse, "<POST-DATA-HERE>");
+  }
+
+  Action onResponse(const std::shared_ptr<Response>& response) {
+    return response->readBodyToStringAsync(this, &SendDtoCoroutine::onBody);
+  }
+
+  Action onBody(const oatpp::String& body) {
+    OATPP_LOGD(TAG, "[SendCoroutine. doPostAsync] data='%s'", body->c_str());
+    return finish();
+  }
+
+};
 ```
 
 #### Request executor configuration
