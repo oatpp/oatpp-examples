@@ -11,7 +11,6 @@
 
 #include "../db/Database.hpp"
 
-#include "oatpp/web/server/HttpError.hpp"
 #include "oatpp/web/server/api/ApiController.hpp"
 #include "oatpp/parser/json/mapping/ObjectMapper.hpp"
 #include "oatpp/core/macro/codegen.hpp"
@@ -52,6 +51,26 @@ public:
   /**
    *  Insert Your endpoints here !!!
    */
+  
+  ENDPOINT_INFO(root) {
+    info->summary = "Index.html page";
+    info->addResponse<UserDto::ObjectWrapper>(Status::CODE_200, "text/html");
+  }
+  ENDPOINT("GET", "/", root) {
+    const char* html =
+    "<html lang='en'>"
+    "<head>"
+    "<meta charset=utf-8/>"
+    "</head>"
+    "<body>"
+    "<p>Hello CRUD example project!</p>"
+    "<a href='swagger/ui'>Checkout Swagger-UI page</a>"
+    "</body>"
+    "</html>";
+    auto response = createResponse(Status::CODE_200, html);
+    response->putHeader(Header::CONTENT_TYPE, "text/html");
+    return response;
+  }
   
   ENDPOINT_INFO(createUser) {
     info->summary = "Create new User";

@@ -49,7 +49,7 @@ void run() {
   oatpp::network::server::Server server(components.serverConnectionProvider.getObject(),
                                         components.serverConnectionHandler.getObject());
   
-  OATPP_LOGD("Server", "Running on port %u...", components.serverConnectionProvider.getObject()->getPort());
+  OATPP_LOGD("Server", "Running on port %s...", components.serverConnectionProvider.getObject()->getProperty("port").toString()->c_str());
   
   server.run();
   

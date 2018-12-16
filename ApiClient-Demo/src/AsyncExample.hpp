@@ -62,6 +62,28 @@ private:
     
   };
   
+  class SendCoroutine : public oatpp::async::Coroutine<SendCoroutine> {
+  private:
+    std::shared_ptr<DemoApiClient> m_client;
+  public:
+    
+    SendCoroutine(const std::shared_ptr<DemoApiClient> client) : m_client(client) {}
+
+    Action act() override {
+      return m_client->doPostAsync(this, &SendDtoCoroutine::onResponse, "<POST-DATA-HERE>");
+    }
+    
+    Action onResponse(const std::shared_ptr<Response>& response) {
+      return response->readBodyToStringAsync(this, &SendDtoCoroutine::onBody);
+    }
+    
+    Action onBody(const oatpp::String& body) {
+      OATPP_LOGD(TAG, "[SendCoroutine. doPostAsync] data='%s'", body->c_str());
+      return finish();
+    }
+    
+  };
+  
 public:
   
   void static runExample(const std::shared_ptr<DemoApiClient>& client) {

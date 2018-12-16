@@ -12,7 +12,6 @@
 #include "oatpp-consul/rest/DTOs.hpp"
 #include "../dto/HealthDto.hpp"
 
-#include "oatpp/web/server/HttpError.hpp"
 #include "oatpp/web/server/api/ApiController.hpp"
 #include "oatpp/parser/json/mapping/ObjectMapper.hpp"
 #include "oatpp/core/macro/codegen.hpp"

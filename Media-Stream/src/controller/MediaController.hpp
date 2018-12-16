@@ -13,7 +13,6 @@
 #include "../Utils.hpp"
 
 #include "oatpp/web/server/api/ApiController.hpp"
-#include "oatpp/web/server/HttpError.hpp"
 #include "oatpp/web/protocol/http/outgoing/ChunkedBufferBody.hpp"
 #include "oatpp/core/macro/codegen.hpp"
 #include "oatpp/core/macro/component.hpp"
@@ -133,9 +132,9 @@ public:
     Action act() override {
       v_int64 time = getMillisTickCount() - getTime0();
       auto response = controller->createResponse(Status::CODE_200, controller->livePlaylist->generateForTime(time, 5));
-      response->headers->put("Accept-Ranges", "bytes");
-      response->headers->put(Header::CONNECTION, Header::Value::CONNECTION_KEEP_ALIVE);
-      response->headers->put(Header::CONTENT_TYPE, "application/x-mpegURL");
+      response->putHeader("Accept-Ranges", "bytes");
+      response->putHeader(Header::CONNECTION, Header::Value::CONNECTION_KEEP_ALIVE);
+      response->putHeader(Header::CONTENT_TYPE, "application/x-mpegURL");
       return _return(response);
     }
     
@@ -168,11 +167,11 @@ public:
         response = getRangeResponse(rangeStr, file);
       }
       
-      response->headers->put("Accept-Ranges", "bytes");
-      response->headers->put(Header::CONNECTION, Header::Value::CONNECTION_KEEP_ALIVE);
+      response->putHeader("Accept-Ranges", "bytes");
+      response->putHeader(Header::CONNECTION, Header::Value::CONNECTION_KEEP_ALIVE);
       auto mimeType = controller->staticFileManager->guessMimeType(request->getPathTail());
       if(mimeType) {
-        response->headers->put(Header::CONTENT_TYPE, mimeType);
+        response->putHeader(Header::CONTENT_TYPE, mimeType);
       } else {
         OATPP_LOGD("Server", "Unknown Mime-Type. Header not set");
       }
@@ -208,7 +207,7 @@ public:
       
       OATPP_LOGD("Server", "range=%s", contentRange.toString()->c_str());
       
-      response->headers->put(Header::CONTENT_RANGE, contentRange.toString());
+      response->putHeader(Header::CONTENT_RANGE, contentRange.toString());
       return response;
       
     }

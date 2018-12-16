@@ -47,7 +47,8 @@ void tryLibressl() {
   auto httpCP = oatpp::network::client::SimpleTCPConnectionProvider::createShared("httpbin.org", 80);
   auto re = oatpp::web::client::HttpRequestExecutor::createShared(httpsCP);
   
-  auto response = re->execute("GET", "/get", nullptr, nullptr);
+  oatpp::web::protocol::http::Protocol::Headers headers;
+  auto response = re->execute("GET", "/get", headers, nullptr);
   
   auto result = response->readBodyToString();
   
@@ -83,7 +84,7 @@ void run() {
   oatpp::network::server::Server server(components.serverConnectionProvider.getObject(),
                                         components.serverConnectionHandler.getObject());
   
-  OATPP_LOGD("Server", "Running on port %u...", components.serverConnectionProvider.getObject()->getPort());
+  OATPP_LOGD("Server", "Running on port %s...", components.serverConnectionProvider.getObject()->getProperty("port").toString()->c_str());
   
   server.run();
   

@@ -22,6 +22,8 @@ class DemoApiClient : public oatpp::web::client::ApiClient {
   //-----------------------------------------------------------------------------------------------
   // Synchronous calls
   
+  API_CALL_ASYNC("GET", "/", getRootAsync)
+  
   API_CALL("GET", "get", doGet)
   API_CALL("POST", "post", doPost, BODY_STRING(String, body))
   API_CALL("PUT", "put", doPut, BODY_STRING(String, body))
