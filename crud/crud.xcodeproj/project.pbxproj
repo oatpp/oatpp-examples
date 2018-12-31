@@ -458,20 +458,20 @@
 		B3D5C3C621B1490000EC9504 /* oatpp */ = {
 			isa = PBXGroup;
 			children = (
+				B3D5C4D721B1490100EC9504 /* .gitignore */,
+				B3D5C4C021B1490100EC9504 /* algorithm */,
+				B3D5C4D521B1490100EC9504 /* azure-pipelines.yml */,
 				B3D5C3C721B1490000EC9504 /* CMakeLists.txt */,
+				B3D5C4CE21B1490100EC9504 /* codegen */,
 				B3D5C3C821B1490000EC9504 /* core */,
+				B3D5C4B921B1490100EC9504 /* encoding */,
+				B3D5C4D821B1490100EC9504 /* lgtm.yml */,
 				B3D5C41D21B1490000EC9504 /* LICENSE */,
+				B3D5C49B21B1490100EC9504 /* network */,
+				B3D5C4C321B1490100EC9504 /* parser */,
+				B3D5C4D621B1490100EC9504 /* README.md */,
 				B3D5C41E21B1490000EC9504 /* test */,
 				B3D5C45421B1490000EC9504 /* web */,
-				B3D5C49B21B1490100EC9504 /* network */,
-				B3D5C4B921B1490100EC9504 /* encoding */,
-				B3D5C4C021B1490100EC9504 /* algorithm */,
-				B3D5C4C321B1490100EC9504 /* parser */,
-				B3D5C4CE21B1490100EC9504 /* codegen */,
-				B3D5C4D521B1490100EC9504 /* azure-pipelines.yml */,
-				B3D5C4D621B1490100EC9504 /* README.md */,
-				B3D5C4D721B1490100EC9504 /* .gitignore */,
-				B3D5C4D821B1490100EC9504 /* lgtm.yml */,
 			);
 			name = oatpp;
 			path = ../lib/oatpp;
@@ -511,10 +511,10 @@
 		B3D5C3D121B1490000EC9504 /* async */ = {
 			isa = PBXGroup;
 			children = (
-				B3D5C3D221B1490000EC9504 /* Processor.cpp */,
 				B3D5C3D321B1490000EC9504 /* Coroutine.cpp */,
-				B3D5C3D421B1490000EC9504 /* Processor.hpp */,
 				B3D5C3D521B1490000EC9504 /* Coroutine.hpp */,
+				B3D5C3D221B1490000EC9504 /* Processor.cpp */,
+				B3D5C3D421B1490000EC9504 /* Processor.hpp */,
 			);
 			path = async;
 			sourceTree = "<group>";
@@ -859,10 +859,10 @@
 		B3D5C45421B1490000EC9504 /* web */ = {
 			isa = PBXGroup;
 			children = (
-				B3D5C45521B1490000EC9504 /* server */,
-				B3D5C46A21B1490000EC9504 /* protocol */,
-				B3D5C48C21B1490000EC9504 /* url */,
 				B3D5C49421B1490100EC9504 /* client */,
+				B3D5C46A21B1490000EC9504 /* protocol */,
+				B3D5C45521B1490000EC9504 /* server */,
+				B3D5C48C21B1490000EC9504 /* url */,
 			);
 			path = web;
 			sourceTree = "<group>";
