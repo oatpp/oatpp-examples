@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B32F51B121772FFE00BA0FA8 /* Types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B32F51B021772FFE00BA0FA8 /* Types.cpp */; };
+		B38C708D21DC28A8006C404E /* Executor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B38C708B21DC28A7006C404E /* Executor.cpp */; };
 		B3917470216102A800E6E60F /* Generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3917412216102A800E6E60F /* Generator.cpp */; };
 		B3917471216102A800E6E60F /* Resources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3917415216102A800E6E60F /* Resources.cpp */; };
 		B3AB9D5021C16C6C00A7D5A3 /* FullAsyncTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3AB9D4E21C16C6C00A7D5A3 /* FullAsyncTest.cpp */; };
@@ -133,6 +134,8 @@
 /* Begin PBXFileReference section */
 		B32F51B021772FFE00BA0FA8 /* Types.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Types.cpp; sourceTree = "<group>"; };
 		B3756CF62110FA2C00F49E60 /* SwaggerComponent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SwaggerComponent.hpp; sourceTree = "<group>"; };
+		B38C708B21DC28A7006C404E /* Executor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Executor.cpp; sourceTree = "<group>"; };
+		B38C708C21DC28A8006C404E /* Executor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Executor.hpp; sourceTree = "<group>"; };
 		B3917402216102A800E6E60F /* Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		B3917404216102A800E6E60F /* favicon-16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-16x16.png"; sourceTree = "<group>"; };
 		B3917405216102A800E6E60F /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -515,6 +518,8 @@
 				B3D5C3D521B1490000EC9504 /* Coroutine.hpp */,
 				B3D5C3D221B1490000EC9504 /* Processor.cpp */,
 				B3D5C3D421B1490000EC9504 /* Processor.hpp */,
+				B38C708B21DC28A7006C404E /* Executor.cpp */,
+				B38C708C21DC28A8006C404E /* Executor.hpp */,
 			);
 			path = async;
 			sourceTree = "<group>";
@@ -541,10 +546,10 @@
 			isa = PBXGroup;
 			children = (
 				B3D5C3DD21B1490000EC9504 /* Runnable.cpp */,
-				B3D5C3DE21B1490000EC9504 /* SpinLock.cpp */,
-				B3D5C3DF21B1490000EC9504 /* Thread.cpp */,
 				B3D5C3E021B1490000EC9504 /* Runnable.hpp */,
+				B3D5C3DE21B1490000EC9504 /* SpinLock.cpp */,
 				B3D5C3E121B1490000EC9504 /* SpinLock.hpp */,
+				B3D5C3DF21B1490000EC9504 /* Thread.cpp */,
 				B3D5C3E221B1490000EC9504 /* Thread.hpp */,
 			);
 			path = concurrency;
@@ -670,12 +675,12 @@
 		B3D5C41121B1490000EC9504 /* memory */ = {
 			isa = PBXGroup;
 			children = (
-				B3D5C41221B1490000EC9504 /* MemoryPool.hpp */,
-				B3D5C41321B1490000EC9504 /* ObjectPool.hpp */,
-				B3D5C41421B1490000EC9504 /* Allocator.hpp */,
 				B3D5C41521B1490000EC9504 /* Allocator.cpp */,
+				B3D5C41421B1490000EC9504 /* Allocator.hpp */,
 				B3D5C41621B1490000EC9504 /* MemoryPool.cpp */,
+				B3D5C41221B1490000EC9504 /* MemoryPool.hpp */,
 				B3D5C41721B1490000EC9504 /* ObjectPool.cpp */,
+				B3D5C41321B1490000EC9504 /* ObjectPool.hpp */,
 			);
 			path = memory;
 			sourceTree = "<group>";
@@ -1328,6 +1333,7 @@
 				B3F7AAED2058637100DA8A39 /* RouterLevelTest.cpp in Sources */,
 				B3D5C4FC21B1490100EC9504 /* PerfTest.cpp in Sources */,
 				B3D5C4F821B1490100EC9504 /* StrBuffer.cpp in Sources */,
+				B38C708D21DC28A8006C404E /* Executor.cpp in Sources */,
 				B3D5C4E221B1490100EC9504 /* SpinLock.cpp in Sources */,
 				B3D5C4DC21B1490100EC9504 /* ListMap.cpp in Sources */,
 				B3D5C51921B1490100EC9504 /* Response.cpp in Sources */,

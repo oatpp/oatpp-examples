@@ -23,6 +23,11 @@
 #endif
 
 //////////////////////////////////
+// oatpp
+
+#include "oatpp/network/server/Server.hpp"
+
+//////////////////////////////////
 // std
 
 #include <iostream>

@@ -26,11 +26,15 @@
 #endif
 
 //////////////////////////////////
+// oatpp
+
+#include "oatpp-swagger/Controller.hpp"
+#include "oatpp/network/server/Server.hpp"
+
+//////////////////////////////////
 // std
 
 #include <iostream>
-
-#include "oatpp-swagger/Controller.hpp"
 
 /**
  *  run() method.
