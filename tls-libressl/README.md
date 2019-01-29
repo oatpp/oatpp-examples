@@ -4,4 +4,4 @@ Example project of how-to use [oatpp-libressl](https://github.com/oatpp/oatpp-li
 
 # This example is moved to separate repo
 
-[https://github.com/oatpp/oatpp-libressl](https://github.com/oatpp/oatpp-libressl)
+[https://github.com/oatpp/example-libressl](https://github.com/oatpp/example-libressl)
