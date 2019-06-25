@@ -16,3 +16,4 @@ More about oat++:
 - [TLS-Libressl](https://github.com/oatpp/example-libressl) - Example project how-to setup secure connection and serve via HTTPS.
 - [Consul](https://github.com/oatpp/example-consul) - Example project of how-to use oatpp::consul::Client. Integration with Consul.
 - [PostgreSQL](https://github.com/oatpp/example-postgresql) - Example of a production grade entity service storing information in PostgreSQL. With Swagger-UI and configuration profiles.
+- [WebSocket](https://github.com/oatpp/example-websocket) - Collection of oatpp WebSocket examples.
