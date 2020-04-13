@@ -17,3 +17,4 @@ More about oat++:
 - [Consul](https://github.com/oatpp/example-consul) - Example project of how-to use oatpp::consul::Client. Integration with Consul.
 - [PostgreSQL](https://github.com/oatpp/example-postgresql) - Example of a production grade entity service storing information in PostgreSQL. With Swagger-UI and configuration profiles.
 - [WebSocket](https://github.com/oatpp/example-websocket) - Collection of oatpp WebSocket examples.
+- [Can-Chat](https://github.com/lganzzzo/canchat) - Feature-complete rooms-based chat for tens of thousands users. Client plus Server.
