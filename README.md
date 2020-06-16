@@ -21,6 +21,10 @@ More about Oat++:
 - [WebSocket](https://github.com/oatpp/example-websocket) - Collection of oatpp WebSocket examples.
 - [YUV-Websocket-Stream](https://github.com/oatpp/example-yuv-websocket-stream) - Example project how-to create a YUV image stream from a V4L device (i.E. Webcam) using websockets.
 
+### IoT
+
+- [Example-IoT-Hue](https://github.com/oatpp/example-iot-hue-ssdp) - Example project how-to create an Philips Hue compatible REST-API that is discovered and controllable by Hue compatible Smart-Home devices like Amazon Alexa or Google Echo.
+
 ### Streaming
 
 - [Media-Stream (Http-Live-Streaming)](https://github.com/oatpp/example-hls-media-stream) - Example project of how-to build HLS-streaming server using oat++ Async-API.
